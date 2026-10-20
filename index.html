@@ -1,0 +1,1721 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#16294A">
+<meta name="description" content="Sabi Lab — nhà bán lẻ máy ảnh Nikon chính hãng, phong cách Nhật Bản. Chụp nhanh. Nhớ lâu.">
+<title>Sabi Lab Brand Book</title>
+<link rel="icon" href="logo/opt4-icon.svg" type="image/svg+xml">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&family=Be+Vietnam+Pro:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=Dela+Gothic+One&display=swap">
+<style>
+/* Layout: a Showa-era Japanese camera catalogue: kinari paper, indigo plates, speed stripes, AF brackets; three views (brand book, Shopee store mock, Zf listing mock). */
+:root{
+  --kinari:#F3EFE6; --kinari-2:#E9E3D6; --white:#FFFFFF; --line:#D9D2C3;
+  --sumi:#1A1A1A; --sumi-2:#26262A; --soft:#55524C; --mute:#8A867D;
+  --ai:#1F3A68; --ai-2:#16294A; --ai-3:#2C4F86;
+  --aka:#E03C31; --kaki:#EE7B30; --yama:#F2B33D; --nezumi:#9A9890;
+  --shp:#EE4D2D; --shp-bg:#F5F5F5; --shp-line:#E8E8E8; --shp-txt:#222; --shp-mute:#757575;
+  --f-ex:'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --f-body:'Be Vietnam Pro', 'Segoe UI', system-ui, sans-serif;
+  --f-mono:'IBM Plex Mono', ui-monospace, Menlo, monospace;
+  --f-jp:'Zen Kaku Gothic New', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
+  --f-dela:'Dela Gothic One', 'Zen Kaku Gothic New', sans-serif;
+  --wrap:1200px;
+  color-scheme:light;
+}
+html{scroll-behavior:smooth;scroll-padding-top:120px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{background:var(--kinari);color:var(--sumi);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:70;background:var(--ai-2)}
+img{max-width:100%;display:block}
+[hidden]{display:none!important}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--aka);outline-offset:3px}
+.wrap{max-width:var(--wrap);margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:720px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+.ex{font-family:var(--f-ex);font-stretch:125%;font-weight:850;letter-spacing:-.01em}
+.exi{font-family:var(--f-ex);font-style:italic;font-stretch:100%;font-weight:900;letter-spacing:-.02em}
+.mono{font-family:var(--f-mono)}
+.jp{font-family:var(--f-jp);font-weight:700}
+.dela{font-family:var(--f-dela)}
+
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:60;background:var(--ai-2);color:var(--kinari)}
+.top .wrap{display:flex;align-items:center;gap:20px;height:60px}
+.top img{height:32px;flex:none}
+.tabs{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none;min-width:0}
+.tabs::-webkit-scrollbar{display:none}
+.tab{background:none;border:0;cursor:pointer;padding:8px 14px;border-radius:4px;font-family:var(--f-ex);font-stretch:112%;font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;opacity:.72}
+.tab:hover{opacity:1}
+.tab[aria-selected="true"]{opacity:1;background:var(--yama);color:var(--sumi)}
+.subnav{background:var(--kinari);border-bottom:1px solid var(--line);position:sticky;top:calc(env(safe-area-inset-top,0px) + 60px);z-index:55}
+.subnav ul{display:flex;gap:2px;list-style:none;overflow-x:auto;scrollbar-width:none;height:44px;align-items:center;padding:0}
+.subnav ul::-webkit-scrollbar{display:none}
+.subnav a{display:block;padding:5px 10px;font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap;color:var(--soft);border-radius:3px}
+.subnav a:hover{background:var(--kinari-2);color:var(--sumi)}
+
+.band{position:relative;padding-block:clamp(72px,9vw,120px)}
+.band.ai{background:var(--ai);color:var(--kinari)}
+.band.sumi{background:var(--sumi);color:var(--kinari)}
+.band.white{background:var(--white)}
+.eyebrow{font-family:var(--f-ex);font-stretch:125%;font-weight:700;font-size:13px;letter-spacing:.22em;text-transform:uppercase;color:var(--aka);display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.ai .eyebrow,.sumi .eyebrow{color:var(--yama)}
+.eyebrow .kana{font-family:var(--f-jp);letter-spacing:.3em;color:var(--mute);font-weight:700}
+.ai .eyebrow .kana,.sumi .eyebrow .kana{color:rgba(243,239,230,.55)}
+h1,h2,h3,h4{text-wrap:balance}
+h2{font-family:var(--f-ex);font-stretch:125%;font-weight:850;font-size:clamp(34px,5.4vw,70px);line-height:.98;letter-spacing:-.015em;margin-top:18px;text-transform:uppercase}
+h2 i{font-family:var(--f-ex);font-style:italic;font-stretch:100%;font-weight:900;text-transform:none;color:var(--ai)}
+.ai h2 i,.sumi h2 i{color:var(--yama)}
+h3{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:clamp(22px,2.3vw,28px);line-height:1.15}
+.lede{font-size:clamp(17px,1.5vw,20px);max-width:64ch;margin-top:22px;color:var(--soft)}
+.ai .lede,.sumi .lede{color:var(--kinari);opacity:.82}
+.sec-head{margin-bottom:clamp(36px,5vw,64px)}
+.note{font-size:13px;color:var(--mute);margin-top:16px;max-width:85ch}
+.ai .note,.sumi .note{color:var(--kinari);opacity:.6}
+.grid{display:grid;gap:clamp(14px,2vw,24px)}
+.grid>*{min-width:0}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.rule{border-top:3px solid var(--sumi);padding-top:16px}
+.ai .rule,.sumi .rule{border-color:rgba(243,239,230,.35)}
+.tbl{overflow-x:auto}
+.stripes{display:flex;flex-direction:column;gap:8px}
+.stripes i{display:block;height:14px;transform:skewX(-24deg)}
+.stripes i:nth-child(1){background:var(--aka)}.stripes i:nth-child(2){background:var(--kaki)}.stripes i:nth-child(3){background:var(--yama)}
+
+.hero{background:var(--ai);color:var(--kinari);position:relative;overflow:hidden;padding-block:clamp(48px,7vw,96px) clamp(56px,6vw,90px)}
+.hero .sun{position:absolute;width:min(70vw,720px);aspect-ratio:1;border-radius:50%;right:-8%;top:8%;background:radial-gradient(circle at 50% 45%,#F6B04C,#EE7B30 60%,#E03C31);opacity:.9}
+.hero .lines{position:absolute;left:0;right:0;bottom:0;height:42%;background:repeating-linear-gradient(180deg,var(--ai) 0 26px,transparent 26px 38px);opacity:.92}
+.hero .wrap{position:relative;display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:980px){.hero .wrap{grid-template-columns:1fr 1fr;align-items:center}}
+.hero .meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;color:var(--yama);display:flex;gap:18px;flex-wrap:wrap}
+.hero h1{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(58px,10vw,140px);line-height:.86;margin-top:20px;letter-spacing:-.02em}
+.hero h1 i{font-style:italic;font-stretch:100%;color:var(--yama)}
+.hero .kn{font-family:var(--f-dela);font-size:clamp(20px,2.6vw,32px);letter-spacing:.18em;margin-top:14px;opacity:.82}
+.hero .tagline{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:clamp(26px,3.2vw,40px);margin-top:28px;line-height:1.1}
+.hero .tagline i{font-style:italic;font-stretch:100%;font-weight:900;color:var(--yama)}
+.hero p.sub{margin-top:16px;max-width:46ch;opacity:.88;font-weight:300}
+.vf{position:relative;aspect-ratio:3/2;max-width:100%}
+.vf i.b{position:absolute;width:52px;height:52px;border:5px solid var(--yama)}
+.vf i.b:nth-child(1){left:0;top:0;border-right:0;border-bottom:0}.vf i.b:nth-child(2){right:0;top:0;border-left:0;border-bottom:0}
+.vf i.b:nth-child(3){left:0;bottom:0;border-right:0;border-top:0}.vf i.b:nth-child(4){right:0;bottom:0;border-left:0;border-top:0}
+.vf .af{position:absolute;right:8%;top:6%;width:18px;height:18px;border-radius:50%;background:var(--aka);animation:blink 1.6s ease-in-out infinite}
+@keyframes blink{50%{opacity:.35}}
+.vf img{position:absolute;left:7%;top:12%;width:86%;filter:drop-shadow(0 34px 38px rgba(0,0,0,.55));transition:opacity .3s}
+.vf .exif{position:absolute;left:10px;bottom:-30px;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;opacity:.85}
+.swatches{display:flex;flex-wrap:wrap;gap:10px;margin-top:52px;align-items:center}
+.swatches .l{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;opacity:.8;margin-right:4px}
+.sw{width:32px;height:32px;border-radius:50%;border:0;cursor:pointer;box-shadow:0 0 0 2px var(--ai),0 0 0 3px rgba(243,239,230,.45)}
+.sw[aria-pressed="true"]{box-shadow:0 0 0 3px var(--ai),0 0 0 5px var(--yama)}
+.swname{font-family:var(--f-ex);font-stretch:112%;font-weight:700;margin-left:6px}
+
+.tl-main{display:grid;grid-template-columns:1fr;gap:28px;align-items:end}
+@media(min-width:900px){.tl-main{grid-template-columns:1.3fr 1fr}}
+.tl-big{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(50px,8vw,112px);line-height:.9;text-transform:uppercase;letter-spacing:-.02em}
+.tl-big i{font-style:italic;font-stretch:100%;text-transform:none;color:var(--ai)}
+.tl-why{border-left:4px solid var(--aka);padding-left:20px;color:var(--soft)}
+.tl-why b{color:var(--sumi)}
+.tl-opts{display:grid;margin-top:56px;border-top:2px solid var(--sumi)}
+.tl-opt{display:grid;grid-template-columns:52px minmax(0,1.1fr) minmax(0,1fr);gap:18px;padding:20px 8px;border-bottom:1px solid var(--line);align-items:baseline}
+@media(max-width:700px){.tl-opt{grid-template-columns:40px 1fr}.tl-opt p{grid-column:2}}
+.tl-opt .n{font-family:var(--f-mono);font-size:13px;color:var(--aka)}
+.tl-opt b{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:clamp(20px,2.2vw,26px);line-height:1.15}
+.tl-opt p{color:var(--soft);font-size:15.5px}
+.tl-opt.rec{background:linear-gradient(90deg,rgba(242,179,61,.2),transparent)}
+.pill{display:inline-block;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;padding:3px 8px;border-radius:20px;background:var(--aka);color:var(--white);vertical-align:middle;margin-left:8px;text-transform:uppercase}
+.proof{background:var(--kinari);border:1px solid var(--line);border-radius:8px;padding:24px}
+.proof .k{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:36px;line-height:1;color:var(--ai)}
+.proof h4{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:19px;margin-top:12px}
+.proof p{font-size:15px;color:var(--soft);margin-top:6px}
+
+.stat .n{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(44px,5.5vw,68px);line-height:1;color:var(--ai)}
+.stat .n small{font-size:.42em;margin-left:4px;color:var(--sumi)}
+.stat p{margin-top:12px;color:var(--soft);font-size:16px}
+.stat a{font-family:var(--f-mono);font-size:12px;color:var(--mute)}
+.quote{font-family:var(--f-ex);font-stretch:112%;font-style:italic;font-weight:700;font-size:clamp(26px,3.6vw,46px);line-height:1.15;max-width:26ch;margin-top:64px}
+.quote::before{content:"「";color:var(--aka);font-style:normal;font-family:var(--f-jp)}
+.quote::after{content:"」";color:var(--aka);font-style:normal;font-family:var(--f-jp)}
+
+.core-k{display:grid;grid-template-columns:auto 1fr;gap:clamp(18px,4vw,48px);align-items:center;margin-bottom:56px}
+@media(max-width:600px){.core-k{grid-template-columns:1fr}}
+.core-k .dela{font-size:clamp(90px,14vw,170px);line-height:.9;color:var(--ai)}
+.core-k h3{font-size:clamp(24px,3.4vw,42px);line-height:1.12}
+.pillar h4{font-family:var(--f-mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--aka);font-weight:500}
+.pillar p{font-size:19px;line-height:1.4;margin-top:10px;font-weight:500}
+.value{background:var(--kinari);border:1px solid var(--line);border-radius:8px;padding:24px 22px}
+.value .kana{font-family:var(--f-jp);font-weight:900;font-size:28px;color:var(--ai);line-height:1}
+.value h4{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:22px;margin-top:14px}
+.value h4 span{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--mute);font-weight:400;margin-top:4px}
+.value p{margin-top:10px;color:var(--soft);font-size:15px}
+.jt{border-collapse:collapse;width:100%;min-width:640px}
+.jt td,.jt th{text-align:left;padding:15px 14px;border-bottom:1px solid var(--line);vertical-align:top;font-size:15.5px}
+.jt th{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);font-weight:400}
+.jt td:first-child{font-family:var(--f-ex);font-stretch:112%;font-weight:800;white-space:nowrap}
+.jt td:first-child span{display:block;font-family:var(--f-jp);font-weight:700;font-size:13px;color:var(--mute);letter-spacing:.1em;margin-top:2px}
+
+.manifesto{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:clamp(26px,3.6vw,46px);line-height:1.12;max-width:24ch;text-transform:uppercase}
+.manifesto>span{display:block}
+.manifesto .w{display:inline}
+.manifesto span.y{color:var(--yama);font-style:italic;font-stretch:100%;text-transform:none;font-weight:900}
+.manifesto strong{display:block;color:var(--kaki);margin-top:20px;font-weight:900}
+.story{columns:2 340px;column-gap:56px;margin-top:56px;font-size:17px;line-height:1.75;font-weight:300}
+.story p{margin-bottom:1em;break-inside:avoid;opacity:.92}
+.bio{margin-top:48px}
+.bio>div{border:1px solid rgba(243,239,230,.22);padding:18px 22px;border-radius:6px}
+.bio .mono{font-size:11px;letter-spacing:.18em;color:var(--yama);text-transform:uppercase}
+
+.segbar{display:flex;height:52px;border-radius:4px;overflow:hidden;margin-top:8px}
+.segbar div{display:flex;align-items:center;padding:0 14px;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;color:var(--white);white-space:nowrap;overflow:hidden}
+.persona{background:var(--white);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.persona .head{padding:22px 22px 16px;display:flex;gap:14px;align-items:center;border-bottom:1px dashed var(--line)}
+.avatar{width:58px;height:58px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:24px;color:var(--white)}
+.persona h3{font-size:22px}
+.persona .role{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase;margin-top:4px}
+.persona dl{padding:16px 22px 6px;display:grid;gap:10px}
+.persona dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--aka)}
+.persona dd{font-size:15px;color:var(--soft);margin-top:2px}
+.persona blockquote{margin-top:auto;padding:16px 22px 20px;font-weight:600;font-size:17px;background:var(--kinari-2)}
+.journey{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));margin-top:20px;counter-reset:j;padding:0}
+.journey li{list-style:none;padding:20px 16px 20px 0;border-top:4px solid var(--ai)}
+.journey li::before{counter-increment:j;content:counter(j,decimal-leading-zero);font-family:var(--f-mono);font-size:12px;color:var(--aka)}
+.journey b{display:block;font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:19px;margin-top:6px}
+.journey span{display:block;font-size:14.5px;color:var(--soft);margin-top:6px}
+.journey em{font-style:normal;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;color:var(--ai);text-transform:uppercase;display:block;margin-top:10px}
+
+.pos{font-size:clamp(20px,2.3vw,28px);line-height:1.4;max-width:42ch}
+.pos b{color:var(--yama);font-weight:700}
+.mapbox{background:#111;border-radius:8px;padding:12px;overflow-x:auto}
+.mapbox svg{width:100%;min-width:540px;height:auto;display:block}
+.vs{border-collapse:collapse;width:100%;min-width:600px}
+.vs th,.vs td{padding:14px 16px;text-align:left;border-bottom:1px solid rgba(243,239,230,.16);font-size:15.5px;vertical-align:top}
+.vs thead th{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:400;opacity:.65}
+.vs td:first-child{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--yama);white-space:nowrap}
+.vs td:nth-child(2){opacity:.7}
+.vs td:last-child{font-weight:600}
+.callout{border-left:4px solid var(--yama);padding:6px 0 6px 20px;margin-top:32px;max-width:72ch}
+
+.trait{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}
+.trait .is{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:21px}
+.trait .not{text-align:right;color:var(--mute);text-decoration:line-through;text-decoration-color:var(--aka);font-size:15.5px}
+.trait .bar{width:clamp(50px,12vw,140px);height:3px;background:linear-gradient(90deg,var(--ai),var(--line))}
+.chat{background:var(--kinari);border:1px solid var(--line);border-radius:8px;padding:18px;display:grid;gap:12px}
+.bubble{max-width:88%;padding:12px 16px;border-radius:14px;font-size:15px;line-height:1.5}
+.bubble.c{background:var(--white);justify-self:start;border-bottom-left-radius:4px}
+.bubble.s{background:var(--ai);color:var(--kinari);justify-self:end;border-bottom-right-radius:4px}
+.bubble small{display:block;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;opacity:.65;margin-bottom:4px;text-transform:uppercase}
+.words{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--kinari)}
+.words div{padding:11px 16px;border-bottom:1px solid var(--line);font-size:15.5px}
+.words div:nth-child(odd){font-weight:600}
+.words div:nth-child(even){color:var(--mute);text-decoration:line-through;text-decoration-color:rgba(224,60,49,.6)}
+.words .h{font-family:var(--f-mono);font-size:11px!important;letter-spacing:.16em;text-transform:uppercase;font-weight:400!important;text-decoration:none!important;color:var(--mute)!important;background:var(--kinari-2)}
+.words .last{border-bottom:0}
+
+.lo{background:var(--white);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:grid;grid-template-columns:1fr;margin-bottom:22px}
+@media(min-width:900px){.lo{grid-template-columns:1.15fr 1fr}}
+.lo.rec{border:2px solid var(--ai);box-shadow:0 0 0 4px rgba(31,58,104,.12)}
+.lo .light{background:var(--kinari);padding:clamp(24px,4vw,48px);display:grid;place-items:center;min-height:220px;position:relative}
+.lo .light img{max-height:110px;width:auto}
+.lo .row{display:grid;grid-template-columns:1fr 1fr 1fr}
+.lo .row div{aspect-ratio:1.4;display:grid;place-items:center;padding:16px;max-width:100%}
+.lo .row img{max-height:70%;max-width:84%}
+.lo .info{padding:clamp(22px,3vw,36px);display:flex;flex-direction:column;gap:14px}
+.lo .num{font-family:var(--f-mono);font-size:12px;letter-spacing:.16em;color:var(--aka)}
+.lo h3{font-size:clamp(24px,2.6vw,32px)}
+.lo h3 small{display:block;font-family:var(--f-jp);font-size:14px;color:var(--mute);letter-spacing:.2em;margin-top:6px;font-weight:700}
+.lo p{color:var(--soft);font-size:15.5px}
+.score{display:grid;grid-template-columns:auto 1fr;gap:6px 16px;font-size:14px;margin-top:4px}
+.score>span:nth-child(odd){font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;color:var(--mute);text-transform:uppercase;padding-top:2px}
+.dots{display:flex;gap:4px;align-items:center}
+.dots i{width:14px;height:14px;border-radius:50%;background:var(--kinari-2);display:block}
+.dots i.on{background:var(--ai)}
+.recbadge{position:absolute;left:16px;top:16px;font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:12px;letter-spacing:.12em;background:var(--aka);color:var(--white);padding:6px 10px;border-radius:4px;text-transform:uppercase}
+.uses{display:flex;flex-wrap:wrap;gap:6px}
+.uses span{font-family:var(--f-mono);font-size:11px;padding:3px 9px;border-radius:20px;border:1px solid var(--line);color:var(--soft)}
+
+.colors{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:minmax(170px,auto);gap:10px}
+.chip{border-radius:6px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;cursor:pointer;border:0;text-align:left;position:relative;min-width:0}
+.chip .nm{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(22px,2.4vw,32px);line-height:1;display:block}
+.chip .jn{font-family:var(--f-jp);font-weight:700;font-size:15px;opacity:.8;margin-top:6px;display:block;letter-spacing:.12em}
+.chip .role{font-size:13px;opacity:.8;margin-top:10px;max-width:30ch;display:block}
+.chip .codes{font-family:var(--f-mono);font-size:12px;line-height:1.7;opacity:.9}
+.chip .copied{position:absolute;right:14px;top:14px;font-family:var(--f-mono);font-size:11px;opacity:0;transition:opacity .2s}
+.chip.ok .copied{opacity:1}
+.c1{grid-column:span 5;grid-row:span 2;background:var(--kinari);box-shadow:inset 0 0 0 1px var(--line);color:var(--sumi)}
+.c2{grid-column:span 4;grid-row:span 2;background:var(--ai);color:var(--kinari)}
+.c3{grid-column:span 3;grid-row:span 2;background:var(--sumi);color:var(--kinari)}
+.c4{grid-column:span 3;background:var(--aka);color:var(--white)}
+.c5{grid-column:span 3;background:var(--kaki);color:var(--sumi)}
+.c6{grid-column:span 3;background:var(--yama);color:var(--sumi)}
+.c7{grid-column:span 3;background:var(--nezumi);color:var(--sumi)}
+@media(max-width:760px){.colors{grid-template-columns:1fr 1fr}.colors>*{grid-column:span 1!important;grid-row:span 1!important;min-height:180px}}
+.ratio{display:flex;height:44px;border-radius:4px;overflow:hidden;margin-top:26px;box-shadow:inset 0 0 0 1px var(--line)}
+.ratio div{font-family:var(--f-mono);font-size:11px;display:flex;align-items:center;padding-left:10px;white-space:nowrap;overflow:hidden}
+.pairs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:12px;margin-top:26px}
+.pair{border-radius:6px;padding:24px 20px;min-height:150px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.pair .t{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:23px;line-height:1.1}
+.pair .m{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.8}
+
+.spec{border-top:2px solid var(--sumi);padding-block:24px;display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr);gap:24px;align-items:baseline}
+@media(max-width:700px){.spec{grid-template-columns:1fr}}
+.spec .meta b{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:20px;display:block}
+.spec .meta span{font-family:var(--f-mono);font-size:12px;letter-spacing:.1em;color:var(--mute);display:block;margin-top:6px}
+.spec .sample{min-width:0;overflow-wrap:anywhere}
+
+.dev{background:var(--ai-2);border-radius:8px;padding:24px;min-height:230px;display:flex;flex-direction:column;justify-content:space-between;color:var(--kinari)}
+.dev h4{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:20px}
+.dev p{font-size:14px;opacity:.72;margin-top:6px}
+.dev .demo{flex:1;display:grid;place-items:center;padding:20px 0;width:100%}
+.afd{position:relative;width:170px;height:110px}
+.afd i{position:absolute;width:30px;height:30px;border:4px solid var(--yama)}
+.afd i:nth-child(1){left:0;top:0;border-right:0;border-bottom:0}.afd i:nth-child(2){right:0;top:0;border-left:0;border-bottom:0}.afd i:nth-child(3){left:0;bottom:0;border-right:0;border-top:0}.afd i:nth-child(4){right:0;bottom:0;border-left:0;border-top:0}
+.afd b{position:absolute;inset:0;display:grid;place-items:center;font-family:var(--f-dela);font-size:30px;font-weight:400}
+.afd em{position:absolute;right:20px;top:10px;width:12px;height:12px;border-radius:50%;background:var(--aka)}
+
+.zf{display:grid;grid-template-columns:1fr;gap:28px;align-items:center}
+@media(min-width:900px){.zf{grid-template-columns:1.2fr .8fr}}
+.zf-photo{background:var(--kinari);border:1px solid var(--line);border-radius:10px;padding:clamp(16px,4vw,44px);position:relative}
+.zf-photo img{width:100%;filter:drop-shadow(0 22px 24px rgba(20,20,30,.3))}
+.zf-photo .cap{position:absolute;left:16px;top:12px;font-family:var(--f-mono);font-size:12px;letter-spacing:.12em;color:var(--mute);text-transform:uppercase}
+.zf-list{display:grid;gap:8px}
+.zf-opt{display:flex;align-items:center;gap:14px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--white);cursor:pointer;text-align:left;width:100%}
+.zf-opt i{width:26px;height:26px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.zf-opt b{font-weight:600}
+.zf-opt span{margin-left:auto;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--mute);text-transform:uppercase}
+.zf-opt[aria-pressed="true"]{border-color:var(--ai);box-shadow:inset 4px 0 0 var(--ai)}
+.specrow{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));margin-top:44px;border-top:3px solid var(--sumi)}
+.specrow div{padding:16px 14px 16px 0}
+.specrow b{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:26px;display:block;line-height:1.05;color:var(--ai)}
+.specrow span{font-size:14px;color:var(--soft)}
+.kits{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px}
+.kit{border-radius:8px;padding:22px 20px;display:flex;flex-direction:column;gap:10px;min-height:290px;color:var(--kinari);position:relative;overflow:hidden}
+.kit .h{font-family:var(--f-jp);font-weight:900;font-size:38px;line-height:1}
+.kit h4{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:23px;line-height:1}
+.kit h4 small{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;opacity:.75;margin-top:8px;font-weight:400}
+.kit ul{list-style:none;font-size:14.5px;display:grid;gap:4px;margin-top:auto;padding:0}
+.kit ul li::before{content:"+ ";opacity:.7}
+.kit .who{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.75;border-top:1px solid currentColor;padding-top:10px}
+
+.goods{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:14px}
+.gi{background:var(--white);border:1px solid var(--line);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
+.gi .art{aspect-ratio:4/3;background:var(--kinari-2);display:grid;place-items:center;position:relative;max-width:100%}
+.gi .art svg{width:74%;height:74%}
+.gi .badge{position:absolute;left:12px;top:12px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:4px 8px;border-radius:3px;background:var(--sumi);color:var(--kinari)}
+.gi .badge.g{background:var(--aka);color:var(--white)}
+.gi .badge.u{background:var(--ai);color:var(--kinari)}
+.gi .body{padding:16px 18px 18px;display:flex;flex-direction:column;gap:8px;flex:1}
+.gi h4{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:19px;line-height:1.2}
+.gi p{font-size:14.5px;color:var(--soft)}
+.gi .facts{margin-top:auto;display:flex;flex-wrap:wrap;gap:6px;padding-top:6px}
+.gi .facts span{font-family:var(--f-mono);font-size:11px;padding:3px 8px;border:1px solid var(--line);border-radius:20px;color:var(--soft)}
+.legend{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:22px;font-size:14px;color:var(--soft)}
+.legend span{display:flex;gap:8px;align-items:center}
+.legend i{width:12px;height:12px;border-radius:2px;display:block}
+
+.ladder{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));border:1px solid rgba(243,239,230,.2);border-radius:8px;overflow:hidden}
+.rung{padding:26px 22px;border-right:1px solid rgba(243,239,230,.2);display:flex;flex-direction:column;gap:12px;position:relative}
+.rung:last-child{border-right:0}
+.rung.hot{background:rgba(242,179,61,.12)}
+.rung .lv{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--yama)}
+.rung h4{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:24px;line-height:1}
+.rung .price{font-family:var(--f-mono);font-size:12.5px;opacity:.75}
+.rung ul{list-style:none;display:grid;gap:8px;font-size:15px;padding:0}
+.rung ul li{padding-left:20px;position:relative;opacity:.9}
+.rung ul li::before{content:"";position:absolute;left:0;top:8px;width:10px;height:10px;background:var(--yama);transform:skewX(-20deg)}
+.rung .pick{position:absolute;right:16px;top:16px;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;background:var(--aka);padding:4px 8px;border-radius:3px;text-transform:uppercase;color:var(--white)}
+.mech{border-top:1px solid rgba(243,239,230,.25);padding-top:18px}
+.mech .k{font-family:var(--f-jp);font-weight:900;font-size:20px;color:var(--yama);letter-spacing:.1em}
+.mech h4{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:21px;margin-top:10px}
+.mech p{font-size:15px;opacity:.8;margin-top:8px}
+.mech .when{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--kaki);margin-top:10px;display:block}
+.passport{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px;max-width:360px}
+.passport span{aspect-ratio:1;border:1.5px dashed rgba(243,239,230,.4);border-radius:50%;display:grid;place-items:center;font-family:var(--f-mono);font-size:11px;opacity:.75}
+.passport span.on{border:0;background:url(logo/opt5-icon-dark.svg) center/100% no-repeat;opacity:1}
+
+.shots{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:16px}
+.shot img{width:100%;aspect-ratio:1;border-radius:6px;cursor:zoom-in;box-shadow:0 18px 30px -18px rgba(20,20,30,.45)}
+.shot b{display:flex;gap:10px;align-items:baseline;font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:18px;margin-top:12px}
+.shot b span{font-family:var(--f-mono);font-size:12px;color:var(--aka);font-weight:400}
+.shot p{font-size:14px;color:var(--soft);margin-top:4px}
+.vars{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px}
+.vars img{width:170px;flex:none;border-radius:6px;cursor:zoom-in;aspect-ratio:1}
+
+.chan{border-radius:8px;padding:28px 26px;display:flex;flex-direction:column;gap:14px}
+.chan h3{font-size:30px}
+.chan dl{display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+.chan dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.7;padding-top:3px}
+.pillbar{display:flex;height:110px;gap:6px;margin-top:10px}
+.pillbar div{border-radius:6px;padding:14px 16px;display:flex;flex-direction:column;justify-content:space-between;min-width:0;overflow:hidden}
+.pillbar b{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:18px;line-height:1.1}
+.pillbar span{font-family:var(--f-mono);font-size:20px}
+@media(max-width:640px){.pillbar{flex-direction:column;height:auto}.pillbar div{flex:none!important;min-height:72px}}
+.road{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.phase{border-radius:8px;padding:22px 20px;border:1px solid var(--line);background:var(--kinari);display:flex;flex-direction:column;gap:10px}
+.phase.on{background:var(--ai);color:var(--kinari);border-color:var(--ai)}
+.phase .dt{font-family:var(--f-mono);font-size:12px;color:var(--mute)}
+.phase.on .dt{color:var(--yama)}
+.phase h4{font-family:var(--f-ex);font-stretch:118%;font-weight:900;font-size:21px;line-height:1.05}
+.phase ul{list-style:none;display:grid;gap:6px;font-size:14.5px;padding:0}
+.phase ul li::before{content:"— ";color:var(--aka)}
+.gate{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--aka);border-top:1px dashed currentColor;padding-top:10px;margin-top:auto}
+.phase.on .gate{color:var(--yama)}
+.kpi{border-collapse:collapse;width:100%;min-width:560px}
+.kpi th,.kpi td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;font-size:15.5px}
+.kpi th{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:400;color:var(--mute)}
+.kpi .n{font-family:var(--f-mono);font-variant-numeric:tabular-nums;text-align:right}
+.todo{list-style:none;counter-reset:t;padding:0}
+.todo li{display:grid;grid-template-columns:52px 1fr;gap:16px;padding:18px 0;border-top:1px solid rgba(243,239,230,.3)}
+.todo li::before{counter-increment:t;content:counter(t,decimal-leading-zero);font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:30px;line-height:1;color:var(--yama)}
+.todo b{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:20px;display:block}
+.todo span{opacity:.88;font-size:15.5px}
+footer{background:var(--ai-2);color:var(--kinari);padding-block:48px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:24px;align-items:center;justify-content:space-between}
+footer img{height:52px}
+footer p{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;opacity:.7;line-height:1.8;max-width:70ch}
+
+/* ===== SHOPEE MOCK ===== */
+.shp{background:var(--shp-bg);color:var(--shp-txt);font-size:14px;line-height:1.45;padding-bottom:56px}
+.mockbar{background:#FFF7E6;border-bottom:1px solid #F5DDB0;color:#7a5000;font-size:13px;padding-block:8px}
+.shp-head{background:linear-gradient(-180deg,#F53D2D,#F63);color:var(--white);padding-block:14px}
+.shp-head .wrap{display:flex;align-items:center;gap:18px}
+.shp-brand{font-family:var(--f-ex);font-stretch:112%;font-weight:900;font-size:21px;white-space:nowrap}
+.shp-brand small{font-weight:500;font-size:12px;opacity:.9;margin-left:6px;font-family:var(--f-body)}
+.shp-search{flex:1;display:flex;background:var(--white);border-radius:3px;padding:3px;min-width:0}
+.shp-search input{flex:1;border:0;padding:8px 10px;font:inherit;color:var(--shp-txt);min-width:0;background:transparent}
+.shp-search button{background:var(--shp);border:0;color:var(--white);padding:0 18px;border-radius:2px;cursor:pointer}
+.cart{font-size:22px;line-height:1;position:relative;flex:none}
+.cart b{position:absolute;right:-10px;top:-8px;background:var(--white);color:var(--shp);font-size:11px;border-radius:10px;padding:0 6px;font-family:var(--f-body)}
+.shop-cover{background:var(--white);margin-top:14px;border-radius:2px;display:grid;grid-template-columns:1fr;overflow:hidden}
+@media(min-width:900px){.shop-cover{grid-template-columns:390px 1fr}}
+.shop-card{position:relative;padding:22px;color:var(--kinari);background:var(--ai);overflow:hidden;min-height:150px}
+.shop-card::before{content:"";position:absolute;inset:0;background:url(img/t_02-lifestyle.jpg) center/cover;opacity:.32}
+.shop-card>*{position:relative}
+.shop-id{display:flex;gap:14px;align-items:center}
+.shop-av{width:76px;height:76px;border-radius:50%;background:var(--kinari);display:grid;place-items:center;box-shadow:0 0 0 3px rgba(255,255,255,.4);flex:none;position:relative}
+.shop-av img{width:56px}
+.shop-av .mall{position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);background:var(--shp);color:var(--white);font-size:10px;font-weight:700;padding:1px 6px;border-radius:2px}
+.shop-id h2{font-family:var(--f-body);font-size:19px;font-weight:600;text-transform:none;margin:0;letter-spacing:0;line-height:1.2}
+.shop-id p{font-size:12px;opacity:.88}
+.shop-btns{display:flex;gap:8px;margin-top:16px}
+.shop-btns button{flex:1;border:1px solid rgba(255,255,255,.8);background:rgba(0,0,0,.18);color:var(--white);padding:6px;border-radius:2px;cursor:pointer;font-size:12px;font-weight:600}
+.shop-stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:14px 28px;padding:24px;align-content:center}
+.shop-stats span{color:var(--shp)}
+.shop-tabs{background:var(--white);display:flex;overflow-x:auto;border-top:1px solid var(--shp-line);scrollbar-width:none}
+.shop-tabs::-webkit-scrollbar{display:none}
+.shop-tabs a{padding:14px 18px;white-space:nowrap;text-decoration:none;font-size:15px;border-bottom:2px solid transparent}
+.shop-tabs a.on{color:var(--shp);border-color:var(--shp)}
+.box{background:var(--white);margin-top:14px;border-radius:2px;padding:18px 20px}
+.box-t{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px;flex-wrap:wrap}
+.box-t h3{font-family:var(--f-body);font-size:16px;font-weight:600;text-transform:uppercase;color:var(--shp-mute);letter-spacing:.02em}
+.box-t a{color:var(--shp);font-size:13px;text-decoration:none}
+.vouchers{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:12px}
+.vc{display:flex;border-radius:4px;overflow:hidden;background:#FFF0EC;border:1px solid #FBD3C8;min-height:84px}
+.vc .l{width:84px;flex:none;background:var(--ai);color:var(--kinari);display:grid;place-items:center;text-align:center;font-family:var(--f-ex);font-stretch:112%;font-weight:900;font-size:13px;line-height:1.1;padding:6px}
+.vc .r{padding:10px 12px;display:flex;flex-direction:column;justify-content:space-between;flex:1;min-width:0}
+.vc b{font-size:14px}
+.vc small{color:var(--shp-mute);font-size:12px}
+.vc button{align-self:flex-end;background:var(--shp);color:var(--white);border:0;border-radius:2px;padding:4px 12px;font-size:12px;cursor:pointer}
+.vc button.saved{background:#ddd;color:#777}
+.hero-bn{display:grid;grid-template-columns:1fr;gap:6px;margin-top:14px}
+@media(min-width:800px){.hero-bn{grid-template-columns:2fr 1fr}}
+.bn{border-radius:2px;overflow:hidden;position:relative;color:var(--kinari);background:var(--ai);min-height:180px;display:flex;flex-direction:column;justify-content:center;padding:24px 28px}
+.bn .t{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(26px,3.4vw,44px);line-height:.95;text-transform:uppercase;position:relative;z-index:1;max-width:60%}
+.bn .t i{font-style:italic;font-stretch:100%;color:var(--yama);text-transform:none}
+.bn p{position:relative;z-index:1;margin-top:10px;opacity:.92;max-width:34ch}
+.bn img.c{position:absolute;right:-4%;bottom:6%;width:min(52%,420px);filter:drop-shadow(0 18px 20px rgba(0,0,0,.45))}
+.bn .sun{position:absolute;right:6%;top:10%;width:min(40vw,260px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#F6B04C,#EE7B30 60%,#E03C31)}
+.bn.small{min-height:96px;padding:16px 20px}
+.bn.small .t{font-size:clamp(18px,2vw,23px);max-width:none}
+.cats{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));border-left:1px solid var(--shp-line);border-top:1px solid var(--shp-line)}
+.cat{border-right:1px solid var(--shp-line);border-bottom:1px solid var(--shp-line);padding:16px 8px;text-align:center;font-size:13px;display:flex;flex-direction:column;align-items:center;gap:8px;background:var(--white)}
+.cat i{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:var(--kinari)}
+.cat i svg{width:42px;height:42px}
+.fs-head{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.fs-logo{font-family:var(--f-ex);font-stretch:112%;font-style:italic;font-weight:900;font-size:22px;color:var(--shp)}
+.timer{display:flex;gap:4px;align-items:center}
+.timer b{background:var(--sumi);color:var(--white);font-family:var(--f-mono);font-size:14px;padding:2px 6px;border-radius:2px;font-variant-numeric:tabular-nums}
+.pgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(46%,180px),1fr));gap:10px}
+.pc{background:var(--white);border:1px solid var(--shp-line);border-radius:2px;display:flex;flex-direction:column;cursor:pointer;position:relative;transition:transform .15s,border-color .15s;text-align:left;padding:0;overflow:hidden;min-width:0}
+.pc:hover{border-color:var(--shp);transform:translateY(-1px);box-shadow:0 1px 20px rgba(0,0,0,.08)}
+.pc .im{aspect-ratio:1;background:var(--kinari);position:relative;overflow:hidden;max-width:100%}
+.pc .im img{width:100%;height:100%;object-fit:cover}
+.pc .im .ph{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:8px;text-align:center;padding:12px}
+.pc .im .ph svg{width:62%;max-height:58%}
+.pc .im .ph span{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:14px;color:var(--ai)}
+.pc .im .ph small{font-size:10.5px;color:var(--mute)}
+.pc .disc{position:absolute;right:0;top:0;background:#FFD839;color:var(--shp);font-size:12px;font-weight:700;padding:3px 6px 8px;clip-path:polygon(0 0,100% 0,100% 100%,50% 82%,0 100%);line-height:1.1;text-align:center}
+.pc .disc small{display:block;color:var(--white);font-size:10px}
+.pc .frame{position:absolute;left:0;right:0;bottom:0;height:22px;background:var(--ai);color:var(--kinari);font-size:10px;font-weight:700;display:flex;align-items:center;gap:6px;padding:0 6px;font-family:var(--f-ex);font-stretch:112%;letter-spacing:.03em;white-space:nowrap;overflow:hidden}
+.pc .frame em{font-style:normal;background:var(--yama);color:var(--sumi);padding:0 4px;border-radius:2px}
+.pc .bd{padding:8px;display:flex;flex-direction:column;gap:6px;flex:1}
+.pc .nm{font-size:13px;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;min-height:2.7em}
+.pc .nm .mall{background:var(--shp);color:var(--white);font-size:10px;font-weight:700;padding:0 4px;border-radius:2px;margin-right:4px;vertical-align:1px}
+.pc .tags{display:flex;gap:4px;flex-wrap:wrap}
+.pc .tags span{font-size:10px;border:1px solid var(--shp);color:var(--shp);padding:0 4px;border-radius:2px}
+.pc .pr{display:flex;align-items:baseline;justify-content:space-between;gap:6px;margin-top:auto;flex-wrap:wrap}
+.pc .pr b{color:var(--shp);font-size:16px;font-weight:500}
+.pc .pr b small{font-size:11px}
+.pc .pr span{font-size:11.5px;color:var(--shp-mute)}
+.pc .loc{font-size:11px;color:var(--shp-mute)}
+.fsbar{height:16px;border-radius:8px;background:#FFBDA6;position:relative;overflow:hidden;font-size:10px;color:var(--white);display:flex;align-items:center;justify-content:center;font-weight:700;text-transform:uppercase}
+.fsbar i{position:absolute;left:0;top:0;bottom:0;background:linear-gradient(90deg,#EE4D2D,#FF7337)}
+.fsbar span{position:relative}
+.live{display:grid;grid-template-columns:1fr;gap:16px;align-items:start}
+@media(min-width:760px){.live{grid-template-columns:260px 1fr}}
+.live .scr{aspect-ratio:9/13;max-width:100%;border-radius:6px;background:linear-gradient(180deg,var(--ai),var(--sumi));position:relative;overflow:hidden;color:var(--kinari)}
+.live .scr img{position:absolute;left:8%;top:28%;width:84%}
+.live .scr .tag{position:absolute;left:10px;top:10px;background:var(--shp);color:var(--white);font-size:11px;font-weight:700;padding:2px 8px;border-radius:2px}
+.live .scr .v{position:absolute;right:10px;top:10px;background:rgba(0,0,0,.5);font-size:11px;padding:2px 8px;border-radius:2px}
+.live .scr .cm{position:absolute;left:10px;right:10px;bottom:10px;display:grid;gap:4px;font-size:11.5px}
+.live .scr .cm span{background:rgba(0,0,0,.5);padding:3px 8px;border-radius:10px;justify-self:start}
+.combo{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:10px}
+.cb{border:1px dashed var(--shp);border-radius:4px;padding:14px;display:flex;gap:12px;align-items:center;background:#FFFAF8}
+.cb .ims{display:flex;align-items:center;gap:4px;flex:none}
+.cb .ims div{width:56px;height:56px;border-radius:4px;background:var(--kinari);overflow:hidden;display:grid;place-items:center}
+.cb .ims b{color:var(--shp)}
+.cb p{font-size:13px}
+.cb p b{color:var(--shp)}
+.decor{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:6px}
+.decor .d{aspect-ratio:16/10;border-radius:2px;position:relative;overflow:hidden;color:var(--kinari);padding:16px;display:flex;flex-direction:column;justify-content:flex-end;max-width:100%}
+.decor .d .t{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:22px;line-height:1;position:relative}
+.decor .d .k{font-family:var(--f-jp);font-weight:900;font-size:14px;letter-spacing:.2em;opacity:.85;position:relative}
+.decor .d .art{position:absolute;inset:0}
+.decor .d img{position:absolute;right:-6%;top:6%;width:62%;filter:drop-shadow(0 10px 12px rgba(0,0,0,.4))}
+
+.crumb{font-size:13px;color:#05a;padding-block:14px}
+.crumb span{color:var(--shp-txt)}
+.pdp{background:var(--white);border-radius:2px;padding:18px;display:grid;grid-template-columns:1fr;gap:26px}
+@media(min-width:900px){.pdp{grid-template-columns:450px 1fr}}
+.pdp>*{min-width:0}
+.gal .main{aspect-ratio:1;background:var(--kinari);position:relative;max-width:100%;cursor:zoom-in}
+.gal .main img{width:100%;height:100%;object-fit:cover}
+.gal .main .play{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.55);color:var(--white);font-size:12px;padding:4px 10px;border-radius:12px}
+.thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:8px}
+.thumbs button{border:2px solid transparent;padding:0;cursor:pointer;aspect-ratio:1;background:var(--kinari);overflow:hidden;max-width:100%}
+.thumbs button[aria-pressed="true"]{border-color:var(--shp)}
+.thumbs img{width:100%;height:100%;object-fit:cover}
+.share{display:flex;gap:18px;justify-content:center;margin-top:16px;font-size:14px;color:var(--shp-mute)}
+.pinfo h1{font-family:var(--f-body);font-size:20px;font-weight:500;line-height:1.4}
+.pinfo h1 .mall{background:var(--shp);color:var(--white);font-size:12px;font-weight:700;padding:1px 6px;border-radius:2px;margin-right:6px;vertical-align:2px}
+.prow{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;font-size:15px;align-items:center}
+.prow .st{color:var(--shp);border-bottom:1px solid var(--shp)}
+.prow .sep{width:1px;height:16px;background:#ddd}
+.prow .g{color:var(--shp-mute)}
+.pricebox{background:#FAFAFA;margin-top:14px;overflow:hidden}
+.pricebox .fs{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:linear-gradient(90deg,#F53D2D,#F63);color:var(--white);padding:8px 20px;font-weight:900;font-style:italic;font-family:var(--f-ex);font-stretch:112%}
+.pricebox .fs span:last-child{font-family:var(--f-mono);font-style:normal;font-size:13px;font-weight:500}
+.pricebox .p{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:16px 20px}
+.pricebox s{color:#929292;font-size:16px}
+.pricebox .now{color:var(--shp);font-size:30px;font-weight:500}
+.pricebox .off{background:var(--shp);color:var(--white);font-size:12px;font-weight:700;padding:2px 4px;border-radius:2px}
+.prop{display:grid;grid-template-columns:110px 1fr;gap:12px;margin-top:20px;align-items:start;font-size:14px}
+@media(max-width:560px){.prop{grid-template-columns:1fr;gap:6px}}
+.prop>span:first-child{color:var(--shp-mute);padding-top:6px}
+.optlist{display:flex;flex-wrap:wrap;gap:8px}
+.opt{display:flex;align-items:center;gap:8px;border:1px solid rgba(0,0,0,.09);background:var(--white);padding:4px 10px 4px 4px;border-radius:2px;cursor:pointer;min-height:40px;position:relative;text-align:left}
+.opt.txt{padding:4px 14px}
+.opt img{width:30px;height:30px;object-fit:cover}
+.opt:hover,.opt[aria-pressed="true"]{border-color:var(--shp);color:var(--shp)}
+.opt[aria-pressed="true"]::after{content:"✓";position:absolute;right:0;bottom:0;background:var(--shp);color:var(--white);font-size:9px;padding:0 3px;line-height:1.4}
+.vchips,.giftrow{display:flex;flex-wrap:wrap;gap:8px}
+.vchips span{background:#FFF0EC;color:var(--shp);font-size:13px;padding:2px 8px;border:1px solid #FBD3C8;border-radius:2px}
+.giftrow span{font-size:13px;border:1px solid var(--line);border-radius:2px;padding:3px 8px;background:var(--kinari)}
+.qty{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.qty .stp{display:flex;border:1px solid rgba(0,0,0,.12)}
+.qty .stp button{width:32px;height:32px;border:0;background:var(--white);cursor:pointer;font-size:16px}
+.qty .stp input{width:50px;text-align:center;border:0;border-left:1px solid rgba(0,0,0,.12);border-right:1px solid rgba(0,0,0,.12);font:inherit}
+.cta{display:flex;gap:14px;margin-top:26px;flex-wrap:wrap}
+.cta button{height:48px;padding:0 22px;border-radius:2px;cursor:pointer;font-size:15px;display:flex;align-items:center;gap:8px}
+.cta .add{border:1px solid var(--shp);background:#FFEEE8;color:var(--shp)}
+.cta .buy{border:0;background:var(--shp);color:var(--white);min-width:180px;justify-content:center}
+.assure{display:flex;gap:18px;flex-wrap:wrap;border-top:1px solid var(--shp-line);margin-top:26px;padding-top:16px;font-size:13px;color:var(--shp-mute)}
+.assure b{color:var(--shp)}
+.sellerbar{background:var(--white);margin-top:14px;padding:22px;display:grid;grid-template-columns:1fr;gap:20px;align-items:center}
+@media(min-width:900px){.sellerbar{grid-template-columns:380px 1fr}}
+.sellerbar .id{display:flex;gap:14px;align-items:center}
+.sellerbar .id .shop-av{width:70px;height:70px;box-shadow:0 0 0 1px var(--line)}
+.sellerbar .id b{font-size:16px;display:block}
+.sellerbar .id p{font-size:12px;color:var(--shp-mute)}
+.sellerbar .btns{display:flex;gap:8px;margin-top:8px}
+.sellerbar .btns button{border:1px solid var(--shp);background:#FFEEE8;color:var(--shp);font-size:12px;padding:5px 10px;border-radius:2px;cursor:pointer}
+.sellerbar .btns button+button{border-color:rgba(0,0,0,.15);background:var(--white);color:var(--shp-txt)}
+.sellerbar .st{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 24px;font-size:14px;color:var(--shp-mute)}
+.sellerbar .st span{color:var(--shp)}
+.pd-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-top:14px}
+@media(min-width:1000px){.pd-grid{grid-template-columns:minmax(0,1fr) 210px}}
+.sec{background:var(--white);padding:22px}
+.sec h3{font-family:var(--f-body);font-size:17px;font-weight:600;background:#FAFAFA;padding:12px 14px;text-transform:uppercase;letter-spacing:.02em;margin-bottom:16px}
+.detail{display:grid;grid-template-columns:150px 1fr;gap:12px 16px;font-size:14px;padding:0 14px}
+@media(max-width:560px){.detail{grid-template-columns:1fr;gap:2px 0}.detail span:nth-child(even){margin-bottom:10px}}
+.detail span:nth-child(odd){color:var(--shp-mute)}
+.desc{padding:0 14px;font-size:14px;line-height:1.75}
+.desc p{margin-bottom:12px}
+.desc .imgs{display:grid;gap:8px;margin-top:16px;max-width:620px}
+.desc .imgs img{cursor:zoom-in}
+.desc ul{padding-left:18px;margin-bottom:12px}
+.rv-sum{display:flex;gap:28px;flex-wrap:wrap;align-items:center;background:#FFFBF8;border:1px solid #F9EDE5;padding:22px 26px;margin:0 14px 18px}
+.rv-sum .sc{color:var(--shp);font-size:16px}
+.rv-sum .sc b{font-size:30px;font-weight:500}
+.rv-sum .stars{color:var(--shp);font-size:18px;letter-spacing:2px}
+.rv-f{display:flex;flex-wrap:wrap;gap:8px}
+.rv-f button{border:1px solid rgba(0,0,0,.09);background:var(--white);padding:5px 14px;border-radius:2px;cursor:pointer;font-size:13px}
+.rv-f button.on{border-color:var(--shp);color:var(--shp)}
+.rv{display:grid;grid-template-columns:44px 1fr;gap:12px;padding:18px 14px;border-bottom:1px solid var(--shp-line)}
+.rv .av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;color:var(--white);font-weight:700}
+.rv .who{font-size:13px}
+.rv .stars{color:var(--shp);font-size:12px;letter-spacing:1px}
+.rv .meta{font-size:12px;color:var(--shp-mute);margin-top:2px}
+.rv p{margin-top:8px;font-size:14px}
+.rv .ph{display:flex;gap:6px;margin-top:8px}
+.rv .ph div{width:72px;height:72px;border-radius:2px}
+.side .pc{margin-bottom:10px}
+.toast{position:fixed;left:50%;bottom:max(28px,env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:rgba(0,0,0,.84);color:var(--white);padding:14px 22px;border-radius:4px;z-index:120;font-size:14px;max-width:calc(100% - 32px)}
+.lightbox{position:fixed;inset:0;z-index:110;background:rgba(10,14,24,.92);display:grid;place-items:center;padding:max(20px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(20px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
+.lightbox img{max-height:88vh;max-width:min(92vw,900px);border-radius:4px}
+.lightbox button{position:absolute;right:max(16px,env(safe-area-inset-right,0px));top:max(16px,env(safe-area-inset-top,0px));background:var(--kinari);color:var(--sumi);border:0;border-radius:20px;padding:8px 16px;font-family:var(--f-mono);font-size:12px;cursor:pointer}
+
+/* ================= V3: LIQUID GLASS + SCROLL STORY ================= */
+:root{--glass-tint:rgba(22,41,74,.42);--glass-edge:rgba(255,255,255,.32);--glass-hi:rgba(255,255,255,.6);--ok:#7CE38B;--nav-h:64px}
+body{padding-top:0}
+.glass{position:relative;isolation:isolate;background:linear-gradient(135deg,rgba(255,255,255,.20),rgba(255,255,255,.05) 55%,rgba(255,255,255,.12));backdrop-filter:blur(18px) saturate(175%);-webkit-backdrop-filter:blur(18px) saturate(175%);border:1px solid var(--glass-edge);box-shadow:inset 0 1px 0 var(--glass-hi),inset 0 -1px 0 rgba(255,255,255,.10),inset 0 0 18px rgba(255,255,255,.06),0 12px 34px rgba(8,16,34,.28)}
+.glass::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:-1;background:radial-gradient(220px 120px at var(--mx,30%) var(--my,0%),rgba(255,255,255,.35),transparent 70%);mix-blend-mode:soft-light;transition:background .2s}
+.glass.light{background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(255,255,255,.42));border-color:rgba(255,255,255,.8);box-shadow:inset 0 1px 0 #fff,inset 0 -1px 0 rgba(0,0,0,.04),0 14px 34px rgba(20,30,50,.16)}
+html.refract .gnav,html.refract .hero2 .dock{backdrop-filter:url(#lg-refract) blur(8px) saturate(175%)}
+
+.progress{position:fixed;left:0;right:0;top:0;height:3px;z-index:90;pointer-events:none}
+.progress i{display:block;height:100%;width:calc(var(--sp,0)*100%);background:linear-gradient(90deg,var(--aka),var(--kaki),var(--yama))}
+.navwrap{position:fixed;left:0;right:0;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:80;display:flex;justify-content:center;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px));pointer-events:none}
+.gnav{pointer-events:auto;display:flex;align-items:center;gap:14px;height:54px;padding:6px 6px 6px 18px;border-radius:999px;width:min(100%,880px);color:var(--kinari);background:linear-gradient(135deg,rgba(31,58,104,.55),rgba(22,41,74,.38));transition:transform .4s cubic-bezier(.2,.9,.2,1)}
+.gnav.compact{transform:scale(.96)}
+.gbrand img{height:28px;width:auto}
+.seg{position:relative;display:flex;margin-left:auto;padding:4px;border-radius:999px;background:rgba(0,0,0,.18);box-shadow:inset 0 1px 2px rgba(0,0,0,.25);min-width:0;overflow-x:auto;scrollbar-width:none}
+.seg::-webkit-scrollbar{display:none}
+.seg .tab{position:relative;z-index:1;border-radius:999px;padding:8px 16px;opacity:.82;background:none;color:var(--kinari);font-size:12.5px;transition:color .3s,opacity .3s}
+.seg .tab[aria-selected="true"]{background:none;color:var(--sumi);opacity:1}
+.lens{position:absolute;top:4px;bottom:4px;left:var(--lx,4px);width:var(--lw,100px);border-radius:999px;background:linear-gradient(180deg,#FFE7A8,var(--yama));box-shadow:inset 0 1px 0 rgba(255,255,255,.9),inset 0 -2px 6px rgba(160,100,0,.25),0 6px 16px rgba(242,179,61,.35);transition:left .55s cubic-bezier(.34,1.45,.5,1),width .55s cubic-bezier(.34,1.45,.5,1)}
+@media(max-width:560px){.gnav{gap:8px;padding-left:12px}.gbrand img{height:22px}.seg .tab{padding:8px 10px;font-size:11px;letter-spacing:.04em}}
+
+.subnav{position:sticky;top:calc(env(safe-area-inset-top,0px) + 72px);z-index:60;background:none;border:0;margin-top:-28px;pointer-events:none}
+.subnav .wrap{display:flex;justify-content:center}
+.subnav ul{pointer-events:auto;height:40px;padding:0 6px;border-radius:999px;max-width:100%;background:linear-gradient(135deg,rgba(255,255,255,.72),rgba(255,255,255,.45));backdrop-filter:blur(16px) saturate(170%);-webkit-backdrop-filter:blur(16px) saturate(170%);border:1px solid rgba(255,255,255,.85);box-shadow:inset 0 1px 0 #fff,0 10px 28px rgba(20,30,50,.14)}
+.subnav a{font-size:11px;border-radius:999px;padding:5px 10px}
+.subnav a.on{background:var(--ai);color:var(--kinari)}
+
+/* hero scrolly */
+.hero2{position:relative;height:250vh;background:var(--ai);color:var(--kinari)}
+.hero2 .stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden}
+.h-sun{position:absolute;width:min(78vw,760px);aspect-ratio:1;border-radius:50%;right:-6%;top:12%;background:radial-gradient(circle at 50% 42%,#F8C060,#EE7B30 58%,#E03C31);transform:translateY(calc(var(--p,0)*-16%)) scale(calc(1 + var(--p,0)*.28));will-change:transform}
+.h-lines{position:absolute;left:0;right:0;bottom:0;height:44%;background:repeating-linear-gradient(180deg,var(--ai) 0 calc(18px + var(--p,0)*14px),transparent calc(18px + var(--p,0)*14px) calc(30px + var(--p,0)*10px));opacity:.95}
+.h-word{position:absolute;left:-2%;bottom:-6%;font-family:var(--f-dela);font-size:min(30vw,360px);line-height:1;white-space:nowrap;color:transparent;-webkit-text-stroke:1.5px rgba(243,239,230,.18);transform:translateX(calc(var(--p,0)*-22%));pointer-events:none}
+.h-grid{position:relative;height:100%;display:grid;grid-template-columns:1fr;grid-template-rows:auto 1fr;gap:0;padding-top:calc(env(safe-area-inset-top,0px) + 92px);padding-bottom:108px}
+@media(min-width:980px){.h-grid{grid-template-columns:.95fr 1.05fr;grid-template-rows:1fr;align-items:center;padding-top:80px;padding-bottom:96px}}
+.h-copy{transform:translateY(calc(var(--p,0)*-40px));position:relative;z-index:2}
+.h-copy .meta{font-family:var(--f-mono);font-size:12px;letter-spacing:.18em;color:var(--yama);display:flex;gap:16px;flex-wrap:wrap}
+.h-copy h1{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(54px,9.4vw,138px);line-height:.86;margin-top:16px;letter-spacing:-.02em}
+.h-copy h1 i{font-style:italic;font-stretch:100%;color:var(--yama)}
+.h-copy .tagline{font-family:var(--f-ex);font-stretch:118%;font-weight:800;font-size:clamp(24px,3vw,40px);margin-top:20px;line-height:1.1}
+.h-copy .tagline i{font-style:italic;font-stretch:100%;font-weight:900;color:var(--yama)}
+.h-copy .sub{margin-top:14px;max-width:44ch;opacity:.88;font-weight:300}
+.hint{margin-top:22px;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:calc(.9 - var(--p,0)*3);display:flex;gap:10px;align-items:center}
+.mouse{width:18px;height:28px;border:2px solid var(--kinari);border-radius:10px;position:relative}
+.mouse::after{content:"";position:absolute;left:50%;top:5px;width:3px;height:6px;border-radius:2px;background:var(--yama);transform:translateX(-50%);animation:wheel 1.6s infinite}
+@keyframes wheel{60%{transform:translate(-50%,8px);opacity:0}}
+.h-stage{position:relative;align-self:center;width:100%;max-width:640px;aspect-ratio:3/2;justify-self:center;z-index:1}
+.h-stage img{position:absolute;left:8%;top:12%;width:84%;transform:scale(calc(.88 + var(--p,0)*.24)) rotate(calc((1 - var(--p,0))*-6deg));filter:drop-shadow(0 34px 40px rgba(0,0,0,.55));transition:opacity .3s;will-change:transform}
+.af{position:absolute;inset:calc(-6% + var(--p,0)*14%) calc(-8% + var(--p,0)*16%);pointer-events:none;--c:var(--yama)}
+.af.lock{--c:var(--ok)}
+.af i{position:absolute;width:15%;aspect-ratio:1;border:5px solid var(--c);transition:border-color .2s}
+.af i:nth-child(1){left:0;top:0;border-right:0;border-bottom:0}.af i:nth-child(2){right:0;top:0;border-left:0;border-bottom:0}.af i:nth-child(3){left:0;bottom:0;border-right:0;border-top:0}.af i:nth-child(4){right:0;bottom:0;border-left:0;border-top:0}
+.af .dot{position:absolute;right:6%;top:4%;width:16px;height:16px;border-radius:50%;background:var(--aka);opacity:0;transform:scale(.4);transition:all .25s}
+.af.lock .dot{opacity:1;transform:scale(1)}
+.af-label,.af-ok{position:absolute;left:0;top:-26px;font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;color:var(--c)}
+.af-ok{left:auto;right:0;opacity:0;color:var(--ok);transition:opacity .2s}
+.af.lock .af-ok{opacity:1}
+.chip{position:absolute;display:inline-flex;gap:6px;align-items:baseline;padding:9px 14px;border-radius:999px;font-size:13px;color:var(--kinari);white-space:nowrap;z-index:2}
+.chip b{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:20px;color:var(--yama)}
+.ch1{left:-4%;top:6%;transform:translate(calc(var(--p,0)*-30px),calc(var(--p,0)*-40px))}
+.ch2{right:-2%;top:58%;transform:translate(calc(var(--p,0)*30px),0)}
+.ch3{left:6%;bottom:-4%;transform:translate(0,calc(var(--p,0)*30px))}
+@media(max-width:700px){.chip{font-size:11px;padding:7px 10px}.chip b{font-size:16px}.ch1{left:0}.ch2{right:0}}
+.flash{position:absolute;inset:0;background:#fff;opacity:var(--flash,0);pointer-events:none;z-index:5}
+.dock{position:absolute;left:50%;bottom:calc(env(safe-area-inset-bottom,0px) + 22px);transform:translateX(-50%);display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;z-index:6;max-width:calc(100% - 32px);overflow-x:auto;scrollbar-width:none}
+.dock::-webkit-scrollbar{display:none}
+.dock .dl{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;opacity:.85;white-space:nowrap}
+.dock .sw,.dock .zf-opt{flex:none;width:30px;height:30px;border-radius:50%;border:0;cursor:pointer;padding:0;box-shadow:0 0 0 2px rgba(255,255,255,.6),inset 0 2px 4px rgba(255,255,255,.35);transition:transform .35s cubic-bezier(.34,1.6,.5,1)}
+.dock .sw:hover,.dock .zf-opt:hover{transform:scale(1.18)}
+.dock .sw[aria-pressed="true"],.dock .zf-opt[aria-pressed="true"]{transform:scale(1.22);box-shadow:0 0 0 2px #fff,0 0 0 5px var(--yama)}
+.dock .zf-opt i{display:block;width:100%;height:100%;border-radius:50%}
+.dock .swname{font-family:var(--f-ex);font-stretch:112%;font-weight:700;white-space:nowrap;min-width:9ch}
+@media(max-width:560px){.dock .dl{display:none}.dock .sw,.dock .zf-opt{width:26px;height:26px}}
+
+/* marquee */
+.marquee{background:var(--yama);color:var(--sumi);overflow:hidden;border-block:2px solid var(--sumi);padding-block:12px}
+.mq{display:flex;gap:28px;width:max-content;animation:mq 26s linear infinite;font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(18px,2.2vw,28px);letter-spacing:.02em;align-items:center}
+.mq .jp{font-family:var(--f-dela);font-weight:400}
+.mq em{font-style:normal;color:var(--aka);font-size:.7em}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* word reveal */
+.manifesto .w{color:rgba(243,239,230,.34);transition:color .35s}
+.manifesto .w.on{color:var(--kinari)}
+.manifesto .y .w.on{color:var(--yama)}
+.manifesto strong .w.on{color:var(--kaki)}
+
+/* feature scrolly */
+.feat{position:relative;height:520vh;background:var(--sumi);color:var(--kinari)}
+.feat .stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:flex-start}
+.feat .stick::before{content:"";position:absolute;width:70vmax;aspect-ratio:1;border-radius:50%;right:-20vmax;top:-10vmax;background:radial-gradient(circle,rgba(31,58,104,.9),transparent 65%)}
+.feat-grid{position:relative;display:grid;grid-template-columns:1fr;gap:20px;width:100%;padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
+@media(min-width:980px){.feat-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;padding-top:110px}}
+.feat h2{font-size:clamp(30px,4.4vw,58px)}
+.feat h2 i{color:var(--yama)}
+.feat .eyebrow{color:var(--yama)}
+.steps{list-style:none;padding:0;margin-top:26px;display:grid;gap:4px}
+.step{padding:12px 0 12px 18px;border-left:3px solid rgba(243,239,230,.15);opacity:.38;transition:opacity .4s,border-color .4s}
+.step .sn{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--yama)}
+.step h3{font-size:clamp(19px,2vw,24px);margin-top:4px}
+.step p,.step .sv{display:none}
+.step.on{opacity:1;border-color:var(--yama)}
+.step.on p{display:block;margin-top:6px;font-size:15.5px;opacity:.85;max-width:44ch}
+.step.on .sv{display:block;margin-top:10px;font-family:var(--f-mono);font-size:13px;color:var(--yama)}
+.step.on .sv b{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:24px;color:var(--kinari)}
+.feat-prog{height:3px;background:rgba(243,239,230,.15);margin-top:20px;border-radius:2px;overflow:hidden}
+.feat-prog i{display:block;height:100%;width:calc(var(--p,0)*100%);background:var(--yama)}
+.feat-stage{position:relative;aspect-ratio:4/3;max-width:100%;width:100%}
+.fv{position:absolute;inset:0;display:grid;place-items:center;opacity:0;transform:scale(.94) translateY(20px);transition:opacity .5s,transform .7s cubic-bezier(.2,.9,.2,1)}
+.fv.on{opacity:1;transform:none}
+.fv img{width:88%;filter:drop-shadow(0 30px 34px rgba(0,0,0,.6))}
+.fv img.top{width:100%}
+.fv img.mono{filter:grayscale(1) contrast(1.15) drop-shadow(0 30px 34px rgba(0,0,0,.6))}
+.fv .track{position:absolute;left:40%;top:36%;width:18%;aspect-ratio:1;border:3px solid var(--ok);border-radius:6px;animation:track 3.2s ease-in-out infinite}
+.fv .track span{position:absolute;left:0;top:-22px;font-family:var(--f-mono);font-size:11px;color:var(--ok);white-space:nowrap;letter-spacing:.1em}
+@keyframes track{0%,100%{transform:translate(0,0)}25%{transform:translate(18%,-10%)}50%{transform:translate(-12%,8%)}75%{transform:translate(10%,12%)}}
+.fv .subj{position:absolute;left:0;right:0;bottom:2%;display:flex;flex-wrap:wrap;justify-content:center;gap:6px}
+.fv .subj span{font-size:12px;padding:4px 10px;border-radius:999px;background:rgba(243,239,230,.1);border:1px solid rgba(243,239,230,.2)}
+.fv .hs{position:absolute;width:20px;height:20px;border-radius:50%;background:var(--yama);box-shadow:0 0 0 0 rgba(242,179,61,.6);animation:ping 1.8s infinite}
+@keyframes ping{70%{box-shadow:0 0 0 18px rgba(242,179,61,0)}}
+.sensor{position:relative;width:86%;aspect-ratio:3/2}
+.sensor>div{position:absolute;left:0;bottom:0;display:flex;align-items:flex-start;padding:8px;font-family:var(--f-mono);font-size:12px;letter-spacing:.08em;transition:transform .8s cubic-bezier(.2,.9,.2,1)}
+.sensor .ff{width:100%;height:100%;border:3px solid var(--kinari);background:repeating-linear-gradient(45deg,rgba(243,239,230,.08) 0 6px,transparent 6px 12px);justify-content:flex-end}
+.sensor .apsc{width:65.3%;height:65%;border:3px solid var(--kaki);background:rgba(238,123,48,.15);color:var(--kaki)}
+.sensor .ph{width:27.2%;height:30.8%;border:3px solid var(--aka);background:rgba(224,60,49,.18);color:var(--aka);font-size:10px}
+.wedges{position:absolute;left:8%;right:8%;bottom:4%;display:grid;gap:6px}
+.wedges i{height:16px;border-radius:3px;background:linear-gradient(90deg,#0c0c0c,#f0f0f0)}
+.wedges i:nth-child(2){background:linear-gradient(90deg,#2a2a2a,#808080 30%,#b0b0b0 70%,#e0e0e0)}
+.wedges i:nth-child(3){background:linear-gradient(90deg,#000,#1a1a1a 40%,#7a7a7a 80%,#dcdcdc)}
+.big60{display:flex;align-items:center;gap:18px}
+.big60 b{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(130px,18vw,260px);line-height:.85;color:var(--yama);text-shadow:0 0 60px rgba(242,179,61,.35)}
+.big60 span{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(20px,2.4vw,32px);line-height:1.1}
+@media(max-width:979px){.feat-stage{max-height:42svh;aspect-ratio:auto;height:42svh}.feat h2{font-size:28px;margin-top:8px}.steps{margin-top:12px}.step{padding:6px 0 6px 14px}.step:not(.on){display:none}}
+
+/* color studio */
+.studio{position:relative;padding-block:clamp(72px,9vw,120px);background:radial-gradient(70% 60% at 50% 55%,color-mix(in srgb,var(--tint) 30%,var(--kinari)),var(--kinari) 75%);transition:background .6s}
+.studio-stage{max-width:820px;margin:0 auto;position:relative}
+.studio-stage img{width:100%;filter:drop-shadow(0 30px 34px rgba(20,20,30,.3));transition:opacity .3s}
+.studio .dock{position:relative;left:auto;bottom:auto;transform:none;margin:28px auto 0;width:max-content;color:var(--sumi)}
+
+/* horizontal gallery */
+.hgal{position:relative;background:var(--white)}
+.hgal .stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;flex-direction:column;justify-content:center;gap:28px;padding-top:calc(env(safe-area-inset-top,0px) + 70px)}
+.hg-track{display:flex;gap:22px;padding-left:max(16px,calc((100vw - var(--wrap))/2 + 40px));padding-right:40px;will-change:transform;transform:translateX(calc(var(--hx,0)*-1px))}
+.hg-track .shot{flex:none;width:clamp(240px,30vw,400px)}
+.hg-track .shot img{transition:transform .5s cubic-bezier(.2,.9,.2,1)}
+.hg-track .shot:hover img{transform:translateY(-6px) rotate(-1deg)}
+.hg-foot{display:flex;align-items:center;gap:16px;font-size:12px;color:var(--mute);letter-spacing:.14em}
+.hg-bar{flex:1;max-width:320px;height:3px;background:var(--kinari-2);border-radius:2px;overflow:hidden}
+.hg-bar i{display:block;height:100%;width:calc(var(--p,0)*100%);background:var(--ai)}
+.hgal.native .stick{position:relative;height:auto;padding-block:80px}
+.hgal.native .hg-track{overflow-x:auto;transform:none;scroll-snap-type:x mandatory;padding-bottom:12px}
+.hgal.native .shot{scroll-snap-align:start;width:78vw}
+
+/* tilt + specular on cards */
+[data-tilt]{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .5s cubic-bezier(.2,.9,.2,1),box-shadow .4s;will-change:transform;position:relative}
+[data-tilt]::before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:radial-gradient(260px 180px at var(--mx,50%) var(--my,0%),rgba(255,255,255,.35),transparent 70%);opacity:var(--hl,0);transition:opacity .3s;z-index:3;mix-blend-mode:soft-light}
+[data-tilt]:hover{box-shadow:0 24px 50px -24px rgba(20,30,60,.45)}
+
+/* section entrance (scroll-driven where supported; content stays visible) */
+@supports (animation-timeline: view()){
+  .reveal{animation:rise linear both;animation-timeline:view();animation-range:entry 0% cover 28%}
+  @keyframes rise{from{transform:translateY(46px) scale(.985)}to{transform:none}}
+}
+
+/* Shopee views under the glass nav */
+.shp{padding-top:calc(env(safe-area-inset-top,0px) + 76px)}
+.buybar{position:fixed;left:12px;right:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 12px);z-index:75;display:none;align-items:center;gap:8px;padding:8px 8px 8px 16px;border-radius:20px;color:var(--sumi);background:linear-gradient(135deg,rgba(255,255,255,.78),rgba(255,255,255,.5))}
+.buybar div{flex:1;min-width:0}
+.buybar small{display:block;font-size:11px;color:var(--shp-mute)}
+.buybar b{color:var(--shp);font-size:17px}
+.buybar button{border:0;border-radius:14px;height:44px;padding:0 16px;cursor:pointer;font-weight:600}
+.bb-add{background:#FFEEE8;color:var(--shp)}
+.bb-buy{background:var(--shp);color:#fff}
+@media(max-width:899px){body.v-listing .buybar{display:flex}body.v-listing footer{padding-bottom:110px}}
+
+@media (prefers-reduced-motion:reduce){
+  .hero2{height:auto}.hero2 .stick{position:relative;height:auto;min-height:100svh}
+  .feat{height:auto}.feat .stick{position:relative;height:auto;padding-block:80px}
+  .fv{position:relative;opacity:1;transform:none;display:none}.fv.on{display:grid}
+  .mq{animation:none}
+}
+
+.gbrand .ico{display:none;height:30px}
+body.immersive .subnav{opacity:0;transform:translateY(-10px);pointer-events:none}
+.subnav{transition:opacity .35s,transform .35s}
+.subnav ul{transition:opacity .35s}
+body.immersive .subnav ul{pointer-events:none}
+@media(min-width:980px){.feat-grid{padding-top:96px}}
+@media(max-width:560px){
+  .gbrand .full{display:none}.gbrand .ico{display:block}
+  .gnav{padding-left:8px}
+  .seg .tab{padding:8px 11px;font-size:10.5px}
+}
+@media(max-width:979px){
+  .h-sun{width:120vw;right:-40%;top:auto;bottom:6%}
+  .h-word{bottom:auto;top:48%}
+  .h-copy h1{font-size:clamp(50px,15vw,80px)}
+  .h-stage{max-width:520px;margin-top:8px}
+  .ch3{display:none}.ch1{left:0;top:-2%}.ch2{right:0;top:66%}
+  .af-label{display:none}
+  .hint{display:none}
+}
+
+</style>
+</head>
+<body>
+
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <filter id="lg-refract" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency="0.006 0.011" numOctaves="2" seed="7" result="n"/>
+    <feGaussianBlur in="n" stdDeviation="2.4" result="nb"/>
+    <feDisplacementMap in="SourceGraphic" in2="nb" scale="42" xChannelSelector="R" yChannelSelector="G"/>
+  </filter>
+</svg>
+<div class="progress" aria-hidden="true"><i></i></div>
+<div class="navwrap">
+  <nav class="gnav glass" aria-label="Điều hướng chính">
+    <a class="gbrand" href="#top" aria-label="Sabi Lab, về đầu trang"><img class="full" src="logo/opt4-katakana-viewfinder-dark.svg" alt=""><img class="ico" src="logo/opt4-icon-dark.svg" alt=""></a>
+    <div class="seg" role="tablist" aria-label="Chế độ xem">
+      <span class="lens" aria-hidden="true"></span>
+      <button class="tab" role="tab" id="t-brand" data-view="brand" aria-selected="true">Brand Book</button>
+      <button class="tab" role="tab" id="t-store" data-view="store" aria-selected="false">Gian hàng</button>
+      <button class="tab" role="tab" id="t-listing" data-view="listing" aria-selected="false">Listing Zf</button>
+    </div>
+  </nav>
+</div>
+
+<!-- ============ BRAND ============ -->
+<main id="v-brand" role="tabpanel" aria-labelledby="t-brand">
+
+
+<section class="hero2" id="top" data-scrolly>
+  <div class="stick">
+    <div class="h-sun" aria-hidden="true"></div>
+    <div class="h-lines" aria-hidden="true"></div>
+    <div class="h-word" aria-hidden="true">サビラボ</div>
+    <div class="h-grid wrap">
+      <div class="h-copy">
+        <div class="meta"><span>BRAND BOOK V3.0</span><span>10 · 2026</span><span>サビラボ</span></div>
+        <h1>SABI <i>Lab</i></h1>
+        <p class="tagline">CHỤP <i>nhanh.</i> NHỚ <i>lâu.</i></p>
+        <p class="sub">Nhà bán lẻ Nikon chính hãng trên Shopee và TikTok, mang tinh thần Nhật Bản cho thế hệ trẻ.</p>
+        <p class="hint"><span class="mouse" aria-hidden="true"></span>Cuộn để lấy nét</p>
+      </div>
+      <div class="h-stage">
+        <div class="af" aria-hidden="true"><i></i><i></i><i></i><i></i><b class="dot"></b><span class="af-label">AF-C · 3D</span><span class="af-ok">● ĐÃ BẮT NÉT</span></div>
+        <img id="heroCam" src="img/cam_black.webp" alt="Nikon Zf với ống kính 40mm f/2 SE">
+        <span class="chip glass ch1"><b data-count="24.5" data-dec="1">24,5</b> MP full-frame</span>
+        <span class="chip glass ch2"><b data-count="9">9</b> chủ thể AF</span>
+        <span class="chip glass ch3"><b data-count="60">60</b> tháng bảo hành</span>
+      </div>
+    </div>
+    <div class="flash" aria-hidden="true"></div>
+    <div class="dock glass" role="group" aria-label="Chọn màu da Nikon Zf">
+      <span class="dl">Màu da</span><button class="sw" data-k="black" data-n="Đen cổ điển" style="background:#1A1A1A" aria-pressed="true" aria-label="Đen cổ điển"></button><button class="sw" data-k="moss-green" data-n="Xanh rêu" style="background:#5C684A" aria-pressed="false" aria-label="Xanh rêu"></button><button class="sw" data-k="stone-gray" data-n="Xám đá" style="background:#8A8880" aria-pressed="false" aria-label="Xám đá"></button><button class="sw" data-k="sepia-brown" data-n="Nâu sepia" style="background:#704C34" aria-pressed="false" aria-label="Nâu sepia"></button><button class="sw" data-k="indigo-blue" data-n="Xanh chàm" style="background:#2C3856" aria-pressed="false" aria-label="Xanh chàm"></button><button class="sw" data-k="sunset-orange" data-n="Cam hoàng hôn" style="background:#BA5C2E" aria-pressed="false" aria-label="Cam hoàng hôn"></button><button class="sw" data-k="bordeaux-red" data-n="Đỏ Bordeaux" style="background:#68222A" aria-pressed="false" aria-label="Đỏ Bordeaux"></button><span class="swname" id="swName">Đen cổ điển</span>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true"><div class="mq">
+  <span>CHỤP NHANH</span><em>●</em><span class="jp">サビラボ</span><em>●</em><span>NHỚ LÂU</span><em>●</em><span>NIKON Zf</span><em>●</em><span class="jp">いちごいちえ</span><em>●</em><span>BẢO HÀNH 60 THÁNG</span><em>●</em>
+  <span>CHỤP NHANH</span><em>●</em><span class="jp">サビラボ</span><em>●</em><span>NHỚ LÂU</span><em>●</em><span>NIKON Zf</span><em>●</em><span class="jp">いちごいちえ</span><em>●</em><span>BẢO HÀNH 60 THÁNG</span><em>●</em>
+</div></div>
+
+<nav class="subnav" aria-label="Mục lục brand book"><div class="wrap"><ul>
+  <li><a href="#tagline">Tagline</a></li><li><a href="#insight">Insight</a></li><li><a href="#core">Core</a></li><li><a href="#story">Story</a></li><li><a href="#audience">Khách hàng</a></li><li><a href="#position">Định vị</a></li><li><a href="#voice">Voice</a></li><li><a href="#logos">5 Logo</a></li><li><a href="#color">Màu</a></li><li><a href="#type">Chữ</a></li><li><a href="#devices">Họa tiết</a></li><li><a href="#product">Zf & Kit</a></li><li><a href="#goods">Sabi Goods</a></li><li><a href="#bundle">Bundle</a></li><li><a href="#shopee-img">Ảnh Shopee</a></li><li><a href="#channels">Kênh</a></li><li><a href="#roadmap">Lộ trình</a></li>
+</ul></div></nav>
+
+
+<section class="band white" id="tagline">
+  <div class="wrap">
+    <div class="eyebrow">00 · Tagline mới <span class="kana">キャッチコピー</span></div>
+    <div class="tl-main" style="margin-top:22px">
+      <div class="tl-big">Chụp <i>nhanh.</i><br>Nhớ <i>lâu.</i></div>
+      <p class="tl-why"><b>Vì sao đổi.</b> “Chụp chậm” vô tình chạm vào nỗi lo phổ biến: “Nikon lấy nét chậm”. Tagline mới nói điều ngược lại, đúng với Zf (hệ lấy nét kế thừa Z8/Z9), mà vẫn giữ vế cảm xúc “nhớ lâu” gắn với chữ Sabi: vẻ đẹp bền theo thời gian.</p>
+    </div>
+    <div class="tl-opts">
+      <div class="tl-opt rec"><span class="n">01</span><b>Chụp nhanh. Nhớ lâu.<span class="pill">Đề xuất</span></b><p>Ngắn, nhịp đối xứng. Trả lời trực tiếp nỗi lo lấy nét mà vẫn có cảm xúc.</p></div>
+      <div class="tl-opt"><span class="n">02</span><b>Bắt kịp khoảnh khắc. Giữ trọn thời gian.</b><p>Trang trọng hơn, hợp brand film và banner lớn.</p></div>
+      <div class="tl-opt"><span class="n">03</span><b>Một lần bấm, một đời nhớ.</b><p>Giàu cảm xúc, hợp mùa quà tặng và Tết.</p></div>
+      <div class="tl-opt"><span class="n">04</span><b>Nhanh như khoảnh khắc. Bền như ký ức.</b><p>Nhấn cả hiệu năng lẫn độ bền, hợp nội dung review.</p></div>
+      <div class="tl-opt"><span class="n">05</span><b>Quick to catch. Made to last.</b><p>Bản tiếng Anh cho bao bì, merch và hashtag.</p></div>
+    </div>
+    <h3 style="margin-top:64px;margin-bottom:18px">Bằng chứng cho “chụp nhanh”, dùng trong mọi nội dung</h3>
+    <div class="grid g4">
+      <div class="proof"><div class="k">EXPEED 7</div><h4>Cùng bộ xử lý flagship</h4><p>Zf dùng chung bộ xử lý và thuật toán lấy nét deep learning với Z8/Z9.</p></div>
+      <div class="proof"><div class="k">9 LOẠI</div><h4>Nhận diện chủ thể</h4><p>Người, chó, mèo, chim, xe đạp, xe máy, ô tô, máy bay, tàu hỏa. Bám mắt, bám 3D.</p></div>
+      <div class="proof"><div class="k">PRE-REL</div><h4>Chụp trước khi bấm</h4><p>Lưu cả khoảnh khắc trước khi nhấn nút, không lỡ cú bay hay nụ cười.</p></div>
+      <div class="proof"><div class="k">AF TEST</div><h4>Series TikTok</h4><p>“Zf bám nét xe máy Sài Gòn”, “bắt chim ở Thảo Cầm Viên”: chứng minh bằng video thật.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="insight">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">01 · Bối cảnh & insight <span class="kana">インサイト</span></div>
+      <h2>Người trẻ đang <i>quay lại</i> với máy ảnh.</h2>
+      <p class="lede">Điện thoại chụp nghìn tấm mỗi tháng, nhưng ít tấm được nhớ. Người trẻ muốn một chiếc máy có cá tính, cầm lên là chụp được ngay, ảnh ra có màu riêng.</p>
+    </div>
+    <div class="grid g4">
+      <div class="stat rule"><div class="n">+15,7<small>%</small></div><p>Doanh thu mảng hình ảnh của Fujifilm năm 2025, nhờ máy ảnh số và Instax được Gen Z ưa chuộng.</p><a href="https://vneconomy.vn/san-pham-loi-thoi-tao-doanh-thu-lon-nho-gen-z.htm" target="_blank" rel="noopener">VnEconomy ↗</a></div>
+      <div class="stat rule"><div class="n">200<small>tr+</small></div><p>Bài đăng gắn #digicam trên TikTok. Trend máy ảnh sinh ra trên video ngắn.</p><a href="https://weekender.thejakartapost.com/the-weekend-digest/2025/10/03/retro-resurgence-why-gen-z-is-falling-for-digicams-and-walkmans.html" target="_blank" rel="noopener">Jakarta Post ↗</a></div>
+      <div class="stat rule"><div class="n">37<small>%</small></div><p>Gen Z thấy hoài niệm về thập niên 1990, dù phần lớn sinh sau thời đó (khảo sát GWI).</p><a href="https://rri.co.id/bandar-lampung/hobi/2588106/tren-retro-kembali-digemari-gen-z-cari-kenyamanan-lewat-nostalgia" target="_blank" rel="noopener">RRI / GWI ↗</a></div>
+      <div class="stat rule"><div class="n">2<small> máy</small></div><p>Nikon có hai chiếc retro cho xu hướng này: Zf (full-frame) và Z fc (APS-C), đều lấy cảm hứng từ FM2.</p><a href="https://www.phileweb.com/news/d-camera/202309/20/1208.html" target="_blank" rel="noopener">Phile Web ↗</a></div>
+    </div>
+    <p class="quote">Mình muốn chụp kịp khoảnh khắc, và muốn nhớ nó thật lâu.</p>
+  </div>
+</section>
+
+<section class="band white" id="core">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">02 · Brand core <span class="kana">ブランドの核</span></div>
+      <h2>Một lần duy nhất, <i>giữ thật lâu.</i></h2>
+    </div>
+    <div class="core-k"><div class="dela">サビ</div><h3>Hai ý niệm Nhật làm xương sống: <span style="color:var(--ai)">Ichigo ichie</span>, mỗi khoảnh khắc chỉ đến một lần nên phải bắt kịp; và <span style="color:var(--ai)">Sabi</span>, vẻ đẹp bền theo thời gian nên đáng được giữ.</h3></div>
+    <div class="grid g4" style="margin-bottom:64px">
+      <div class="pillar rule"><h4>Purpose</h4><p>Giúp người trẻ bắt kịp và lưu giữ những khoảnh khắc đáng nhớ nhất của mình.</p></div>
+      <div class="pillar rule"><h4>Vision · 5 năm</h4><p>Nơi đầu tiên người trẻ Việt nghĩ tới khi muốn mua một chiếc Nikon có cá tính.</p></div>
+      <div class="pillar rule"><h4>Mission</h4><p>Tuyển chọn Nikon chính hãng thành bộ kit sẵn sàng, kèm hướng dẫn, cảm hứng và cộng đồng.</p></div>
+      <div class="pillar rule"><h4>Brand promise</h4><p>Chính hãng 100%. Mở hộp là chụp. Bảo hành 60 tháng.</p></div>
+    </div>
+    <div class="grid g4" style="margin-bottom:64px">
+      <div class="value"><div class="kana">ほんもの</div><h4>Chân thật<span>HONMONO · AUTHENTIC</span></h4><p>Hàng chính hãng, nói thật về sản phẩm, không thổi phồng.</p></div>
+      <div class="value"><div class="kana">はやい</div><h4>Nhanh nhạy<span>HAYAI · QUICK</span></h4><p>Máy bắt nét nhanh, shop trả lời nhanh, giao hàng nhanh.</p></div>
+      <div class="value"><div class="kana">こだわり</div><h4>Chỉn chu<span>KODAWARI · CRAFT</span></h4><p>Tinh thần làm kỹ của người Nhật, từ bộ kit đến cái hộp.</p></div>
+      <div class="value"><div class="kana">ながく</div><h4>Bền lâu<span>NAGAKU · LASTING</span></h4><p>Sản phẩm và dịch vụ được xây để dùng nhiều năm.</p></div>
+    </div>
+    <h3 style="margin-bottom:14px">Ý niệm Nhật, nói cho người trẻ</h3>
+    <div class="tbl"><table class="jt">
+      <thead><tr><th>Ý niệm</th><th>Ý nghĩa gốc</th><th>Sabi Lab nói thế nào</th></tr></thead>
+      <tbody>
+        <tr><td>Ichigo ichie<span>いちごいちえ</span></td><td>Mỗi cuộc gặp chỉ có một lần</td><td>Khoảnh khắc không chờ ai. Máy phải sẵn sàng, nét phải nhanh.</td></tr>
+        <tr><td>Sabi<span>さび</span></td><td>Vẻ đẹp của thời gian</td><td>Vòng xoay đồng thau của Zf càng dùng càng đẹp. Ảnh càng lâu càng quý.</td></tr>
+        <tr><td>Kodawari<span>こだわり</span></td><td>Tận tâm tới từng chi tiết</td><td>Kiểm tra từng máy, cài sẵn công thức màu, đóng gói kỹ.</td></tr>
+        <tr><td>Monozukuri<span>ものづくり</span></td><td>Nghệ thuật làm ra đồ vật</td><td>Tôn trọng chiếc máy như một tác phẩm cơ khí.</td></tr>
+        <tr><td>Omotenashi<span>おもてなし</span></td><td>Hiếu khách không cần đáp lễ</td><td>Hướng dẫn 7 ngày đầu, chăm sóc sau bán trong 60 tháng.</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="band ai" id="story">
+  <div class="wrap">
+    <div class="eyebrow">03 · Brand story · Manifesto <span class="kana">マニフェスト</span></div>
+    <div class="manifesto" data-words style="margin-top:32px">
+      <span>Khoảnh khắc không chờ ai.</span>
+      <span class="y">Nụ cười, cú nhảy, ánh nắng cuối ngày.</span>
+      <span>Chúng tôi chọn chiếc máy bắt kịp chúng,</span>
+      <span>và giữ chúng đẹp theo thời gian.</span>
+      <span class="y">Nhanh trong một tích tắc.</span>
+      <span>Bền trong nhiều năm.</span>
+      <strong>Chụp nhanh. Nhớ lâu.</strong>
+    </div>
+    <div class="story">
+      <p>Năm 1982, Nikon ra mắt FM2, chiếc máy cơ có màn trập nhanh nhất thời đó: 1/4000 giây. Nhiều gia đình Việt vẫn còn giữ một chiếc trong tủ, lớp sơn đã mòn, vòng chỉnh vẫn kêu “tách” rõ ràng.</p>
+      <p>Hơn bốn mươi năm sau, Nikon Zf mang lại đúng dáng vẻ ấy, nhưng bên trong là bộ não của dòng máy chuyên nghiệp: lấy nét nhận diện chủ thể, chụp liên tục, chống rung 8 stop.</p>
+      <p>Người Nhật có hai chữ cho điều này. Ichigo ichie: mỗi khoảnh khắc chỉ đến một lần. Sabi: những thứ tốt sẽ đẹp hơn theo thời gian.</p>
+      <p>Sabi Lab đứng giữa hai chữ đó. Chúng tôi tuyển chọn những chiếc Nikon đủ nhanh để bắt kịp khoảnh khắc, đủ bền để đi cùng bạn nhiều năm, ghép thành bộ kit sẵn sàng với công thức màu và lời hướng dẫn.</p>
+      <p>Bạn không cần là nhiếp ảnh gia. Chỉ cần mở hộp, bấm máy, và giữ lại điều mình muốn nhớ.</p>
+    </div>
+    <div class="bio grid g3">
+      <div><span class="mono">Bio TikTok</span><p style="font-size:18px;margin-top:8px;font-weight:600">Sabi Lab · Nikon chính hãng, bảo hành 60 tháng. Chụp nhanh. Nhớ lâu.</p></div>
+      <div><span class="mono">Mô tả shop</span><p style="font-size:15px;margin-top:8px;opacity:.88">Sabi Lab tuyển chọn máy ảnh Nikon chính hãng thành bộ kit sẵn sàng, cài sẵn công thức màu, bảo hành 60 tháng. Bắt kịp khoảnh khắc, giữ nó thật lâu.</p></div>
+      <div><span class="mono">Tagline</span><p class="ex" style="font-size:24px;margin-top:8px">CHỤP NHANH.<br>NHỚ LÂU.</p><p class="mono" style="font-size:12px;opacity:.65;margin-top:6px">EN · Quick to catch. Made to last.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="audience">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">04 · Target audience <span class="kana">ターゲット</span></div>
+      <h2>Mua vì phong cách, <i>không vì nghề.</i></h2>
+      <p class="lede">Người trẻ 20–32 tuổi ở thành thị. Lướt TikTok để tìm cảm hứng, lên Shopee để so giá và chốt đơn.</p>
+    </div>
+    <p class="mono" style="font-size:12px;color:var(--mute)">Tỷ trọng mục tiêu (giả định, kiểm lại sau 60 ngày bán)</p>
+    <div class="segbar" role="img" aria-label="Core 50%, Upgrade 30%, Creator 15%, Gifting 5%">
+      <div style="flex:50;background:var(--ai)">CORE · 50%</div><div style="flex:30;background:var(--sumi)">UPGRADE · 30%</div><div style="flex:15;background:var(--kaki);color:var(--sumi)">CREATOR · 15%</div><div style="flex:5;background:var(--aka)">5%</div>
+    </div>
+    <div class="grid g4" style="margin-top:36px">
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--ai)">L</div><div><h3>Linh, 23</h3><div class="role">Core · Marketing · HCM</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Ảnh điện thoại giống hệt mọi người. Muốn màu riêng và một chiếc máy đẹp như phụ kiện.</dd></div><div><dt>Nỗi sợ</dt><dd>Khó dùng, lấy nét hụt, hàng không chính hãng.</dd></div><div><dt>Kích hoạt</dt><dd>Video “1 ngày với Zf”, recipe cài sẵn, trả góp, voucher ngày đôi.</dd></div></dl><blockquote>“Mình muốn ảnh nhìn là biết của mình.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--sumi)">H</div><div><h3>Huy, 28</h3><div class="role">Upgrade · Kỹ sư · Hà Nội</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Từng chơi film, mê đồ cơ khí. Zf giống FM2 là điểm chạm.</dd></div><div><dt>Nỗi sợ</dt><dd>Nghe nói Nikon lấy nét chậm, sợ mua sai cấu hình.</dd></div><div><dt>Kích hoạt</dt><dd>Video AF test thật, so sánh Zf và FM2, bảo hành dài.</dd></div></dl><blockquote>“Đẹp thôi chưa đủ, phải bắt nét được.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--kaki)">V</div><div><h3>Vy, 25</h3><div class="role">Creator · Bán hàng TikTok</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Quay sản phẩm đẹp hơn điện thoại, máy gọn, màn hình lật.</dd></div><div><dt>Nỗi sợ</dt><dd>Setup phức tạp, âm thanh kém.</dd></div><div><dt>Kích hoạt</dt><dd>Bộ kit vlog, hướng dẫn setup livestream.</dd></div></dl><blockquote>“Máy đẹp lên hình thì khách tin shop hơn.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--aka)">N</div><div><h3>Nam, 30</h3><div class="role">Gifting · Mua tặng</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Quà kỷ niệm, sinh nhật, Valentine, tốt nghiệp.</dd></div><div><dt>Nỗi sợ</dt><dd>Giao trễ, hộp xấu, chọn sai màu.</dd></div><div><dt>Kích hoạt</dt><dd>Hộp quà đẹp, thiệp viết tay, giao đúng ngày.</dd></div></dl><blockquote>“Mở ra phải thấy được tình cảm.”</blockquote></article>
+    </div>
+    <h3 style="margin-top:72px">Hành trình mua trên sàn</h3>
+    <ol class="journey">
+      <li><b>Khám phá</b><span>Video ảnh đẹp, AF test, unboxing.</span><em>TikTok</em></li>
+      <li><b>Tìm hiểu</b><span>“Zf lấy nét có nhanh không?”</span><em>TikTok · Google</em></li>
+      <li><b>So sánh</b><span>So giá, đọc đánh giá, kiểm tra chính hãng.</span><em>Shopee</em></li>
+      <li><b>Quyết định</b><span>Kit hợp lý, bảo hành dài, trả góp.</span><em>Shopee · Live</em></li>
+      <li><b>Trải nghiệm</b><span>Mở hộp, chụp tấm đầu tiên.</span><em>Unboxing</em></li>
+      <li><b>Gắn kết</b><span>Vào cộng đồng, mua thêm phụ kiện.</span><em>Zalo · Photowalk</em></li>
+    </ol>
+  </div>
+</section>
+
+<section class="band sumi" id="position">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">05 · Định vị <span class="kana">ポジショニング</span></div>
+      <h2>Thắng bằng gu, <i>không chỉ bằng giá.</i></h2>
+    </div>
+    <div class="grid g2" style="align-items:center">
+      <p class="pos">Dành cho <b>người trẻ thành thị</b> muốn lưu giữ cuộc sống có cá tính, <b>Sabi Lab</b> là nơi mua <b>Nikon chính hãng</b> với bộ kit sẵn sàng sáng tạo theo phong cách Nhật, vì chúng tôi <b>tuyển chọn, hướng dẫn và bảo hành tới 60 tháng</b>.</p>
+      <div class="mapbox">
+        <svg viewBox="0 0 600 440" role="img" aria-label="Bản đồ định vị: Sabi Lab ở góc chính hãng và giàu phong cách">
+          <rect x="300" y="20" width="280" height="200" fill="#F2B33D" fill-opacity=".12"/>
+          <rect x="20" y="20" width="560" height="400" fill="none" stroke="#55524C"/>
+          <line x1="20" y1="220" x2="580" y2="220" stroke="#8A867D" stroke-width="1.2"/><line x1="300" y1="20" x2="300" y2="420" stroke="#8A867D" stroke-width="1.2"/>
+          <text x="30" y="210" fill="#B9B4A8" font-family="IBM Plex Mono, monospace" font-size="11">← BÁN THEO THÔNG SỐ</text>
+          <text x="570" y="210" fill="#B9B4A8" font-family="IBM Plex Mono, monospace" font-size="11" text-anchor="end">BÁN THEO PHONG CÁCH →</text>
+          <text x="310" y="40" fill="#B9B4A8" font-family="IBM Plex Mono, monospace" font-size="11">↑ CHÍNH HÃNG, AN TÂM</text>
+          <text x="310" y="410" fill="#B9B4A8" font-family="IBM Plex Mono, monospace" font-size="11">↓ RỦI RO</text>
+          <circle cx="140" cy="90" r="7" fill="#9A9890"/><text x="154" y="95" fill="#F3EFE6" font-family="Be Vietnam Pro, sans-serif" font-size="14">Đại lý, chuỗi lớn</text>
+          <circle cx="420" cy="140" r="7" fill="#9A9890"/><text x="434" y="138" fill="#F3EFE6" font-family="Be Vietnam Pro, sans-serif" font-size="14">Fujifilm</text><text x="434" y="156" fill="#B9B4A8" font-family="Be Vietnam Pro, sans-serif" font-size="12">khan hàng, giá cao</text>
+          <path d="M498 52 v-10 h10 M522 42 h10 v10 M532 78 v10 h-10 M508 88 h-10 v-10" stroke="#F2B33D" stroke-width="3" fill="none"/><circle cx="515" cy="65" r="6" fill="#E03C31"/>
+          <text x="486" y="71" fill="#F3EFE6" font-family="Archivo, sans-serif" font-size="19" text-anchor="end" font-weight="800">Sabi Lab</text>
+          <circle cx="460" cy="330" r="7" fill="#9A9890"/><text x="446" y="335" fill="#F3EFE6" font-family="Be Vietnam Pro, sans-serif" font-size="14" text-anchor="end">Shop máy cũ</text>
+          <circle cx="110" cy="320" r="7" fill="#9A9890"/><text x="124" y="325" fill="#F3EFE6" font-family="Be Vietnam Pro, sans-serif" font-size="14">Điện thoại + app filter</text>
+        </svg>
+      </div>
+    </div>
+    <h3 style="margin-top:64px;margin-bottom:14px">Khác gì đại lý VHG</h3>
+    <div class="tbl"><table class="vs">
+      <thead><tr><th>Tiêu chí</th><th>Đại lý VHG</th><th>Sabi Lab</th></tr></thead>
+      <tbody>
+        <tr><td>Kênh</td><td>Showroom, website, sàn</td><td>Chỉ Shopee và TikTok Shop</td></tr>
+        <tr><td>Khách</td><td>Đa dạng, có dân chuyên</td><td>Người trẻ, người mới, lifestyle</td></tr>
+        <tr><td>Danh mục</td><td>Toàn dải Nikon, ống pro</td><td>Chỉ Nikon, tập trung dòng retro và creator</td></tr>
+        <tr><td>Cách bán</td><td>Theo thông số</td><td>Theo phong cách, trải nghiệm, bộ kit</td></tr>
+        <tr><td>Giá</td><td>Theo niêm yết</td><td>Cạnh tranh bằng giá trị kit, quà và bảo hành 60 tháng</td></tr>
+      </tbody>
+    </table></div>
+    <p class="callout"><b>Nguyên tắc giá.</b> Tạo khác biệt bằng bundle, quà Sabi Goods, voucher riêng của sàn và bảo hành dài, không hạ giá niêm yết thân máy.</p>
+  </div>
+</section>
+
+<section class="band white" id="voice">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">06 · Personality & voice <span class="kana">トーン</span></div>
+      <h2>Năng động, <i>như người đã dùng thật.</i></h2>
+      <p class="lede">Nếu Sabi Lab là một người: 27 tuổi, đi nhiều, mê máy ảnh và đồ Nhật, nói ngắn gọn, vui vẻ, am hiểu nhưng không khoe chữ.</p>
+    </div>
+    <div class="grid g2">
+      <div>
+        <div class="trait"><span class="is">Năng động</span><span class="bar"></span><span class="not">Ồn ào, hét giá</span></div>
+        <div class="trait"><span class="is">Trẻ trung</span><span class="bar"></span><span class="not">Teencode</span></div>
+        <div class="trait"><span class="is">Am hiểu</span><span class="bar"></span><span class="not">Khoe thuật ngữ</span></div>
+        <div class="trait"><span class="is">Chất Nhật</span><span class="bar"></span><span class="not">Lạm dụng tiếng Nhật</span></div>
+        <div class="trait"><span class="is">Tự tin</span><span class="bar"></span><span class="not">Hứa quá lời</span></div>
+        <div class="trait"><span class="is">Chỉn chu</span><span class="bar"></span><span class="not">Cứng nhắc</span></div>
+      </div>
+      <div class="chat" aria-label="Ví dụ chat chăm sóc khách hàng">
+        <div class="bubble c"><small>Khách · 20:14</small>Nghe nói Nikon lấy nét chậm, Zf có vậy không shop?</div>
+        <div class="bubble s"><small>Sabi · 20:15</small>Sabi chào bạn! Zf dùng hệ lấy nét kế thừa từ Z8/Z9, tự nhận diện người, thú cưng, xe cộ và bám mắt. Sabi gửi bạn video test bám nét xe máy ngoài đường nhé.</div>
+        <div class="bubble c"><small>Khách · 20:16</small>Ok, mình chụp đi chơi là chính.</div>
+        <div class="bubble s"><small>Sabi · 20:16</small>Vậy bộ AKI với ống 40mm f/2 rất hợp. Có cài sẵn recipe Yūhi màu nắng chiều, bảo hành 60 tháng luôn ạ.</div>
+      </div>
+    </div>
+    <div class="grid g2" style="margin-top:48px">
+      <div>
+        <h3 style="margin-bottom:12px">Quy tắc viết</h3>
+        <ul style="list-style:none;display:grid;gap:10px;font-size:16px;padding:0">
+          <li><b>Xưng hô:</b> “Sabi” và “bạn”.</li>
+          <li><b>Câu ngắn,</b> động từ mạnh: bắt, bấm, giữ, đi, thử.</li>
+          <li><b>Tiếng Nhật</b> dùng katakana và hiragana để trang trí, luôn kèm nghĩa. Hạn chế chữ Hán đứng một mình.</li>
+          <li><b>Luôn kèm bằng chứng</b> khi nói về tốc độ lấy nét: thông số hoặc video thật.</li>
+          <li><b>Không dùng:</b> “siêu phẩm”, “rẻ nhất”, “xả kho”, chuỗi dấu chấm than.</li>
+        </ul>
+      </div>
+      <div class="words">
+        <div class="h">Dùng</div><div class="h">Thay cho</div>
+        <div>Bộ kit, bộ Sabi</div><div>Combo</div>
+        <div>Công thức màu (recipe)</div><div>Filter, preset</div>
+        <div>Bắt nét, bám nét</div><div>Lấy nét chuẩn</div>
+        <div>Người chụp</div><div>Khách hàng</div>
+        <div>Quà đi kèm</div><div>Giảm sốc</div>
+        <div class="last">Lab notes</div><div class="last">Hướng dẫn sử dụng</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="logos">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">07 · 5 phương án logo <span class="kana">ロゴ案</span></div>
+      <h2>Vintage, máy ảnh, <i>trẻ và rất Nhật.</i></h2>
+      <p class="lede">Bỏ dấu triện đỏ và chữ Hán, vốn dễ gợi nhà hàng hay Trung Quốc. Năm hướng mới dùng chữ katakana (chỉ có trong tiếng Nhật), màu chàm Japan Blue, sọc Showa và hình ảnh máy ảnh. Mỗi phương án có bản nền sáng, nền tối và icon.</p>
+    </div>
+    <article class="lo rec">
+      <div><div class="light"><span class="recbadge">Đề xuất</span><img src="logo/opt4-katakana-viewfinder.svg" alt="Logo phương án 4: Katakana Viewfinder"></div>
+        <div class="row"><div style="background:var(--ai)"><img src="logo/opt4-katakana-viewfinder-dark.svg" alt=""></div><div style="background:var(--white)"><img src="logo/opt4-icon.svg" alt=""></div><div style="background:var(--sumi)"><img src="logo/opt4-icon-dark.svg" alt=""></div></div></div>
+      <div class="info"><span class="num">PHƯƠNG ÁN 04</span><h3>Katakana Viewfinder<small>サビ · ファインダー</small></h3>
+        <p>Chữ katakana サビ nằm trong khung lấy nét AF, chấm đỏ là đèn báo đã bắt nét. Không thể nhầm với Trung Quốc vì katakana chỉ có ở tiếng Nhật. Khung AF nói luôn thông điệp “chụp nhanh”.</p>
+        <div class="score"><span>Vintage</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>Máy ảnh</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Trẻ, năng động</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Chất Nhật</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Avatar nhỏ</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+        <div class="uses"><span>Avatar Shopee</span><span>Icon TikTok</span><span>Khung ảnh sản phẩm</span><span>Sticker</span></div></div>
+    </article>
+    <article class="lo">
+      <div><div class="light"><img src="logo/opt2-showa-stripe.svg" alt="Logo phương án 2: Showa Stripe"></div>
+        <div class="row"><div style="background:var(--ai)"><img src="logo/opt2-showa-stripe-dark.svg" alt=""></div><div style="background:var(--white)"><img src="logo/opt2-icon.svg" alt=""></div><div style="background:var(--sumi)"><img src="logo/opt2-showa-stripe-dark.svg" alt=""></div></div></div>
+      <div class="info"><span class="num">PHƯƠNG ÁN 02</span><h3>Showa Stripe<small>しょうわ · ストライプ</small></h3>
+        <p>Chữ nghiêng đậm và ba sọc đỏ, cam, vàng của bao bì phim và máy ảnh Nhật thập niên 1970. Năng động nhất, rất hợp TikTok và merch. Ô dọc サビラボ giữ chất Nhật.</p>
+        <div class="score"><span>Vintage</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Máy ảnh</span><span class="dots" aria-label="2 trên 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span><span>Trẻ, năng động</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Chất Nhật</span><span class="dots" aria-label="4 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span>Avatar nhỏ</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span></div>
+        <div class="uses"><span>Áo thun</span><span>Dây đeo</span><span>Banner sale</span></div></div>
+    </article>
+    <article class="lo">
+      <div><div class="light"><img src="logo/opt1-aperture-mon.svg" alt="Logo phương án 1: Aperture Mon"></div>
+        <div class="row"><div style="background:var(--ai)"><img src="logo/opt1-aperture-mon-dark.svg" alt=""></div><div style="background:var(--white)"><img src="logo/opt1-icon.svg" alt=""></div><div style="background:var(--sumi)"><img src="logo/opt1-aperture-mon-dark.svg" alt=""></div></div></div>
+      <div class="info"><span class="num">PHƯƠNG ÁN 01</span><h3>Aperture Mon<small>かもん · しぼり</small></h3>
+        <p>Lá khẩu ống kính xếp thành một kamon, huy hiệu gia tộc Nhật, tâm là chấm đỏ mặt trời. Trang nhã, chuyên nghiệp, gợi một cửa hàng máy ảnh lâu năm.</p>
+        <div class="score"><span>Vintage</span><span class="dots" aria-label="4 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span>Máy ảnh</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Trẻ, năng động</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>Chất Nhật</span><span class="dots" aria-label="4 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span>Avatar nhỏ</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+        <div class="uses"><span>Tem bảo hành</span><span>Hộp</span><span>Nắp hot-shoe</span></div></div>
+    </article>
+    <article class="lo">
+      <div><div class="light"><img src="logo/opt3-hinomaru-camera.svg" alt="Logo phương án 3: Hinomaru Camera"></div>
+        <div class="row"><div style="background:var(--ai)"><img src="logo/opt3-hinomaru-camera-dark.svg" alt=""></div><div style="background:var(--white)"><img src="logo/opt3-icon.svg" alt=""></div><div style="background:var(--sumi)"><img src="logo/opt3-hinomaru-camera-dark.svg" alt=""></div></div></div>
+      <div class="info"><span class="num">PHƯƠNG ÁN 03</span><h3>Hinomaru Camera<small>ひのまる · カメラ</small></h3>
+        <p>Dáng máy ảnh có gù lăng kính như FM2, ống kính là mặt trời đỏ. Nhìn là biết bán máy ảnh. Chữ thường thân thiện, dễ dùng cho người mới.</p>
+        <div class="score"><span>Vintage</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>Máy ảnh</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Trẻ, năng động</span><span class="dots" aria-label="4 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span>Chất Nhật</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>Avatar nhỏ</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span></div>
+        <div class="uses"><span>App icon</span><span>Biển hiệu</span><span>Bao bì</span></div></div>
+    </article>
+    <article class="lo">
+      <div><div class="light"><img src="logo/opt5-shutter-badge.svg" alt="Logo phương án 5: Shutter Badge"></div>
+        <div class="row"><div style="background:var(--ai)"><img src="logo/opt5-shutter-badge-dark.svg" alt=""></div><div style="background:var(--white)"><img src="logo/opt5-icon.svg" alt=""></div><div style="background:var(--sumi)"><img src="logo/opt5-icon-dark.svg" alt=""></div></div></div>
+      <div class="info"><span class="num">PHƯƠNG ÁN 05</span><h3>Shutter Badge<small>バッジ · シャッター</small></h3>
+        <p>Huy hiệu tròn kiểu men, vòng chữ chạy quanh như vòng tốc độ màn trập, tâm là サビ LAB. Vintage nhất, hợp làm con dấu, huy hiệu, nhãn trên hộp.</p>
+        <div class="score"><span>Vintage</span><span class="dots" aria-label="5 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></span><span>Máy ảnh</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>Trẻ, năng động</span><span class="dots" aria-label="3 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i></span><span>Chất Nhật</span><span class="dots" aria-label="4 trên 5"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i></span><span>Avatar nhỏ</span><span class="dots" aria-label="2 trên 5"><i class="on"></i><i class="on"></i><i></i><i></i><i></i></span></div>
+        <div class="uses"><span>Huy hiệu</span><span>Sabi Passport</span><span>Tem niêm phong</span></div></div>
+    </article>
+    <p class="note">Đề xuất kết hợp: phương án 04 làm logo chính, sọc Showa của phương án 02 làm họa tiết, huy hiệu phương án 05 làm con dấu cho Sabi Passport và tem hộp.</p>
+  </div>
+</section>
+
+<section class="band white" id="color">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">08 · Màu sắc <span class="kana">にほんのいろ</span></div>
+      <h2>Màu truyền thống <i>Nhật Bản.</i></h2>
+      <p class="lede">Chàm Japan Blue làm màu chủ đạo, nền vải mộc kinari, và ba màu sọc Showa cho năng lượng trẻ. Bỏ cặp đỏ son và vàng đồng. Bấm ô màu để sao chép mã HEX.</p>
+    </div>
+    <div class="colors">
+      <button class="chip c1" data-hex="#F3EFE6"><span><span class="nm">KINARI</span><span class="jn">きなり · vải mộc</span><span class="role">Nền chính. Mộc, sạch, nhiều khoảng thở.</span></span><span class="codes">#F3EFE6<br>RGB 243 239 230</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c2" data-hex="#1F3A68"><span><span class="nm">AI</span><span class="jn">あい · chàm Nhật</span><span class="role">Màu thương hiệu chính, “Japan Blue”.</span></span><span class="codes">#1F3A68<br>RGB 31 58 104</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c3" data-hex="#1A1A1A"><span><span class="nm">SUMI</span><span class="jn">すみ · mực</span><span class="role">Chữ, thân máy.</span></span><span class="codes">#1A1A1A</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c4" data-hex="#E03C31"><span><span class="nm">HINOMARU</span><span class="jn">ひのまる</span></span><span class="codes">#E03C31 · chỉ cho chấm</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c5" data-hex="#EE7B30"><span><span class="nm">KAKI</span><span class="jn">かき · hồng chín</span></span><span class="codes">#EE7B30</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c6" data-hex="#F2B33D"><span><span class="nm">YAMABUKI</span><span class="jn">やまぶき</span></span><span class="codes">#F2B33D</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c7" data-hex="#9A9890"><span><span class="nm">NEZUMI</span><span class="jn">ねずみ · xám</span></span><span class="codes">#9A9890</span><span class="copied">ĐÃ CHÉP</span></button>
+    </div>
+    <p class="mono" style="font-size:12px;color:var(--mute);margin-top:30px">Tỷ lệ sử dụng trong một ấn phẩm</p>
+    <div class="ratio" role="img" aria-label="Kinari 45%, Ai 30%, Sumi 15%, sọc Showa 10%">
+      <div style="flex:45;background:var(--kinari)">KINARI 45%</div><div style="flex:30;background:var(--ai);color:var(--kinari)">AI 30%</div><div style="flex:15;background:var(--sumi);color:var(--kinari)">SUMI 15%</div><div style="flex:4;background:var(--aka)"></div><div style="flex:3;background:var(--kaki)"></div><div style="flex:3;background:var(--yama)"></div>
+    </div>
+    <div class="pairs">
+      <div class="pair" style="background:var(--kinari);box-shadow:inset 0 0 0 1px var(--line)"><span class="m">Mặc định</span><span class="t">Kinari + Sumi<br><span style="color:var(--ai)">+ Ai</span></span></div>
+      <div class="pair" style="background:var(--ai);color:var(--kinari)"><span class="m" style="color:var(--yama)">Thương hiệu</span><span class="t">Ai + <span style="color:var(--yama)">Yamabuki</span></span></div>
+      <div class="pair" style="background:var(--sumi);color:var(--kinari)"><span class="m">Sale · năng lượng</span><span class="t">Sumi + sọc Showa</span><div class="stripes" style="margin-top:10px"><i></i><i></i><i></i></div></div>
+      <div class="pair" style="background:var(--kinari-2)"><span class="m">Điểm nhấn</span><span class="t">Một chấm <span style="color:var(--aka)">Hinomaru</span> = “đã bắt nét”</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="type">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">09 · Typography <span class="kana">もじ</span></div>
+      <h2>Chữ rộng như <i>nắp máy ảnh.</i></h2>
+      <p class="lede">Bỏ font serif cổ điển (gợi nhà hàng). Chữ không chân dáng rộng gợi chữ khắc trên máy ảnh Nhật thập niên 70, nghiêng khi cần năng lượng. Tất cả miễn phí trên Google Fonts.</p>
+    </div>
+    <div class="spec"><div class="meta"><b>Archivo Expanded</b><span>DISPLAY · WIDTH 125 · 800–900</span></div><div class="sample ex" style="font-size:clamp(32px,5.2vw,66px);line-height:1;text-transform:uppercase">Chụp nhanh. <span class="exi" style="text-transform:none;color:var(--ai)">Nhớ lâu.</span></div></div>
+    <div class="spec"><div class="meta"><b>Be Vietnam Pro</b><span>BODY · 300–700</span></div><div class="sample" style="font-size:21px;line-height:1.5">Mỗi bộ kit đã chọn ống kính, thẻ nhớ, dây đeo và cài sẵn công thức màu. Mở hộp là chụp được ngay.</div></div>
+    <div class="spec"><div class="meta"><b>IBM Plex Mono</b><span>THÔNG SỐ · GIÁ · MÃ</span></div><div class="sample mono" style="font-size:21px">Zf · 40mm · f/2 · 1/1000 · ISO 200 · AF-C</div></div>
+    <div class="spec"><div class="meta"><b>Dela Gothic One + Zen Kaku Gothic</b><span>KATAKANA · HIRAGANA</span></div><div class="sample" style="display:flex;gap:28px;align-items:baseline;flex-wrap:wrap"><span class="dela" style="font-size:clamp(46px,7vw,84px);line-height:1;color:var(--ai)">サビラボ</span><span class="jp" style="font-size:24px;letter-spacing:.3em;color:var(--soft)">いちごいちえ</span></div></div>
+  </div>
+</section>
+
+<section class="band ai" id="devices">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">10 · Họa tiết <span class="kana">グラフィック</span></div>
+      <h2>Ngôn ngữ của <i>máy ảnh Nhật.</i></h2>
+    </div>
+    <div class="grid g3">
+      <div class="dev"><div class="demo"><div class="afd"><i></i><i></i><i></i><i></i><em></em><b>Zf</b></div></div><h4>Khung lấy nét AF</h4><p>Bốn góc vàng ôm sản phẩm, chấm đỏ báo “đã bắt nét”. Nói thông điệp chụp nhanh.</p></div>
+      <div class="dev"><div class="demo"><div class="stripes" style="width:80%"><i style="height:18px"></i><i style="height:18px"></i><i style="height:18px"></i></div></div><h4>Sọc Showa</h4><p>Ba sọc nghiêng đỏ, cam, vàng như bao bì phim Nhật 1970. Dùng cho chuyển động, sale.</p></div>
+      <div class="dev"><div class="demo"><span class="jp" style="writing-mode:vertical-rl;letter-spacing:.4em;font-size:20px;color:var(--yama)">ニコン・ゼットエフ</span></div><h4>Katakana dọc</h4><p>Nhãn katakana viết dọc ở mép ảnh, như tem hàng Nhật.</p></div>
+      <div class="dev"><div class="demo"><span class="mono" style="font-size:16px">Zf · 40mm · f/2 · 1/1000 · ISO 200</span></div><h4>Dòng EXIF</h4><p>Thông số chụp dưới mọi ảnh, như chú thích kỹ thuật.</p></div>
+      <div class="dev"><div class="demo"><span class="mono" style="font-size:30px;color:var(--yama);letter-spacing:.14em;text-shadow:0 0 12px rgba(242,179,61,.6)">'26 10 20</span></div><h4>Date stamp</h4><p>Ngày giờ LED kiểu máy film, cho nội dung đời thường.</p></div>
+      <div class="dev"><div class="demo"><div style="width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,#F6B04C,#EE7B30 60%,#E03C31)"></div></div><h4>Mặt trời Showa</h4><p>Vòng hoàng hôn phía sau sản phẩm cho ảnh lifestyle và banner.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="feat" id="product" data-scrolly data-steps="5">
+  <div class="stick">
+    <div class="wrap feat-grid">
+      <div class="feat-copy">
+        <div class="eyebrow">11 · Nikon Zf <span class="kana">ニコン・ゼットエフ</span></div>
+        <h2>Dáng FM2. <i>Bộ não Z8/Z9.</i></h2>
+        <ol class="steps">
+          <li class="step" data-i="0"><span class="sn">01 · LẤY NÉT</span><h3>Nét nhanh, bám chắc</h3><p>EXPEED 7 và thuật toán deep learning từ Z8/Z9 tự nhận diện 9 loại chủ thể, bám mắt, bám 3D.</p><span class="sv"><b data-count="273">273</b> điểm AF lai pha</span></li>
+          <li class="step" data-i="1"><span class="sn">02 · THIẾT KẾ</span><h3>Vòng xoay đồng thau</h3><p>Vòng ISO, tốc độ, bù sáng riêng. Ký hiệu khắc chìm, càng dùng càng đẹp, đúng tinh thần Sabi.</p><span class="sv">Thân hợp kim magie · chống bụi ẩm</span></li>
+          <li class="step" data-i="2"><span class="sn">03 · CHẤT LƯỢNG ẢNH</span><h3>Full-frame 24,5MP</h3><p>Cảm biến lớn gấp ~2,3 lần APS-C và hơn 10 lần điện thoại. Pixel Shift lên tới 96MP.</p><span class="sv">ISO <b data-count="64000">64000</b> gốc</span></li>
+          <li class="step" data-i="3"><span class="sn">04 · ĐƠN SẮC</span><h3>Gạt một cần, ra đen trắng</h3><p>Cần gạt riêng với Monochrome, Flat Mono, Deep Tone. Kèm 3 Sabi Recipes cài sẵn.</p><span class="sv">3 chế độ · 3 recipes</span></li>
+          <li class="step" data-i="4"><span class="sn">05 · CAM KẾT</span><h3>Bảo hành 60 tháng</h3><p>5 năm an tâm, Sabi Care vệ sinh máy mỗi năm, hướng dẫn 7 ngày đầu.</p><span class="sv">Chỉ có tại Sabi Lab</span></li>
+        </ol>
+        <div class="feat-prog" aria-hidden="true"><i></i></div>
+      </div>
+      <div class="feat-stage" aria-hidden="true">
+        <div class="fv" data-i="0"><img src="img/cam_black.webp" alt=""><div class="track"><i></i><span>AF · ĐANG BÁM</span></div><div class="subj"><span>Người</span><span>Chó</span><span>Mèo</span><span>Chim</span><span>Xe đạp</span><span>Xe máy</span><span>Ô tô</span><span>Máy bay</span><span>Tàu hỏa</span></div></div>
+        <div class="fv" data-i="1"><img class="top" src="img/cam_top.webp" alt=""><b class="hs" style="left:27%;top:42%"></b><b class="hs" style="left:50%;top:14%"></b><b class="hs" style="left:83%;top:32%"></b></div>
+        <div class="fv" data-i="2"><div class="sensor"><div class="ff"><span>FULL-FRAME 36×24</span></div><div class="apsc"><span>APS-C</span></div><div class="ph"><span>ĐIỆN THOẠI</span></div></div></div>
+        <div class="fv" data-i="3"><img class="mono" src="img/cam_black.webp" alt=""><div class="wedges"><i></i><i></i><i></i></div></div>
+        <div class="fv" data-i="4"><div class="big60"><b data-count="60">60</b><span>THÁNG<br>BẢO HÀNH</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="studio" id="colorstudio" style="--tint:#1A1A1A">
+  <div class="wrap">
+    <div class="sec-head" style="text-align:center">
+      <div class="eyebrow" style="justify-content:center">11b · Phòng màu <span class="kana">いろ</span></div>
+      <h2>Chọn màu <i>của bạn.</i></h2>
+    </div>
+    <div class="studio-stage"><img id="zfImg" src="img/cam_black.webp" alt="Nikon Zf"></div>
+    <div class="dock glass light" role="group" aria-label="Phiên bản màu Zf"><button class="zf-opt" data-k="black" data-n="Đen cổ điển" data-c="#1A1A1A" aria-pressed="true" aria-label="Đen cổ điển"><i style="background:#1A1A1A"></i></button><button class="zf-opt" data-k="moss-green" data-n="Xanh rêu" data-c="#5C684A" aria-pressed="false" aria-label="Xanh rêu"><i style="background:#5C684A"></i></button><button class="zf-opt" data-k="stone-gray" data-n="Xám đá" data-c="#8A8880" aria-pressed="false" aria-label="Xám đá"><i style="background:#8A8880"></i></button><button class="zf-opt" data-k="sepia-brown" data-n="Nâu sepia" data-c="#704C34" aria-pressed="false" aria-label="Nâu sepia"><i style="background:#704C34"></i></button><button class="zf-opt" data-k="indigo-blue" data-n="Xanh chàm" data-c="#2C3856" aria-pressed="false" aria-label="Xanh chàm"><i style="background:#2C3856"></i></button><button class="zf-opt" data-k="sunset-orange" data-n="Cam hoàng hôn" data-c="#BA5C2E" aria-pressed="false" aria-label="Cam hoàng hôn"><i style="background:#BA5C2E"></i></button><button class="zf-opt" data-k="bordeaux-red" data-n="Đỏ Bordeaux" data-c="#68222A" aria-pressed="false" aria-label="Đỏ Bordeaux"><i style="background:#68222A"></i></button><span class="swname" id="zfCap">Đen cổ điển</span></div>
+    <p class="note" style="text-align:center;margin-inline:auto">Màu da là phối màu kỹ thuật số để duyệt ý tưởng. Cần xác nhận phiên bản nào phân phối tại Việt Nam.</p>
+  </div>
+</section>
+
+<section class="band white" id="kits">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">11c · Bộ kit theo mùa <span class="kana">きせつ</span></div>
+      <h2>Bốn mùa, <i>năm bộ kit.</i></h2>
+      <p class="lede">Tên mùa bằng hiragana, dễ nhớ, mỗi mùa một màu. Bộ kit tạo khác biệt với đại lý và là nhân vật để kể chuyện trên TikTok.</p>
+    </div>
+    <div class="kits">
+      <div class="kit" style="background:#5C684A"><span class="h">はる</span><h4>HARU<small>Starter</small></h4><ul><li>Z fc + 16-50mm</li><li>Thẻ nhớ, dây đeo Sabi</li><li>Recipe Haru</li></ul><span class="who">Người mới</span></div>
+      <div class="kit" style="background:var(--kaki);color:var(--sumi)"><span class="h">なつ</span><h4>NATSU<small>Travel</small></h4><ul><li>Z fc + 28mm SE</li><li>Pin dự phòng</li><li>Túi đeo chéo</li></ul><span class="who">Đi du lịch</span></div>
+      <div class="kit" style="background:var(--ai)"><span class="h" style="color:var(--yama)">あき</span><h4>AKI<small>Classic · Zf</small></h4><ul><li>Zf + 40mm f/2 SE</li><li>Grip, dây đeo</li><li>3 Sabi Recipes</li></ul><span class="who">Người chơi film</span></div>
+      <div class="kit" style="background:var(--sumi)"><span class="h">ふゆ</span><h4>FUYU<small>Creator</small></h4><ul><li>Z50II / Z30</li><li>Mic, tripod mini</li><li>Thẻ tốc độ cao</li></ul><span class="who">Creator</span></div>
+      <div class="kit" style="background:var(--aka)"><span class="h" style="font-size:30px">おくりもの</span><h4>OKURIMONO<small>Gift</small></h4><ul><li>Bất kỳ kit nào</li><li>Hộp quà, thiệp</li><li>Khắc tên dây đeo</li></ul><span class="who">Người tặng</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="goods">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">12 · Sabi Goods · OEM / ODM <span class="kana">グッズ</span></div>
+      <h2>Máy là Nikon. <i>Mọi thứ khác là Sabi.</i></h2>
+      <p class="lede">Phụ kiện, quần áo và dịch vụ mang thương hiệu Sabi Lab: dùng làm quà tặng, hàng bán kèm tăng giá trị đơn và hàng bán lẻ riêng có biên lợi nhuận tốt.</p>
+    </div>
+    <div class="legend"><span><i style="background:var(--aka)"></i>Quà tặng kèm</span><span><i style="background:var(--ai)"></i>Bán kèm, tăng AOV</span><span><i style="background:var(--sumi)"></i>Bán lẻ</span></div>
+    <div class="goods" id="goodsGrid"></div>
+    <p class="note">MOQ và chất liệu là gợi ý để hỏi giá xưởng; cần báo giá thực tế trước khi chốt.</p>
+  </div>
+</section>
+
+<section class="band sumi" id="bundle">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">13 · Bundle & khuyến mãi <span class="kana">セット</span></div>
+      <h2>Tặng thêm giá trị, <i>không phá giá.</i></h2>
+      <p class="lede">Ba tầng bundle. Giá thân máy niêm yết giữ nguyên, phần chênh lệch nằm ở quà Sabi Goods, dịch vụ và bảo hành.</p>
+    </div>
+    <div class="ladder">
+      <div class="rung"><span class="lv">Tầng 1 · Máy + quà</span><h4>SABI ESSENTIAL</h4><span class="price">Giá niêm yết · quà ~2–3%</span><ul><li>Nikon chính hãng</li><li>Khăn lau, sticker, Lab Card</li><li>3 Sabi Recipes cài sẵn</li><li>Bảo hành 60 tháng</li></ul></div>
+      <div class="rung hot"><span class="pick">Đẩy mạnh</span><span class="lv">Tầng 2 · Bộ kit mùa</span><h4>SABI KIT</h4><span class="price">Giá kit · quà ~5–7%</span><ul><li>Tất cả của Essential</li><li>Dây đeo + túi chống sốc</li><li>Thẻ nhớ tốc độ cao</li><li>Hướng dẫn 1:1 qua video call</li></ul></div>
+      <div class="rung"><span class="lv">Tầng 3 · Trọn gói</span><h4>SABI ATELIER</h4><span class="price">Biên lợi nhuận tốt nhất</span><ul><li>Tất cả của Sabi Kit</li><li>Half-case da + hộp thẻ nhớ</li><li>Vé photowalk + in 10 ảnh</li><li>Vệ sinh máy hằng năm</li></ul></div>
+    </div>
+    <div class="grid g3" style="margin-top:56px">
+      <div class="mech"><span class="k">パスポート</span><h4>Sabi Passport</h4><p>Mỗi đơn hàng được đóng một huy hiệu. Đủ 5 huy hiệu đổi half-case da hoặc vé workshop.</p><div class="passport" aria-hidden="true"><span class="on"></span><span class="on"></span><span>3</span><span>4</span><span>5</span></div><span class="when">Giữ chân · mua lặp lại</span></div>
+      <div class="mech"><span class="k">げんてい</span><h4>Drop giới hạn</h4><p>Mỗi tháng một món Sabi Goods số lượng giới hạn, chỉ mở bán trong livestream.</p><span class="when">Hằng tháng · kéo người xem live</span></div>
+      <div class="mech"><span class="k">だんかい</span><h4>Quà theo bậc đơn</h4><p>Bậc 1 khăn lau, sticker. Bậc 2 thêm dây đeo. Bậc 3 thêm túi chống sốc.</p><span class="when">Ngày đôi · 11.11 · 12.12</span></div>
+      <div class="mech"><span class="k">ともだち</span><h4>Rủ bạn cùng chụp</h4><p>Khách cũ giới thiệu bạn mua máy: cả hai nhận voucher Sabi Goods.</p><span class="when">Sau 30 ngày mua</span></div>
+      <div class="mech"><span class="k">ケア</span><h4>Sabi Care</h4><p>Vệ sinh cảm biến, kiểm tra máy miễn phí mỗi năm trong 60 tháng bảo hành.</p><span class="when">Hậu mãi · 5 năm</span></div>
+      <div class="mech"><span class="k">ライブ</span><h4>AF Challenge Live</h4><p>Livestream test bắt nét thật, voucher chỉ có trong phiên. Biến nỗi lo thành nội dung.</p><span class="when">2 phiên mỗi tuần</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="hgal" id="shopee-img" data-hscroll>
+  <div class="stick">
+    <div class="wrap hg-head">
+      <div class="eyebrow">14 · Bộ ảnh Shopee · Nikon Zf <span class="kana">しゃしん</span></div>
+      <h2>Tám tấm ảnh, <i>một câu chuyện.</i></h2>
+    </div>
+    <div class="hg-track" id="shots"></div>
+    <div class="wrap hg-foot"><span class="mono">KÉO HOẶC CUỘN →</span><span class="hg-bar" aria-hidden="true"><i></i></span></div>
+  </div>
+</section>
+<section class="band white" style="padding-top:56px">
+  <div class="wrap">
+    <h3 style="margin-bottom:14px">Ảnh phân loại (variation)</h3>
+    <div class="vars" id="varsRow"></div>
+  </div>
+</section>
+
+<section class="band" id="channels">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">15 · Kênh & nội dung <span class="kana">チャネル</span></div>
+      <h2>TikTok tạo nhu cầu, <i>Shopee chốt đơn.</i></h2>
+    </div>
+    <div class="grid g2">
+      <div class="chan" style="background:var(--sumi);color:var(--kinari)"><h3>TikTok Shop</h3><dl><dt>Vai trò</dt><dd>Khám phá, cảm hứng, livestream</dd><dt>Nội dung</dt><dd>AF test, “Một ngày với Zf”, Recipe test, mở hộp</dd><dt>Trả phí</dt><dd>GMV Max, 10–20 micro-KOC</dd><dt>KPI</dt><dd>View, follower, GMV video và live</dd></dl></div>
+      <div class="chan" style="background:var(--ai);color:var(--kinari)"><h3>Shopee <span style="font-family:var(--f-mono);font-size:13px;color:var(--yama)">· kênh chính</span></h3><dl><dt>Vai trò</dt><dd>Tìm kiếm, so sánh, chốt đơn, mua lặp lại</dd><dt>Nội dung</dt><dd>Gian hàng decor đồng bộ, 8 ảnh mỗi listing, voucher shop, flash sale, livestream</dd><dt>Trả phí</dt><dd>Shopee Ads tìm kiếm và khám phá, Affiliate</dd><dt>KPI</dt><dd>NMV, CVR, ROAS, đánh giá</dd></dl></div>
+    </div>
+    <h3 style="margin-top:64px">Bốn trụ cột nội dung</h3>
+    <div class="pillbar">
+      <div style="flex:35;background:var(--ai);color:var(--kinari)"><b>Khoảnh khắc</b><span>35%</span></div>
+      <div style="flex:25;background:var(--aka);color:var(--white)"><b>AF & hiệu năng</b><span>25%</span></div>
+      <div style="flex:25;background:var(--kaki)"><b>Bộ kit</b><span>25%</span></div>
+      <div style="flex:15;background:var(--yama)"><b>Cộng đồng</b><span>15%</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band white" id="roadmap">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">16 · Lộ trình 90 ngày <span class="kana">ロードマップ</span></div>
+      <h2>Ra mắt dịp <i>11.11.</i></h2>
+    </div>
+    <div class="road">
+      <div class="phase"><span class="dt">27/10 – 09/11/2026</span><h4>CHUẨN BỊ</h4><ul><li>Chốt logo, pháp lý, tên shop</li><li>Chụp ảnh lifestyle thật</li><li>Dựng shop, 5 bộ kit</li><li>Kho 30 video, 10 video AF test</li></ul><span class="gate">Gate 1 · Sẵn sàng lên shop</span></div>
+      <div class="phase on"><span class="dt">10/11 – 30/11/2026</span><h4>RA MẮT · 11.11</h4><ul><li>Brand film “Chụp nhanh. Nhớ lâu.”</li><li>Mở bộ HARU và AKI</li><li>AF Challenge Live</li><li>KOC đợt 1, bật Shopee Ads</li></ul><span class="gate">Gate 2 · Review 30 ngày</span></div>
+      <div class="phase"><span class="dt">01/12 – 31/12/2026</span><h4>TĂNG TỐC · 12.12</h4><ul><li>Bộ quà OKURIMONO</li><li>Tăng ngân sách ads</li><li>Photowalk đầu tiên</li><li>Drop Sabi Goods đầu tiên</li></ul></div>
+      <div class="phase"><span class="dt">01/01 – 31/01/2027</span><h4>TẾT & TỐI ƯU</h4><ul><li>“Tết này, chụp kịp nụ cười”</li><li>Review 90 ngày</li><li>Kế hoạch Q2/2027</li></ul></div>
+    </div>
+    <h3 style="margin-top:56px;margin-bottom:12px">KPI khởi điểm</h3>
+    <div class="tbl"><table class="kpi">
+      <thead><tr><th>Nhóm</th><th>Chỉ số</th><th class="n">30 ngày</th><th class="n">90 ngày</th></tr></thead>
+      <tbody>
+        <tr><td>Nhận diện</td><td>Follower TikTok</td><td class="n">3.000</td><td class="n">15.000</td></tr>
+        <tr><td>Nhận diện</td><td>Follower shop Shopee</td><td class="n">1.000</td><td class="n">5.000</td></tr>
+        <tr><td>Chuyển đổi</td><td>CVR Shopee</td><td class="n">≥ 1,5%</td><td class="n">≥ 2,0%</td></tr>
+        <tr><td>Chuyển đổi</td><td>Tỷ lệ đơn mua bộ kit</td><td class="n">≥ 50%</td><td class="n">≥ 65%</td></tr>
+        <tr><td>Hiệu quả</td><td>ROAS ads sàn</td><td class="n">≥ 8</td><td class="n">≥ 12</td></tr>
+        <tr><td>Trải nghiệm</td><td>Đánh giá trung bình</td><td class="n">≥ 4,9</td><td class="n">≥ 4,9</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<section class="band ai" id="next">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">17 · Cần BOD chốt <span class="kana">けってい</span></div>
+      <h2>Bốn quyết định <i>tuần này.</i></h2>
+    </div>
+    <ol class="todo">
+      <li><p><b>Chọn 1 trong 5 logo</b><span>Đề xuất phương án 04. Sau khi chốt, designer vẽ lại vector chuẩn và đăng ký nhãn hiệu (nhóm 9 và 35).</span></p></li>
+      <li><p><b>Chọn tagline</b><span>Đề xuất “Chụp nhanh. Nhớ lâu.” cho mọi kênh.</span></p></li>
+      <li><p><b>Quyền dùng thương hiệu Nikon và khung giá</b><span>Xác nhận phạm vi dùng chữ “Nikon” và ngưỡng giá hiển thị với bộ phận đại lý.</span></p></li>
+      <li><p><b>Chính sách bảo hành 60 tháng</b><span>Chốt điều kiện, phạm vi và đơn vị thực hiện trước khi đăng lên listing.</span></p></li>
+    </ol>
+  </div>
+</section>
+</main>
+
+<!-- ============ STORE ============ -->
+<main id="v-store" class="shp" role="tabpanel" aria-labelledby="t-store" hidden>
+  <div class="mockbar"><div class="wrap">Bản mô phỏng gian hàng Sabi Lab trên Shopee để BOD duyệt bố cục. Không phải trang thật; số liệu, giá và đánh giá là minh họa.</div></div>
+  <div class="shp-head"><div class="wrap">
+    <span class="shp-brand">Shopee<small>Mall</small></span>
+    <form class="shp-search" onsubmit="return false"><label for="q" hidden>Tìm trong shop</label><input id="q" placeholder="Tìm trong Sabi Lab: Nikon Zf, Z fc, dây đeo…"><button type="submit" aria-label="Tìm">⌕</button></form>
+    <span class="cart" aria-label="Giỏ hàng">🛒<b class="cartN">0</b></span>
+  </div></div>
+  <div class="wrap">
+    <div class="shop-cover">
+      <div class="shop-card">
+        <div class="shop-id"><div class="shop-av"><img src="logo/opt4-icon.svg" alt=""><span class="mall">Mall</span></div><div><h2>Sabi Lab · Nikon Camera Store</h2><p>Online 3 phút trước · TP. Hồ Chí Minh</p></div></div>
+        <div class="shop-btns"><button type="button" id="followBtn">+ Theo dõi</button><button type="button" class="js-toast" data-msg="Mở khung chat với Sabi (mô phỏng)">Chat</button></div>
+      </div>
+      <div class="shop-stats">
+        <div>Sản phẩm: <span>32</span></div><div>Người theo dõi: <span id="fol">12,4k</span></div>
+        <div>Đánh giá: <span>4.9 (2,1k đánh giá)</span></div><div>Tỉ lệ phản hồi chat: <span>99% (trong vài phút)</span></div>
+        <div>Đang theo dõi: <span>18</span></div><div>Tham gia: <span>1 tháng trước</span></div>
+      </div>
+    </div>
+    <nav class="shop-tabs" aria-label="Danh mục shop"><a class="on" href="#store">Dạo</a><a href="#store">Tất cả sản phẩm</a><a href="#store">Nikon Zf</a><a href="#store">Nikon Z fc</a><a href="#store">Bộ kit theo mùa</a><a href="#store">Ống kính</a><a href="#store">Sabi Goods</a></nav>
+
+    <div class="box">
+      <div class="box-t"><h3>Mã giảm giá của shop</h3><a href="#store">Xem tất cả ›</a></div>
+      <div class="vouchers">
+        <div class="vc"><div class="l">SABI<br>500K</div><div class="r"><b>Giảm ₫500k</b><small>Đơn tối thiểu ₫20tr · HSD 30.11</small><button type="button" class="js-save">Lưu</button></div></div>
+        <div class="vc"><div class="l">SABI<br>1TR</div><div class="r"><b>Giảm ₫1tr</b><small>Đơn tối thiểu ₫45tr · HSD 30.11</small><button type="button" class="js-save">Lưu</button></div></div>
+        <div class="vc"><div class="l" style="background:var(--aka);color:var(--white)">QUÀ</div><div class="r"><b>Tặng dây đeo Sabi</b><small>Đơn máy ảnh bất kỳ · số lượng có hạn</small><button type="button" class="js-save">Lưu</button></div></div>
+        <div class="vc"><div class="l" style="background:var(--kaki);color:var(--sumi)">LIVE</div><div class="r"><b>Giảm thêm 3%</b><small>Chỉ trong AF Challenge Live</small><button type="button" class="js-save">Lưu</button></div></div>
+      </div>
+    </div>
+
+    <div class="hero-bn">
+      <div class="bn" style="min-height:300px"><div class="sun"></div><div class="t">Nikon Zf<br><i>Chụp nhanh.<br>Nhớ lâu.</i></div><p>Bộ AKI · Kit 40mm f/2 SE · Bảo hành 60 tháng · Trả góp 0%</p><img class="c" src="img/cam_black.webp" alt=""></div>
+      <div style="display:grid;gap:6px">
+        <div class="bn small" style="background:var(--sumi)"><div class="t">11.11 · <i>Mega Sale</i></div><p style="margin-top:4px;font-size:13px">Voucher tới ₫1tr + quà Sabi Goods</p></div>
+        <div class="bn small" style="background:var(--kaki);color:var(--sumi)"><div class="t" style="color:var(--sumi)">AF Challenge <i style="color:var(--ai)">Live</i></div><p style="margin-top:4px;font-size:13px">20:00 thứ 4 và Chủ nhật</p></div>
+        <div class="bn small" style="background:var(--kinari);color:var(--sumi)"><div class="t" style="color:var(--ai)">Sabi Goods <i style="color:var(--aka)">mới</i></div><p style="margin-top:4px;font-size:13px">Dây đeo, túi chống sốc, áo thun</p></div>
+      </div>
+    </div>
+
+    <div class="box"><div class="box-t"><h3>Danh mục</h3></div><div class="cats" id="cats"></div></div>
+
+    <div class="box">
+      <div class="box-t"><div class="fs-head"><span class="fs-logo">FLASH SALE</span><span class="timer" aria-label="Thời gian còn lại"><b id="th">02</b>:<b id="tm">14</b>:<b id="ts">36</b></span></div><a href="#store">Xem tất cả ›</a></div>
+      <div class="pgrid" id="fsGrid"></div>
+    </div>
+
+    <div class="box">
+      <div class="box-t"><h3>Sabi Studio Live</h3><a href="#store">Lịch live ›</a></div>
+      <div class="live">
+        <div class="scr"><span class="tag">● LIVE</span><span class="v">1,2k xem</span><img src="img/cam_black.webp" alt=""><div class="cm"><span>Linh: Zf bám nét mèo được không ạ?</span><span>Huy: xin video test xe máy</span><span>Sabi: test ngay cho cả nhà xem nè</span></div></div>
+        <div><h3 style="font-family:var(--f-ex);font-stretch:118%;font-weight:900;font-size:24px;text-transform:uppercase">AF Challenge · <span style="color:var(--shp)">20:00</span></h3><p style="margin-top:8px;color:var(--shp-mute);max-width:56ch">Mỗi phiên test bắt nét một chủ đề thật: xe máy, thú cưng, chim, nhảy múa. Voucher 3% và Drop Sabi Goods giới hạn chỉ có trong live.</p><div class="pgrid" id="liveGrid" style="margin-top:14px"></div></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-t"><h3>Combo khuyến mãi</h3></div>
+      <div class="combo">
+        <div class="cb"><div class="ims"><div><img src="img/t_var-01-black.jpg" alt=""></div><b>+</b><div style="background:var(--ai)"><svg viewBox="0 0 40 40" width="40" height="40"><path d="M12 4c-6 10-6 24 4 32" stroke="#F2B33D" stroke-width="5" fill="none"/></svg></div></div><p>Mua <b>Nikon Zf</b> kèm <b>Dây đeo Sabi</b> giảm <b>₫190k</b></p></div>
+        <div class="cb"><div class="ims"><div><img src="img/t_var-01-black.jpg" alt=""></div><b>+</b><div style="background:var(--ai)"></div><b>+</b><div style="background:#6B4A33"></div></div><p>Bộ <b>Sabi Atelier</b>: máy + túi + half-case, tiết kiệm <b>₫650k</b></p></div>
+        <div class="cb"><div class="ims"><div style="background:var(--sumi);color:var(--kinari);font-size:10px;font-family:var(--f-mono)">SD</div><b>+</b><div style="background:#2a2a2a;color:var(--kinari);font-size:9px;font-family:var(--f-mono)">EL15c</div></div><p>Mua 2 phụ kiện bất kỳ giảm <b>5%</b></p></div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-t"><h3>Bộ sưu tập</h3></div>
+      <div class="decor">
+        <div class="d" style="background:var(--ai)"><div class="art" style="background:radial-gradient(circle at 78% 34%,#F6B04C 0 22%,transparent 22.5%)"></div><img src="img/cam_black.webp" alt=""><span class="k">あき</span><span class="t">BỘ AKI · Zf</span></div>
+        <div class="d" style="background:#5C684A"><img src="img/cam_moss-green.webp" alt=""><span class="k">いろ</span><span class="t">Zf PREMIUM COLORS</span></div>
+        <div class="d" style="background:var(--sumi)"><div class="art" style="background:linear-gradient(180deg,transparent 30%,#E03C31 30% 38%,transparent 38% 42%,#EE7B30 42% 50%,transparent 50% 54%,#F2B33D 54% 62%,transparent 62%)"></div><span class="k">グッズ</span><span class="t">SABI GOODS</span></div>
+      </div>
+    </div>
+
+    <div class="box"><div class="box-t"><h3>Sản phẩm bán chạy</h3><a href="#store">Xem tất cả ›</a></div><div class="pgrid" id="allGrid"></div></div>
+  </div>
+</main>
+
+<!-- ============ LISTING ============ -->
+<main id="v-listing" class="shp" role="tabpanel" aria-labelledby="t-listing" hidden>
+  <div class="mockbar"><div class="wrap">Bản mô phỏng trang sản phẩm Nikon Zf trên Shopee. Giá tham khảo thị trường (TechSpot, 10/2026); lượt bán, đánh giá là minh họa.</div></div>
+  <div class="shp-head"><div class="wrap">
+    <span class="shp-brand">Shopee<small>Mall</small></span>
+    <form class="shp-search" onsubmit="return false"><label for="q2" hidden>Tìm</label><input id="q2" placeholder="Nikon Zf"><button type="submit" aria-label="Tìm">⌕</button></form>
+    <span class="cart" aria-label="Giỏ hàng">🛒<b class="cartN">0</b></span>
+  </div></div>
+  <div class="wrap">
+    <div class="crumb">Shopee › Máy ảnh & Máy quay phim › Máy ảnh › Máy ảnh không gương lật › <span>Nikon Zf</span></div>
+    <section class="pdp">
+      <div class="gal">
+        <div class="main" id="pdpMainWrap"><img id="pdpMain" src="img/01-main.jpg" alt="Ảnh sản phẩm Nikon Zf"><span class="play">▶ 0:38</span></div>
+        <div class="thumbs" id="pdpThumbs"></div>
+        <div class="share"><span>Chia sẻ: f · m · p</span><span>♡ Đã thích (1,2k)</span></div>
+      </div>
+      <div class="pinfo">
+        <h1><span class="mall">Mall</span>Máy Ảnh Nikon Zf Kit 40mm f/2 SE Chính Hãng | Bảo Hành 60 Tháng | Bộ Sabi AKI | Lấy Nét Nhận Diện 9 Chủ Thể</h1>
+        <div class="prow"><span class="st">4.9 ★★★★★</span><span class="sep"></span><span><b>128</b> <span class="g">Đánh giá</span></span><span class="sep"></span><span><b>356</b> <span class="g">Đã bán</span></span></div>
+        <div class="pricebox"><div class="fs"><span>⚡ FLASH SALE</span><span id="pdpTimer">KẾT THÚC TRONG 02:14:36</span></div><div class="p"><s id="pOld">₫61.990.000</s><span class="now" id="pNow">₫53.990.000</span><span class="off" id="pOff">-13%</span></div></div>
+        <div class="prop"><span>Mã giảm giá</span><div class="vchips"><span>Giảm ₫500k</span><span>Giảm ₫1tr</span><span>Tặng dây đeo Sabi</span></div></div>
+        <div class="prop"><span>Bảo hành</span><div><b>60 tháng</b> tại Sabi Lab · Sabi Care vệ sinh máy hằng năm</div></div>
+        <div class="prop"><span>Vận chuyển</span><div>Miễn phí vận chuyển · Nhận từ <b>22 Th10 – 23 Th10</b> · Hỏa tốc nội thành HCM</div></div>
+        <div class="prop"><span>Màu sắc</span><div class="optlist" id="optColor"></div></div>
+        <div class="prop"><span>Phiên bản</span><div class="optlist" id="optVer"></div></div>
+        <div class="prop"><span>Quà tặng</span><div class="giftrow" id="gifts"></div></div>
+        <div class="prop"><span>Số lượng</span><div class="qty"><div class="stp"><button type="button" id="qm" aria-label="Giảm">−</button><input id="qv" value="1" inputmode="numeric" aria-label="Số lượng"><button type="button" id="qp" aria-label="Tăng">+</button></div><span style="color:var(--shp-mute);font-size:13px">12 sản phẩm có sẵn</span></div></div>
+        <div class="cta"><button type="button" class="add" id="addCart">🛒 Thêm vào giỏ hàng</button><button type="button" class="buy" id="buyNow">Mua ngay</button></div>
+        <div class="assure"><span><b>15 ngày</b> trả hàng</span><span><b>Chính hãng</b> 100%</span><span><b>Trả góp 0%</b></span><span><b>60 tháng</b> bảo hành</span></div>
+      </div>
+    </section>
+
+    <section class="sellerbar">
+      <div class="id"><div class="shop-av"><img src="logo/opt4-icon.svg" alt=""><span class="mall">Mall</span></div><div><b>Sabi Lab · Nikon Camera Store</b><p>Online 3 phút trước</p><div class="btns"><button type="button" class="js-toast" data-msg="Mở chat với Sabi (mô phỏng)">Chat ngay</button><button type="button" data-goto="store">Xem shop</button></div></div></div>
+      <div class="st"><div>Đánh giá <span>2,1k</span></div><div>Tỉ lệ phản hồi <span>99%</span></div><div>Tham gia <span>1 tháng trước</span></div><div>Sản phẩm <span>32</span></div><div>Thời gian phản hồi <span>vài phút</span></div><div>Người theo dõi <span>12,4k</span></div></div>
+    </section>
+
+    <div class="pd-grid">
+      <div>
+        <section class="sec">
+          <h3>Chi tiết sản phẩm</h3>
+          <div class="detail">
+            <span>Danh mục</span><span>Shopee › Máy ảnh › Máy ảnh không gương lật</span>
+            <span>Thương hiệu</span><span>Nikon</span>
+            <span>Model</span><span>Zf · Kit NIKKOR Z 40mm f/2 SE</span>
+            <span>Cảm biến</span><span>Full-frame BSI CMOS 24,5MP</span>
+            <span>Bộ xử lý</span><span>EXPEED 7</span>
+            <span>Lấy nét</span><span>Lai pha 273 điểm, nhận diện 9 loại chủ thể</span>
+            <span>Chống rung</span><span>5 trục trong thân, tới 8 stop</span>
+            <span>Chụp liên tục</span><span>14 fps (mở rộng), 30 fps JPEG</span>
+            <span>Video</span><span>4K 60p (crop 1.5x), 4K 30p, Full HD 120p</span>
+            <span>Màn hình / EVF</span><span>3,2" xoay lật cảm ứng · EVF OLED 3,69 triệu điểm</span>
+            <span>Thẻ nhớ</span><span>SD UHS-II + microSD UHS-I</span>
+            <span>Pin</span><span>EN-EL15c, sạc qua USB-C</span>
+            <span>Kích thước / nặng</span><span>144 × 103 × 49 mm · ~710 g kèm pin</span>
+            <span>Bảo hành</span><span>60 tháng tại Sabi Lab</span>
+            <span>Gửi từ</span><span>TP. Hồ Chí Minh</span>
+          </div>
+        </section>
+        <section class="sec" style="margin-top:14px">
+          <h3>Mô tả sản phẩm</h3>
+          <div class="desc">
+            <p><b>NIKON Zf · CHỤP NHANH. NHỚ LÂU.</b></p>
+            <p>Dáng máy ảnh film huyền thoại Nikon FM2, bên trong là bộ xử lý EXPEED 7 và hệ lấy nét kế thừa từ dòng flagship Z8/Z9. Zf tự nhận diện người, thú cưng, chim, xe cộ, bám mắt và bám vật thể chuyển động, để bạn bắt kịp mọi khoảnh khắc.</p>
+            <ul><li>Cảm biến Full-frame 24,5MP BSI, ISO 100–64.000</li><li>Lấy nét nhận diện 9 loại chủ thể, chụp trước khi bấm (Pre-Release Capture)</li><li>Chống rung 8 stop, Focus-point VR</li><li>Vòng ISO, tốc độ, bù sáng bằng đồng thau, ký hiệu khắc chìm</li><li>Cần gạt Đơn sắc riêng với 3 chế độ trắng đen</li></ul>
+            <p><b>BỘ SABI AKI GỒM:</b> Thân máy Zf, ống kính NIKKOR Z 40mm f/2 SE, phụ kiện tiêu chuẩn Nikon, kèm quà: dây đeo Sabi, túi chống sốc, khăn lau, Lab Card và 3 Sabi Recipes cài sẵn.</p>
+            <p><b>CAM KẾT SABI LAB:</b> Chính hãng 100% có VAT · Kiểm tra từng máy trước khi giao · Hướng dẫn 7 ngày đầu · Bảo hành 60 tháng.</p>
+            <p style="color:var(--shp-mute)">#nikonzf #mayanhnikon #mayanhretro #sabilab #chupnhanhnholau</p>
+            <div class="imgs" id="descImgs"></div>
+          </div>
+        </section>
+        <section class="sec" style="margin-top:14px">
+          <h3>Đánh giá sản phẩm</h3>
+          <div class="rv-sum"><div><div class="sc"><b>4.9</b> trên 5</div><div class="stars">★★★★★</div></div><div class="rv-f"><button type="button" class="on">Tất cả</button><button type="button">5 Sao (119)</button><button type="button">4 Sao (8)</button><button type="button">Có hình ảnh (64)</button><button type="button">Lấy nét (41)</button></div></div>
+          <div class="rv"><div class="av" style="background:var(--ai)">L</div><div><div class="who">l***h.photo</div><div class="stars">★★★★★</div><div class="meta">2026-11-12 · Phân loại: Đen cổ điển, Kit 40mm · Bộ AKI</div><p>Máy bắt nét mắt mèo nhà mình rất nhanh, không như mình lo trước khi mua. Mở hộp có sẵn recipe màu nắng chiều, chụp là đẹp luôn. Hộp gói rất kỹ.</p><div class="ph"><div style="background:linear-gradient(160deg,#F6B04C,#E03C31)"></div><div style="background:linear-gradient(200deg,#8FB0D6,#1F3A68)"></div></div></div></div>
+          <div class="rv"><div class="av" style="background:var(--sumi)">H</div><div><div class="who">huy***91</div><div class="stars">★★★★★</div><div class="meta">2026-11-14 · Phân loại: Xanh rêu, Kit 40mm · Bộ AKI</div><p>Cầm đầm tay, vòng đồng thau xoay rất sướng. Test chụp xe máy ngoài đường bám tốt. Bảo hành 60 tháng là lý do mình chọn shop này.</p></div></div>
+          <div class="rv"><div class="av" style="background:var(--kaki)">V</div><div><div class="who">vy.studio</div><div class="stars">★★★★☆</div><div class="meta">2026-11-18 · Phân loại: Đen cổ điển, Body</div><p>Quay video sản phẩm nét, màn hình lật tiện. Giao hỏa tốc trong ngày. Mong shop có thêm mic trong combo.</p></div></div>
+          <p class="note" style="padding:0 14px">Đánh giá mẫu để minh họa bố cục.</p>
+        </section>
+      </div>
+      <aside class="side"><section class="sec" style="padding:14px"><h3 style="font-size:14px">Top sản phẩm của shop</h3><div id="sideGrid"></div></section></aside>
+    </div>
+  </div>
+
+  <div class="buybar glass" id="buybar"><div><small>Bộ AKI · Kit 40mm</small><b id="bbPrice">₫53.990.000</b></div><button type="button" class="bb-add" id="bbAdd">Thêm giỏ</button><button type="button" class="bb-buy" id="bbBuy">Mua ngay</button></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="logo/opt4-katakana-viewfinder-dark.svg" alt="Sabi Lab">
+    <p>SABI LAB · BRAND BOOK V2.0 · 10/2026<br>Nguồn: <a href="https://vneconomy.vn/san-pham-loi-thoi-tao-doanh-thu-lon-nho-gen-z.htm" target="_blank" rel="noopener">VnEconomy</a> · <a href="https://www.phileweb.com/news/d-camera/202309/20/1208.html" target="_blank" rel="noopener">Phile Web</a> · <a href="https://www.selfridges.com/SG/en/product/nikon-z-f-mirorless-camera-with-24-70mm-f4-s-lens_R04238674/" target="_blank" rel="noopener">Selfridges SG</a> · <a href="https://en.wikipedia.org/wiki/Nikon_Zf" target="_blank" rel="noopener">Wikipedia</a> · <a href="https://techspot.vn/nikon-zf-kit-40mm-chinh-hang-vic-p39100530.html" target="_blank" rel="noopener">TechSpot (giá tham khảo)</a></p>
+  </div>
+</footer>
+
+<div class="lightbox" id="lb" hidden><button type="button" id="lbClose">ĐÓNG ✕</button><img id="lbImg" alt=""></div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var money=function(n){return '₫'+n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.')};
+  var tT;function toast(m){var t=$('#toast');t.textContent=m;t.hidden=false;clearTimeout(tT);tT=setTimeout(function(){t.hidden=true},2200)}
+
+  var views=['brand','store','listing'];
+  function show(v,scroll){
+    if(views.indexOf(v)<0)v='brand';
+    views.forEach(function(x){$('#v-'+x).hidden=(x!==v);$('#t-'+x).setAttribute('aria-selected',x===v?'true':'false')});
+    if(scroll!==false)window.scrollTo(0,0);
+    document.dispatchEvent(new CustomEvent('viewchange',{detail:v}));
+  }
+  $$('.tab').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.view);try{history.replaceState(null,'','#'+b.dataset.view)}catch(e){}})});
+  $$('[data-goto]').forEach(function(b){b.addEventListener('click',function(){show(b.dataset.goto)})});
+  function fromHash(){var h=(location.hash||'').slice(1);if(views.indexOf(h)>=0){show(h)}else if(h&&$('#v-brand').hidden){show('brand',false);var el=document.getElementById(h);if(el)el.scrollIntoView()}}
+  fromHash();window.addEventListener('hashchange',fromHash);
+
+  function picker(sel,img,label,prefix){var bs=$$(sel);bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-pressed','false')});b.setAttribute('aria-pressed','true');img.style.opacity='0';setTimeout(function(){img.src='img/cam_'+b.dataset.k+'.webp';img.style.opacity='1'},160);label.textContent=(prefix||'')+b.dataset.n})})}
+  picker('.sw',$('#heroCam'),$('#swName'));picker('.zf-opt',$('#zfImg'),$('#zfCap'),'Nikon Zf · ');
+
+  $$('.chip').forEach(function(c){c.addEventListener('click',function(){try{navigator.clipboard.writeText(c.dataset.hex).then(function(){c.classList.add('ok');setTimeout(function(){c.classList.remove('ok')},1200)},function(){})}catch(e){}})});
+
+  var COLORS=[['black','Đen cổ điển'],['moss-green','Xanh rêu'],['stone-gray','Xám đá'],['sepia-brown','Nâu sepia'],['indigo-blue','Xanh chàm'],['sunset-orange','Cam hoàng hôn'],['bordeaux-red','Đỏ Bordeaux']];
+  var SHOTS=[['01-main','Ảnh chính','Nhận diện, tagline, bảo hành 60 tháng.'],['02-lifestyle','Lifestyle','Chụp nhanh, nhớ lâu, mặt trời Showa.'],['03-autofocus','Lấy nét nhanh','9 chủ thể, công nghệ Z8/Z9, Pre-Release.'],['04-design','Thiết kế FM2','Vòng ISO, logo cổ điển, đồng thau.'],['05-image-quality','Chất lượng ảnh','24,5MP, so sánh cảm biến theo tỷ lệ.'],['06-monochrome-recipes','Đơn sắc & Recipes','3 chế độ trắng đen, 3 Sabi Recipes.'],['07-in-the-box','Trong hộp','Bộ AKI: phụ kiện Nikon và quà Sabi.'],['08-warranty','Bảo hành 60 tháng','Cam kết để chốt đơn.']];
+  var CAM_SVG='<svg viewBox="0 0 200 130"><rect x="10" y="34" width="180" height="88" rx="14" fill="#1F3A68"/><path d="M72 36 L82 8 H118 L128 36 Z" fill="#1F3A68"/><rect x="30" y="18" width="28" height="16" rx="3" fill="#1F3A68"/><rect x="142" y="18" width="28" height="16" rx="3" fill="#1F3A68"/><circle cx="100" cy="80" r="34" fill="#F3EFE6"/><circle cx="100" cy="80" r="21" fill="#E03C31"/></svg>';
+  var G={
+    strap:'<svg viewBox="0 0 200 150"><path d="M30 20c-12 40-14 80 10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M170 20c12 40 14 80-10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M30 20c-12 40-14 80 10 120M170 20c12 40 14 80-10 120" stroke="#F2B33D" stroke-width="3" fill="none"/><rect x="76" y="58" width="48" height="34" rx="4" fill="#1A1A1A"/><path d="M84 68v-6h6M110 62h6v6M116 82v6h-6M90 88h-6v-6" stroke="#F2B33D" stroke-width="2" fill="none"/><circle cx="111" cy="68" r="2.5" fill="#E03C31"/></svg>',
+    pouch:'<svg viewBox="0 0 200 150"><rect x="40" y="30" width="120" height="96" rx="22" fill="#1F3A68"/><path d="M40 70h120" stroke="#E03C31" stroke-width="6"/><path d="M40 80h120" stroke="#EE7B30" stroke-width="6"/><path d="M40 90h120" stroke="#F2B33D" stroke-width="6"/><path d="M52 30c10-14 86-14 96 0" stroke="#1A1A1A" stroke-width="6" fill="none"/></svg>',
+    tee:'<svg viewBox="0 0 200 150"><path d="M62 20l-34 20 12 26 16-8v76h88V58l16 8 12-26-34-20c-6 12-18 18-38 18s-32-6-38-18z" fill="#F3EFE6" stroke="#1A1A1A" stroke-width="2"/><text x="100" y="82" font-family="Dela Gothic One,sans-serif" font-size="22" fill="#1F3A68" text-anchor="middle">サビ</text><path d="M72 94h56" stroke="#E03C31" stroke-width="4"/><path d="M72 101h56" stroke="#EE7B30" stroke-width="4"/><path d="M72 108h56" stroke="#F2B33D" stroke-width="4"/></svg>',
+    cloth:'<svg viewBox="0 0 200 150"><g transform="rotate(-6 100 78)"><rect x="45" y="28" width="110" height="100" fill="#fff" stroke="#D9D2C3" stroke-width="2"/><path d="M72 52v-10h10M118 42h10v10M128 104v10h-10M82 114h-10v-10" stroke="#1F3A68" stroke-width="5" fill="none"/><text x="100" y="86" font-family="Dela Gothic One,sans-serif" font-size="20" fill="#1A1A1A" text-anchor="middle">サビ</text></g></svg>',
+    shoe:'<svg viewBox="0 0 200 150"><rect x="36" y="56" width="74" height="40" rx="5" fill="#B9935A"/><text x="73" y="82" font-family="Dela Gothic One,sans-serif" font-size="14" fill="#1A1A1A" text-anchor="middle">サビ</text><circle cx="150" cy="76" r="20" fill="#E03C31"/><circle cx="150" cy="76" r="12" fill="#F05A4E"/><path d="M150 96v24" stroke="#9A9890" stroke-width="6"/></svg>',
+    tote:'<svg viewBox="0 0 200 150"><path d="M58 40h84l8 96H50z" fill="#E9E3D6" stroke="#1F3A68" stroke-width="2"/><path d="M78 40c0-20 44-20 44 0" stroke="#1A1A1A" stroke-width="5" fill="none"/><text x="100" y="92" font-family="Archivo,sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#1F3A68" text-anchor="middle">Sabi Lab</text><path d="M66 102h68" stroke="#E03C31" stroke-width="4"/><path d="M66 109h68" stroke="#EE7B30" stroke-width="4"/><path d="M66 116h68" stroke="#F2B33D" stroke-width="4"/></svg>',
+    sd:'<svg viewBox="0 0 200 150"><circle cx="100" cy="72" r="46" fill="#1A1A1A"/><circle cx="100" cy="72" r="38" fill="none" stroke="#F2B33D" stroke-width="2"/><rect x="84" y="50" width="14" height="20" rx="2" fill="#9A9890"/><rect x="102" y="50" width="14" height="20" rx="2" fill="#9A9890"/><rect x="84" y="74" width="14" height="20" rx="2" fill="#9A9890"/><rect x="102" y="74" width="14" height="20" rx="2" fill="#E03C31"/><text x="100" y="138" font-family="IBM Plex Mono,monospace" font-size="9" fill="#55524C" text-anchor="middle">SD · microSD</text></svg>',
+    note:'<svg viewBox="0 0 200 150"><rect x="56" y="22" width="88" height="112" rx="4" fill="#1F3A68"/><rect x="56" y="22" width="10" height="112" fill="#16294A"/><text x="104" y="70" font-family="Archivo,sans-serif" font-weight="900" font-size="14" fill="#F3EFE6" text-anchor="middle">LAB NOTES</text><text x="104" y="92" font-family="Zen Kaku Gothic New,sans-serif" font-size="11" fill="#F2B33D" text-anchor="middle">ラボノート</text></svg>',
+    case:'<svg viewBox="0 0 200 150"><path d="M36 60h128v54c0 6-4 10-10 10H46c-6 0-10-4-10-10z" fill="#6B4A33"/><path d="M42 66h116v48H42z" fill="none" stroke="#F2B33D" stroke-width="1" stroke-dasharray="3 3"/><circle cx="100" cy="92" r="18" fill="#4E3524"/><circle cx="100" cy="92" r="8" fill="#2a2a2a"/></svg>',
+    wrap:'<svg viewBox="0 0 200 150"><path d="M100 16l64 60-64 60-64-60z" fill="#1F3A68"/><circle cx="100" cy="76" r="24" fill="#F3EFE6"/><circle cx="100" cy="76" r="14" fill="#E03C31"/></svg>',
+    pin:'<svg viewBox="0 0 200 150"><g transform="translate(26 28) scale(.46)"><path d="M8 52 V8 H52 M148 8 H192 V52 M192 148 V192 H148 M52 192 H8 V148" stroke="#1F3A68" stroke-width="12" fill="none"/><text x="100" y="124" font-family="Dela Gothic One,sans-serif" font-size="68" fill="#1A1A1A" text-anchor="middle">サビ</text><circle cx="166" cy="28" r="10" fill="#E03C31"/></g><circle cx="150" cy="76" r="26" fill="#1F3A68"/><circle cx="150" cy="76" r="16" fill="#F3EFE6"/><circle cx="150" cy="76" r="8" fill="#E03C31"/></svg>',
+    print:'<svg viewBox="0 0 200 150"><defs><linearGradient id="pgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6B04C"/><stop offset="1" stop-color="#1F3A68"/></linearGradient></defs><rect x="48" y="26" width="104" height="96" rx="4" fill="#fff" stroke="#D9D2C3" stroke-width="2"/><rect x="58" y="36" width="84" height="58" fill="url(#pgr)"/><text x="138" y="88" font-family="IBM Plex Mono,monospace" font-size="7" fill="#F2B33D" text-anchor="end">26 10 20</text><text x="100" y="112" font-family="Archivo,sans-serif" font-weight="800" font-size="8.5" fill="#1A1A1A" text-anchor="middle">CHỤP NHANH. NHỚ LÂU.</text></svg>'
+  };
+  var GL=[
+    ['strap','u','Dây đeo Sabi sọc Showa','Cotton dệt màu chàm, sọc vàng, khoen kim loại, tag in サビ. Khắc tên theo yêu cầu.',['OEM','MOQ ~300','Khắc tên'],390000],
+    ['pouch','g','Túi chống sốc sọc Showa','Túi mềm vừa Zf, Z fc gắn ống nhỏ, lót nỉ, sọc đỏ cam vàng nhận diện từ xa.',['ODM','2 size','Quà bộ AKI'],450000],
+    ['tee','s','Áo thun サビ','Cotton 250gsm form rộng, ngực in サビ và sọc Showa, lưng in dải tốc độ màn trập.',['OEM','Kinari · Ai','Drop theo mùa'],350000],
+    ['cloth','g','Khăn lau microfiber','In khung AF và サビ. Chi phí thấp, có trong mọi đơn hàng.',['OEM','Mọi đơn'],59000],
+    ['shoe','u','Nắp hot-shoe & nút chụp mềm','Nắp chân đèn kim loại khắc サビ, nút soft release đỏ Hinomaru.',['OEM','Add-on'],190000],
+    ['tote','s','Túi tote canvas','Canvas dày, ngăn lót đệm vừa một thân máy, in chữ nghiêng Sabi Lab.',['OEM','Bộ NATSU'],290000],
+    ['sd','u','Hộp thẻ nhớ','Hộp tròn nhỏ chứa 4 thẻ SD và 2 microSD (Zf dùng cả hai loại).',['ODM','Add-on'],290000],
+    ['note','g','Sổ Lab Notes','Ghi thông số, 30 ngày thử thách chụp ảnh, QR tới video hướng dẫn.',['OEM in','A6','Bộ HARU'],120000],
+    ['case','s','Half-case da thật','Bao da nửa thân cho Zf, Z fc. Da bò thuộc thực vật, lên màu theo năm tháng.',['ODM','3 màu','Biên LN cao'],1290000],
+    ['wrap','g','Khăn furoshiki gói máy','Khăn vải chàm in mặt trời Hinomaru, vừa gói quà vừa bọc máy.',['OEM','50×50cm','Bộ OKURIMONO'],190000],
+    ['pin','u','Sticker & huy hiệu','Logo サビ, huy hiệu tròn, sọc Showa. Khách tự dán, quảng bá cho Sabi.',['OEM','Mọi đơn'],49000],
+    ['print','s','Dịch vụ in ảnh Sabi Print','Gửi 10 ảnh đầu tiên, Sabi in 10x15 viền trắng gửi kèm đơn sau.',['Đối tác in','Mua lặp lại'],99000]
+  ];
+  var BD={g:['g','Quà tặng'],u:['u','Bán kèm'],s:['','Bán lẻ']};
+  $('#goodsGrid').innerHTML=GL.map(function(g){var b=BD[g[1]];return '<article class="gi"><div class="art"><span class="badge '+b[0]+'">'+b[1]+'</span>'+G[g[0]]+'</div><div class="body"><h4>'+g[2]+'</h4><p>'+g[3]+'</p><div class="facts">'+g[4].map(function(f){return '<span>'+f+'</span>'}).join('')+'</div></div></article>'}).join('');
+  $('#shots').innerHTML=SHOTS.map(function(s,i){return '<div class="shot"><img src="img/'+s[0]+'.jpg" alt="Ảnh Shopee: '+s[1]+'" loading="lazy"><b><span>0'+(i+1)+'</span>'+s[1]+'</b><p>'+s[2]+'</p></div>'}).join('');
+  $('#varsRow').innerHTML=COLORS.map(function(c,i){return '<img src="img/var-0'+(i+1)+'-'+c[0]+'.jpg" alt="Phân loại '+c[1]+'" loading="lazy">'}).join('');
+
+  function card(p){
+    var im=p.img?'<img src="'+p.img+'" alt="" loading="lazy">':'<div class="ph">'+CAM_SVG+'<span>'+p.model+'</span><small>Ảnh sẽ cập nhật</small></div>';
+    if(p.goods)im='<div class="ph" style="background:var(--kinari-2)">'+G[p.goods]+'</div>';
+    var off=p.old?Math.round((1-p.price/p.old)*100):0;
+    return '<button type="button" class="pc" data-link="'+(p.link||'')+'"><div class="im">'+im+(off?'<span class="disc">'+off+'%<small>GIẢM</small></span>':'')+(p.frame?'<span class="frame"><em>60T</em>'+p.frame+'</span>':'')+'</div><div class="bd"><div class="nm">'+(p.mall!==false?'<span class="mall">Mall</span>':'')+p.name+'</div><div class="tags">'+(p.tags||[]).map(function(t){return '<span>'+t+'</span>'}).join('')+'</div>'+(p.fs?'<div class="fsbar"><i style="width:'+p.fs+'%"></i><span>Đã bán '+p.fsn+'</span></div>':'')+'<div class="pr"><b><small>₫</small>'+money(p.price).slice(1)+'</b><span>Đã bán '+p.sold+'</span></div><div class="loc">TP. Hồ Chí Minh</div></div></button>';
+  }
+  var ZF=COLORS.map(function(c,i){return {name:'Máy Ảnh Nikon Zf Kit 40mm f/2 SE Chính Hãng · '+c[1]+' · Bộ Sabi AKI',img:'img/t_var-0'+(i+1)+'-'+c[0]+'.jpg',price:53990000,old:61990000,sold:['356','42','31','58','27','19','12'][i],tags:['Trả góp 0%','Quà Sabi'],frame:'BỘ AKI · BH 60 THÁNG',link:'listing:'+i}});
+  var OT=[
+    {name:'Máy Ảnh Nikon Zf Body Chính Hãng · Bảo hành 60 tháng',model:'Nikon Zf Body',price:48990000,old:50500000,sold:'88',tags:['Trả góp 0%'],frame:'BODY · BH 60 THÁNG'},
+    {name:'Máy Ảnh Nikon Z fc Kit 16-50mm Chính Hãng · Bộ Sabi HARU',model:'Nikon Z fc · HARU',price:25400000,sold:'120',tags:['Quà Sabi'],frame:'BỘ HARU'},
+    {name:'Máy Ảnh Nikon Z fc Kit 28mm f/2.8 SE · Bộ Sabi NATSU',model:'Nikon Z fc · NATSU',price:27500000,sold:'64',tags:['Quà Sabi'],frame:'BỘ NATSU'},
+    {name:'Máy Ảnh Nikon Z5 II Body Chính Hãng',model:'Nikon Z5 II',price:34990000,sold:'21',tags:['Trả góp 0%']}
+  ];
+  var GD=GL.map(function(g,i){return {name:g[2],goods:g[0],price:g[5],sold:String(20+i*7),tags:['Sabi Goods'],mall:false}});
+  function ext(a,b){var o={},k;for(k in a)o[k]=a[k];for(k in b)o[k]=b[k];return o}
+  $('#fsGrid').innerHTML=[ext(ZF[0],{fs:72,fsn:18}),ext(OT[1],{price:24400000,old:25400000,fs:45,fsn:9}),ext(GD[0],{price:290000,old:390000,fs:88,fsn:44}),ext(GD[1],{price:350000,old:450000,fs:60,fsn:30}),ext(GD[2],{price:290000,old:350000,fs:35,fsn:14})].map(card).join('');
+  $('#liveGrid').innerHTML=[ZF[0],ZF[1],GD[0]].map(card).join('');
+  $('#allGrid').innerHTML=ZF.concat(OT,GD.slice(0,5)).map(card).join('');
+  $('#sideGrid').innerHTML=[ZF[1],OT[1],GD[0]].map(card).join('');
+  var CATS=[['Nikon Zf',CAM_SVG],['Nikon Z fc',CAM_SVG],['Bộ kit mùa','<svg viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="24" rx="3" fill="#E03C31"/><path d="M4 18h32" stroke="#F3EFE6" stroke-width="2"/></svg>'],['Ống kính','<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="#1A1A1A"/><circle cx="20" cy="20" r="9" fill="#1F3A68"/></svg>'],['Dây đeo',G.strap],['Túi máy',G.pouch],['Áo thun',G.tee],['Phụ kiện',G.sd]];
+  $('#cats').innerHTML=CATS.map(function(c){return '<div class="cat"><i>'+c[1]+'</i>'+c[0]+'</div>'}).join('');
+
+  document.addEventListener('click',function(e){var pc=e.target.closest('.pc');if(!pc)return;var l=pc.dataset.link;if(l&&l.indexOf('listing:')===0){show('listing');selColor(+l.split(':')[1])}else{toast('Trang sản phẩm này chưa dựng trong bản mô phỏng')}});
+  $$('.js-save').forEach(function(b){b.addEventListener('click',function(){b.textContent='Đã lưu';b.classList.add('saved')})});
+  $$('.js-toast').forEach(function(b){b.addEventListener('click',function(){toast(b.dataset.msg)})});
+  var fb=$('#followBtn'),following=false;fb.addEventListener('click',function(){following=!following;fb.textContent=following?'✓ Đang theo dõi':'+ Theo dõi';$('#fol').textContent=following?'12,4k (+1)':'12,4k'});
+
+  var left=2*3600+14*60+36;function tick(){var h=Math.floor(left/3600),m=Math.floor(left%3600/60),s=left%60,p=function(n){return ('0'+n).slice(-2)};$('#th').textContent=p(h);$('#tm').textContent=p(m);$('#ts').textContent=p(s);$('#pdpTimer').textContent='KẾT THÚC TRONG '+p(h)+':'+p(m)+':'+p(s);left=left>0?left-1:5400}
+  tick();setInterval(tick,1000);
+
+  var GAL=SHOTS.map(function(s){return s[0]});
+  var THUMBS=GAL.concat(COLORS.map(function(c,i){return 'var-0'+(i+1)+'-'+c[0]}));
+  function setMain(n){$('#pdpMain').src='img/'+n+'.jpg';$$('#pdpThumbs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.n===n?'true':'false')})}
+  $('#pdpThumbs').innerHTML=THUMBS.map(function(n,i){return '<button type="button" data-n="'+n+'" aria-pressed="'+(i===0)+'" aria-label="Ảnh '+(i+1)+'"><img src="img/t_'+n+'.jpg" alt="" loading="lazy"></button>'}).join('');
+  $$('#pdpThumbs button').forEach(function(b){b.addEventListener('mouseenter',function(){setMain(b.dataset.n)});b.addEventListener('click',function(){setMain(b.dataset.n)})});
+  $('#pdpMainWrap').addEventListener('click',function(){openLb($('#pdpMain').src)});
+  $('#descImgs').innerHTML=GAL.slice(1).map(function(n){return '<img src="img/'+n+'.jpg" alt="" loading="lazy">'}).join('');
+  $('#optColor').innerHTML=COLORS.map(function(c,i){return '<button type="button" class="opt" data-i="'+i+'" aria-pressed="'+(i===0)+'"><img src="img/t_var-0'+(i+1)+'-'+c[0]+'.jpg" alt="">'+c[1]+'</button>'}).join('');
+  var VERS=[['Kit 40mm f/2 SE · Bộ AKI',53990000,61990000,['Dây đeo Sabi','Túi chống sốc','Khăn lau','Lab Card + 3 Recipes']],['Body',48990000,50500000,['Khăn lau','Lab Card + 3 Recipes']],['Kit 40mm · Sabi Atelier',56490000,64990000,['Dây đeo Sabi','Túi chống sốc','Half-case da','Hộp thẻ nhớ','Vé photowalk','Sabi Print 10 ảnh']]];
+  $('#optVer').innerHTML=VERS.map(function(v,i){return '<button type="button" class="opt txt" data-v="'+i+'" aria-pressed="'+(i===0)+'">'+v[0]+'</button>'}).join('');
+  function selColor(i){$$('#optColor .opt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i?'true':'false')});setMain('var-0'+(i+1)+'-'+COLORS[i][0])}
+  function selVer(i){var v=VERS[i];$$('#optVer .opt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.v===i?'true':'false')});$('#pNow').textContent=money(v[1]);$('#pOld').textContent=money(v[2]);$('#pOff').textContent='-'+Math.round((1-v[1]/v[2])*100)+'%';$('#gifts').innerHTML=v[3].map(function(g){return '<span>'+g+'</span>'}).join('')}
+  selVer(0);
+  $$('#optColor .opt').forEach(function(b){b.addEventListener('click',function(){selColor(+b.dataset.i)})});
+  $$('#optVer .opt').forEach(function(b){b.addEventListener('click',function(){selVer(+b.dataset.v)})});
+  var qv=$('#qv');function q(d){qv.value=Math.max(1,Math.min(12,(parseInt(qv.value,10)||1)+d))}
+  $('#qm').addEventListener('click',function(){q(-1)});$('#qp').addEventListener('click',function(){q(1)});qv.addEventListener('change',function(){q(0)});
+  var cart=0;$('#addCart').addEventListener('click',function(){cart+=parseInt(qv.value,10)||1;$$('.cartN').forEach(function(x){x.textContent=cart});toast('Đã thêm vào giỏ hàng (mô phỏng)')});
+  $('#buyNow').addEventListener('click',function(){toast('Bản mô phỏng: không có thanh toán')});
+  $$('.rv-f button').forEach(function(b){b.addEventListener('click',function(){$$('.rv-f button').forEach(function(x){x.classList.remove('on')});b.classList.add('on')})});
+
+  var lb=$('#lb'),lbImg=$('#lbImg');function openLb(src){lbImg.src=src;lb.hidden=false}
+  document.addEventListener('click',function(e){var im=e.target.closest('.shot img,.vars img,.desc .imgs img');if(im)openLb(im.src)});
+  $('#lbClose').addEventListener('click',function(){lb.hidden=true});lb.addEventListener('click',function(e){if(e.target===lb)lb.hidden=true});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')lb.hidden=true});
+})();
+</script>
+<script>
+(function(){
+  var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
+  var RM=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var ua=navigator.userAgent;
+  if(/Chrome|Chromium|Edg\//.test(ua)&&!/Mobile|Android|iPhone|iPad/.test(ua)&&!RM){document.documentElement.classList.add('refract')}
+
+  /* lens on segmented tabs */
+  var seg=$('.seg'),lens=$('.lens');
+  function moveLens(){var t=$('.seg .tab[aria-selected="true"]');if(!t)return;seg.style.setProperty('--lx',t.offsetLeft+'px');seg.style.setProperty('--lw',t.offsetWidth+'px')}
+  window.addEventListener('resize',moveLens);document.addEventListener('viewchange',function(e){moveLens();document.body.className=document.body.className.replace(/\bv-\w+/g,'')+' v-'+e.detail;requestAnimationFrame(onScroll)});
+  if(document.fonts&&document.fonts.ready)document.fonts.ready.then(moveLens);setTimeout(moveLens,60);
+  document.body.classList.add('v-'+(['store','listing'].indexOf(location.hash.slice(1))>=0?location.hash.slice(1):'brand'));
+
+  /* specular highlight follows pointer on glass */
+  $$('.glass').forEach(function(g){g.addEventListener('pointermove',function(e){var r=g.getBoundingClientRect();g.style.setProperty('--mx',(e.clientX-r.left)+'px');g.style.setProperty('--my',(e.clientY-r.top)+'px')})});
+
+  /* tilt cards */
+  if(!RM&&window.matchMedia('(hover:hover)').matches){
+    $$('.lo,.gi,.persona,.proof,.value,.kit,.shot,.chan,.phase').forEach(function(c){c.setAttribute('data-tilt','');
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;c.style.setProperty('--ry',((x-.5)*6)+'deg');c.style.setProperty('--rx',((.5-y)*6)+'deg');c.style.setProperty('--mx',(x*100)+'%');c.style.setProperty('--my',(y*100)+'%');c.style.setProperty('--hl',1)});
+      c.addEventListener('pointerleave',function(){c.style.setProperty('--rx','0deg');c.style.setProperty('--ry','0deg');c.style.setProperty('--hl',0)})});
+  }
+
+  /* section entrance */
+  $$('#v-brand .sec-head, #v-brand .grid, #v-brand .tbl, #v-brand .lo, #v-brand .colors, #v-brand .kits, #v-brand .goods, #v-brand .ladder, #v-brand .road, #v-brand .story').forEach(function(el){el.classList.add('reveal')});
+
+  /* word split for manifesto */
+  var man=$('[data-words]'),words=[];
+  if(man){$$('span,strong',man).forEach(function(el){var t=el.textContent.trim().split(/\s+/);el.innerHTML=t.map(function(w){return '<span class="w">'+w+'</span>'}).join(' ')});words=$$('.w',man)}
+
+  /* counters */
+  function fmt(n,dec){return dec?n.toFixed(1).replace('.',','):Math.round(n).toLocaleString('vi-VN')}
+  var counted=new WeakSet();
+  function runCount(el){if(counted.has(el)||RM)return;counted.add(el);var to=parseFloat(el.dataset.count),dec=+(el.dataset.dec||0),t0=performance.now(),d=1200;
+    (function f(t){var k=Math.min(1,(t-t0)/d),e=1-Math.pow(1-k,3);el.textContent=fmt(to*e,dec);if(k<1)requestAnimationFrame(f)})(t0)}
+  if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){runCount(en.target);io.unobserve(en.target)}})},{threshold:.6});$$('[data-count]').forEach(function(el){io.observe(el)})}
+
+  /* scroll engine */
+  var hero=$('.hero2'),af=$('.hero2 .af'),feat=$('.feat'),steps=$$('.feat .step'),fvs=$$('.feat .fv'),hg=$('.hgal'),track=$('.hg-track'),nav=$('.gnav'),bar=document.documentElement;
+  var lastStep=-1,ticking=false,flashed=false;
+  function prog(el){var r=el.getBoundingClientRect(),span=el.offsetHeight-innerHeight;return span>0?Math.min(1,Math.max(0,-r.top/span)):0}
+  function setupH(){if(!hg)return;var native=RM||innerWidth<760;hg.classList.toggle('native',native);if(native){hg.style.height='';track.style.removeProperty('--hx');return}var over=track.scrollWidth-innerWidth;hg.style.height=(over+innerHeight)+'px';hg._over=over}
+  function onScroll(){ticking=false;
+    var sp=scrollY/Math.max(1,document.documentElement.scrollHeight-innerHeight);bar.style.setProperty('--sp',sp.toFixed(4));
+    nav.classList.toggle('compact',scrollY>40);
+    if($('#v-brand').hidden)return;
+    if(hero&&!RM){var p=prog(hero);hero.style.setProperty('--p',p.toFixed(4));var lock=p>.72;af.classList.toggle('lock',lock);var fl=Math.max(0,1-Math.abs(p-.8)*14);hero.style.setProperty('--flash',(fl*.85).toFixed(3))}
+    if(feat){var q=prog(feat);feat.style.setProperty('--p',q.toFixed(4));var n=steps.length,i=Math.min(n-1,Math.floor(q*n*0.999));if(i!==lastStep){lastStep=i;steps.forEach(function(s,k){s.classList.toggle('on',k===i)});fvs.forEach(function(f,k){f.classList.toggle('on',k===i)});$$('.step.on [data-count], .fv.on [data-count]').forEach(function(el){counted.delete(el);runCount(el)})}}
+    if(hg&&!hg.classList.contains('native')){var h=prog(hg);hg.style.setProperty('--p',h.toFixed(4));track.style.setProperty('--hx',(h*hg._over).toFixed(1))}
+    if(man){var r=man.getBoundingClientRect(),m=Math.min(1,Math.max(0,(innerHeight*.85-r.top)/(r.height+innerHeight*.35))),lit=Math.round(m*words.length);words.forEach(function(w,k){w.classList.toggle('on',k<lit)})}
+    var imm=[hero,feat,hg].some(function(el){if(!el)return false;var r=el.getBoundingClientRect();return r.top<=1&&r.bottom>=innerHeight-1});document.body.classList.toggle('immersive',imm);
+    spy();
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(onScroll)}},{passive:true});
+  window.addEventListener('resize',function(){setupH();onScroll()});
+
+  /* subnav scroll-spy */
+  var links=$$('.subnav a'),targets=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+  function spy(){var y=innerHeight*.3,cur=-1;targets.forEach(function(t,k){if(t&&t.getBoundingClientRect().top<y)cur=k});links.forEach(function(a,k){a.classList.toggle('on',k===cur)});if(cur>=0){var a=links[cur],ul=a.parentNode.parentNode;var off=a.offsetLeft-ul.clientWidth/2+a.offsetWidth/2;if(Math.abs(ul.scrollLeft-off)>40)ul.scrollLeft=off}}
+
+  /* color studio tint */
+  $$('#colorstudio .zf-opt').forEach(function(b){b.addEventListener('click',function(){$('#colorstudio').style.setProperty('--tint',b.dataset.c)})});
+
+  /* listing buy bar mirrors price */
+  var pn=$('#pNow'),bb=$('#bbPrice');if(pn&&bb){new MutationObserver(function(){bb.textContent=pn.textContent}).observe(pn,{childList:true,characterData:true,subtree:true})}
+  $('#bbAdd')&&$('#bbAdd').addEventListener('click',function(){$('#addCart').click()});
+  $('#bbBuy')&&$('#bbBuy').addEventListener('click',function(){$('#buyNow').click()});
+
+  window.addEventListener('load',function(){setupH();moveLens();onScroll()});
+  setupH();onScroll();
+})();
+</script>
+
+
+</body>
+</html>
