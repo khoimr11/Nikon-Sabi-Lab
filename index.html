@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#33201A">
+<meta name="theme-color" content="#16294A">
 <meta name="description" content="Sabi Lab — nhà bán lẻ máy ảnh Nikon chính hãng, phong cách Nhật Bản. Chụp nhanh. Nhớ lâu.">
 <title>Sabi Lab Brand Book</title>
 <link rel="icon" href="logo/opt4-icon.svg" type="image/svg+xml">
@@ -18,7 +18,7 @@
 :root{
   --kinari:#F3EFE6; --kinari-2:#E9E3D6; --white:#FFFFFF; --line:#D9D2C3;
   --sumi:#1A1A1A; --sumi-2:#26262A; --soft:#55524C; --mute:#8A867D;
-  --ai:#4A2C1F; --ai-2:#33201A; --ai-3:#6B4430;
+  --ai:#1F3A68; --ai-2:#16294A; --ai-3:#2C4F86;
   --aka:#E03C31; --kaki:#EE7B30; --yama:#F2B33D; --nezumi:#9A9890;
   --shp:#EE4D2D; --shp-bg:#F5F5F5; --shp-line:#E8E8E8; --shp-txt:#222; --shp-mute:#757575;
   --f-ex:'Archivo', 'Helvetica Neue', Arial, sans-serif;
@@ -219,7 +219,7 @@ h3{font-family:var(--f-ex);font-stretch:112%;font-weight:800;font-size:clamp(22p
 
 .lo{background:var(--white);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:grid;grid-template-columns:1fr;margin-bottom:22px}
 @media(min-width:900px){.lo{grid-template-columns:1.15fr 1fr}}
-.lo.rec{border:2px solid var(--ai);box-shadow:0 0 0 4px rgba(74,44,31,.12)}
+.lo.rec{border:2px solid var(--ai);box-shadow:0 0 0 4px rgba(31,58,104,.12)}
 .lo .light{background:var(--kinari);padding:clamp(24px,4vw,48px);display:grid;place-items:center;min-height:220px;position:relative}
 .lo .light img{max-height:110px;width:auto}
 .lo .row{display:grid;grid-template-columns:1fr 1fr 1fr}
@@ -591,7 +591,7 @@ html.refract .gnav,html.refract .hero2 .dock{backdrop-filter:url(#lg-refract) bl
 .progress{position:fixed;left:0;right:0;top:0;height:3px;z-index:90;pointer-events:none}
 .progress i{display:block;height:100%;width:calc(var(--sp,0)*100%);background:linear-gradient(90deg,var(--aka),var(--kaki),var(--yama))}
 .navwrap{position:fixed;left:0;right:0;top:calc(env(safe-area-inset-top,0px) + 10px);z-index:80;display:flex;justify-content:center;padding-left:max(12px,env(safe-area-inset-left,0px));padding-right:max(12px,env(safe-area-inset-right,0px));pointer-events:none}
-.gnav{pointer-events:auto;display:flex;align-items:center;gap:14px;height:54px;padding:6px 6px 6px 18px;border-radius:999px;width:min(100%,880px);color:var(--kinari);background:linear-gradient(135deg,rgba(74,44,31,.55),rgba(51,32,26,.38));transition:transform .4s cubic-bezier(.2,.9,.2,1)}
+.gnav{pointer-events:auto;display:flex;align-items:center;gap:14px;height:54px;padding:6px 6px 6px 18px;border-radius:999px;width:min(100%,880px);color:var(--kinari);background:linear-gradient(135deg,rgba(31,58,104,.55),rgba(51,32,26,.38));transition:transform .4s cubic-bezier(.2,.9,.2,1)}
 .gnav.compact{transform:scale(.96)}
 .gbrand img{height:28px;width:auto}
 .seg{position:relative;display:flex;margin-left:auto;padding:4px;border-radius:999px;background:rgba(0,0,0,.18);box-shadow:inset 0 1px 2px rgba(0,0,0,.25);min-width:0;overflow-x:auto;scrollbar-width:none}
@@ -670,7 +670,7 @@ html.refract .gnav,html.refract .hero2 .dock{backdrop-filter:url(#lg-refract) bl
 /* feature scrolly */
 .feat{position:relative;height:520vh;background:var(--sumi);color:var(--kinari)}
 .feat .stick{position:sticky;top:0;height:100vh;height:100svh;overflow:hidden;display:flex;align-items:flex-start}
-.feat .stick::before{content:"";position:absolute;width:70vmax;aspect-ratio:1;border-radius:50%;right:-20vmax;top:-10vmax;background:radial-gradient(circle,rgba(74,44,31,.9),transparent 65%)}
+.feat .stick::before{content:"";position:absolute;width:70vmax;aspect-ratio:1;border-radius:50%;right:-20vmax;top:-10vmax;background:radial-gradient(circle,rgba(31,58,104,.9),transparent 65%)}
 .feat-grid{position:relative;display:grid;grid-template-columns:1fr;gap:20px;width:100%;padding-top:calc(env(safe-area-inset-top,0px) + 120px)}
 @media(min-width:980px){.feat-grid{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;padding-top:110px}}
 .feat h2{font-size:clamp(30px,4.4vw,58px)}
@@ -794,7 +794,7 @@ body.immersive .subnav ul{pointer-events:none}
 .av b{font-size:14px}.av span{font-size:12.5px;color:var(--soft)}
 .pals{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:16px}
 .pal{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--white);display:flex;flex-direction:column}
-.pal.rec{border:2px solid var(--ai);box-shadow:0 0 0 4px rgba(74,44,31,.12)}
+.pal.rec{border:2px solid var(--ai);box-shadow:0 0 0 4px rgba(31,58,104,.12)}
 .pal-mock{position:relative;aspect-ratio:16/9;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:16px;padding:24px 26px;max-width:100%}
 .pal-mock img{height:52px;width:auto}
 .pal-body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:10px}
@@ -812,7 +812,7 @@ body.immersive .subnav ul{pointer-events:none}
 .lu-stats span{font-size:14px;color:var(--soft)}
 .roles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:0;border-radius:10px;overflow:hidden;margin-bottom:48px}
 .roles div{padding:18px 18px 20px;color:var(--kinari);min-width:0}
-.roles div:nth-child(1){background:var(--ai)}.roles div:nth-child(2){background:#6B4430}.roles div:nth-child(3){background:var(--sumi)}.roles div:nth-child(4){background:var(--kaki);color:var(--sumi)}.roles div:nth-child(5){background:#5E6136}
+.roles div:nth-child(1){background:var(--ai)}.roles div:nth-child(2){background:#2C4F86}.roles div:nth-child(3){background:var(--sumi)}.roles div:nth-child(4){background:var(--kaki);color:var(--sumi)}.roles div:nth-child(5){background:#5E6136}
 .roles span{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;opacity:.8}
 .roles b{display:block;font-family:var(--f-ex);font-stretch:118%;font-weight:900;font-size:20px;margin-top:6px}
 .roles p{font-size:13.5px;opacity:.85;margin-top:4px}
@@ -848,7 +848,7 @@ body.immersive .subnav ul{pointer-events:none}
 .sv-d{font-size:14px;line-height:1.5;opacity:.72;max-width:30ch;position:relative}
 .sv-bar{position:absolute;left:22px;right:22px;bottom:12px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--aka) 0 33%,var(--kaki) 33% 66%,var(--yama) 66%);transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
 .sv-card[aria-selected="true"]{background:linear-gradient(160deg,#FBF6EC,#EFE6D4);color:var(--sumi);border-color:transparent;box-shadow:0 18px 40px rgba(0,0,0,.35),inset 0 1px 0 #fff}
-.sv-card[aria-selected="true"] .sv-jp{color:rgba(74,44,31,.13);transform:translateX(-6px)}
+.sv-card[aria-selected="true"] .sv-jp{color:rgba(31,58,104,.13);transform:translateX(-6px)}
 .sv-card[aria-selected="true"] .sv-k{color:var(--aka);opacity:1}
 .sv-card[aria-selected="true"] .sv-d{opacity:.75}
 .sv-card[aria-selected="true"] .sv-bar{transform:scaleX(1)}
@@ -857,6 +857,35 @@ body.immersive .subnav ul{pointer-events:none}
 @keyframes svIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
 @media(max-width:760px){.sv-pick{grid-template-columns:1fr;gap:10px;margin-top:40px}.sv-card{min-height:0;padding:18px 18px 30px}.sv-bar{bottom:14px}.sv-d{max-width:none}}
 @media(prefers-reduced-motion:reduce){.mf-stack .manifesto,.sv-card,.sv-bar,.sv-jp{transition:none}}
+
+.pals{grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr))}
+.ta-stack{display:grid}
+.ta-head{grid-area:1/1;transition:opacity .45s,transform .55s cubic-bezier(.2,.8,.2,1),filter .45s;opacity:0;transform:translateY(12px);filter:blur(5px);pointer-events:none}
+.ta-head.on{opacity:1;transform:none;filter:none;pointer-events:auto}
+.pk-pick{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:0 0 40px}
+.pk-card{position:relative;overflow:hidden;text-align:left;cursor:pointer;border:1px solid var(--line);border-radius:16px;padding:20px 22px 28px;min-height:150px;color:var(--sumi);background:var(--white);display:flex;flex-direction:column;gap:6px;transition:transform .35s cubic-bezier(.2,.8,.2,1),background .35s,border-color .35s,box-shadow .35s,color .35s;font:inherit}
+.pk-card:hover{transform:translateY(-3px);border-color:var(--ai);box-shadow:0 10px 24px rgba(31,58,104,.12)}
+.pk-card:focus-visible{outline:2px solid var(--ai);outline-offset:3px}
+.pk-jp{position:absolute;right:6px;bottom:-16px;font-family:var(--f-jp);font-weight:900;font-size:clamp(70px,7vw,104px);line-height:1;color:rgba(31,58,104,.07);transition:color .35s,transform .6s cubic-bezier(.2,.8,.2,1);pointer-events:none}
+.pk-k{font-family:var(--f-jp);font-size:12px;letter-spacing:.28em;color:var(--aka);display:flex;align-items:center;gap:10px}
+.pk-k em{font-style:normal;font-family:var(--f-mono);letter-spacing:.12em;font-size:10px;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:var(--aka);color:#fff}
+.pk-t{font-family:var(--f-ex);font-stretch:118%;font-weight:900;font-size:clamp(19px,1.8vw,24px);line-height:1.1;margin-top:6px;position:relative}
+.pk-d{font-size:14px;line-height:1.5;color:var(--soft);max-width:32ch;position:relative;transition:color .35s}
+.pk-bar{position:absolute;left:22px;right:22px;bottom:12px;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--aka) 0 33%,var(--kaki) 33% 66%,var(--yama) 66%);transform:scaleX(0);transform-origin:left;transition:transform .6s cubic-bezier(.2,.8,.2,1)}
+.pk-card[aria-selected="true"]{background:linear-gradient(160deg,#2A4A80,var(--ai));color:var(--kinari);border-color:transparent;box-shadow:0 18px 40px rgba(31,58,104,.35),inset 0 1px 0 rgba(255,255,255,.18)}
+.pk-card[aria-selected="true"] .pk-jp{color:rgba(243,239,230,.1);transform:translateX(-6px)}
+.pk-card[aria-selected="true"] .pk-k{color:var(--yama)}
+.pk-card[aria-selected="true"] .pk-d{color:rgba(243,239,230,.8)}
+.pk-card[aria-selected="true"] .pk-bar{transform:scaleX(1)}
+.ta-pane.sv-in{animation:svIn .6s cubic-bezier(.2,.8,.2,1) both}
+.ta-grid{margin-top:28px}
+.ta-pane .segbar div{padding:0 10px}
+.pal-mock .recbadge{left:auto!important;right:12px!important;top:12px!important}
+.pal-mock{padding-top:40px}
+.ta-tbl{background:var(--white);border-radius:10px}.ta-tbl td:first-child{white-space:normal}.ta-tbl td:first-child span{font-family:inherit;font-stretch:100%;font-weight:400;font-size:13.5px;letter-spacing:0;color:var(--mute)}
+.tbl-wrap{overflow-x:auto;max-width:100%}
+@media(max-width:760px){.pk-pick{grid-template-columns:1fr;gap:10px}.pk-card{min-height:0;padding:16px 18px 28px}.pk-bar{bottom:14px}}
+@media(prefers-reduced-motion:reduce){.ta-head,.pk-card,.pk-bar,.pk-jp{transition:none}}
 
 </style>
 </head>
@@ -1051,9 +1080,48 @@ body.immersive .subnav ul{pointer-events:none}
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">04 · Target audience <span class="kana">ターゲット</span></div>
-      <h2>Mua vì phong cách, <i>không vì nghề.</i></h2>
-      <p class="lede">Người trẻ 20–32 tuổi ở thành thị. Lướt TikTok để tìm cảm hứng, lên Shopee để so giá và chốt đơn.</p>
+      <div class="ta-stack">
+      <div class="ta-head on" data-ta="3"><h2>Mỗi dòng Nikon, <i>một kiểu người.</i></h2><p class="lede">Sabi Lab bán toàn bộ Nikon, nên khách hàng không chỉ là người mê máy retro. Sáu nhóm, mỗi nhóm gắn với một dòng sản phẩm và một bộ kit.</p></div>
+      <div class="ta-head" data-ta="1" aria-hidden="true"><h2>Mua vì phong cách, <i>không vì nghề.</i></h2><p class="lede">Người trẻ 20–32 tuổi ở thành thị. Lướt TikTok để tìm cảm hứng, lên Shopee để so giá và chốt đơn.</p></div>
+      <div class="ta-head" data-ta="2" aria-hidden="true"><h2>Họ là ai, sống thế nào, <i>vì sao xuống tiền.</i></h2><p class="lede">Bản chân dung đầy đủ từ brand book đầu tiên: thu nhập, đời sống, nỗi sợ và điều khiến họ bấm “Mua ngay”.</p></div>
+      </div>
     </div>
+    <div class="pk-pick" role="tablist" aria-label="Chọn phương án Target Audience">
+      <button type="button" role="tab" class="pk-card" data-ta="3" aria-selected="true">
+        <span class="pk-jp" aria-hidden="true">全</span>
+        <span class="pk-k">ぜんぶ<em>Đề xuất</em></span>
+        <span class="pk-t">Toàn hệ sinh thái</span>
+        <span class="pk-d">6 nhóm khách theo dòng sản phẩm: máy, ống kính, ống nhòm.</span>
+        <span class="pk-bar" aria-hidden="true"></span>
+      </button>
+      <button type="button" role="tab" class="pk-card" data-ta="1" aria-selected="false">
+        <span class="pk-jp" aria-hidden="true">粋</span>
+        <span class="pk-k">いき</span>
+        <span class="pk-t">Phong cách sống</span>
+        <span class="pk-d">4 persona gọn, tập trung người trẻ mua vì “vibe”.</span>
+        <span class="pk-bar" aria-hidden="true"></span>
+      </button>
+      <button type="button" role="tab" class="pk-card" data-ta="2" aria-selected="false">
+        <span class="pk-jp" aria-hidden="true">人</span>
+        <span class="pk-k">ひと</span>
+        <span class="pk-t">Chân dung chi tiết</span>
+        <span class="pk-d">Bảng phân khúc và persona đầy đủ từ bản đầu.</span>
+        <span class="pk-bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="ta-pane" data-ta="3">
+    <p class="mono" style="font-size:12px;color:var(--mute)">Tỷ trọng mục tiêu theo nhóm khách (giả định, kiểm lại sau 60 ngày bán)</p>
+    <div class="segbar" role="img" aria-label="Người mới 35%, Retro 20%, Creator 15%, Nâng cấp 15%, Ngoài trời 10%, Mua tặng 5%"><div style="flex:35;background:var(--ai)">NGƯỜI MỚI · 35%</div><div style="flex:20;background:var(--sumi)">RETRO · 20%</div><div style="flex:15;background:var(--kaki);color:var(--sumi)">CREATOR · 15%</div><div style="flex:15;background:#2C4F86">NÂNG CẤP · 15%</div><div style="flex:10;background:#5E6136">NGOÀI TRỜI 10%</div><div style="flex:5;background:var(--aka)">5%</div></div>
+    <div class="grid g3 ta-grid">
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--ai)">L</div><div><h3>Linh, 23</h3><div class="role">Người mới · máy đầu tiên</div></div></div><dl><div><dt>Mua gì</dt><dd>Z50 II kit, Z fc 16-50, pin EN-EL25a</dd></div><div><dt>Vì sao</dt><dd>Muốn ảnh có màu riêng, máy dễ dùng, đẹp như phụ kiện.</dd></div><div><dt>Kích hoạt</dt><dd>Bộ kit HARU, recipe cài sẵn, trả góp 0%.</dd></div></dl><blockquote>“Mình muốn ảnh nhìn là biết của mình.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--sumi)">H</div><div><h3>Huy, 28</h3><div class="role">Retro · mê máy film</div></div></div><dl><div><dt>Mua gì</dt><dd>Zf 40mm SE, Z fc 28mm SE bạc, 50mm f/1.4</dd></div><div><dt>Vì sao</dt><dd>Cảm giác cơ của FM2, nhưng bắt nét nhanh như máy chuyên nghiệp.</dd></div><div><dt>Kích hoạt</dt><dd>Video AF test thật, so sánh Zf và FM2, bảo hành 60 tháng.</dd></div></dl><blockquote>“Đẹp thôi chưa đủ, phải bắt nét được.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--kaki);color:var(--sumi)">V</div><div><h3>Vy, 25</h3><div class="role">Creator · TikTok Shop</div></div></div><dl><div><dt>Mua gì</dt><dd>Z30 kit, remote ML-L7, sạc MH-32, pin EN-EL25a</dd></div><div><dt>Vì sao</dt><dd>Quay sản phẩm đẹp hơn điện thoại, máy gọn, màn hình lật.</dd></div><div><dt>Kích hoạt</dt><dd>Bộ kit FUYU, hướng dẫn setup livestream.</dd></div></dl><blockquote>“Máy đẹp lên hình thì khách tin shop hơn.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:#2C4F86">T</div><div><h3>Tuấn, 34</h3><div class="role">Nâng cấp · đã có máy Nikon</div></div></div><dl><div><dt>Mua gì</dt><dd>9 ống kính Z, FTZ II, kính lọc NC, nắp, loa che nắng</dd></div><div><dt>Vì sao</dt><dd>Đã có Z hoặc DSLR Nikon, muốn ống kính sắc hơn, dùng lại ống ngàm F.</dd></div><div><dt>Kích hoạt</dt><dd>Gợi ý đúng ống, đúng size lọc; ưu đãi cho khách cũ.</dd></div></dl><blockquote>“Máy đủ rồi, giờ là lúc đầu tư ống kính.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:#5E6136">M</div><div><h3>Chú Minh, 45</h3><div class="role">Ngoài trời · du lịch, ngắm chim</div></div></div><dl><div><dt>Mua gì</dt><dd>Prostaff P3/P7 10x42, Action 7x50, 10x50, Travelite EX</dd></div><div><dt>Vì sao</dt><dd>Đi trekking, ngắm chim, xem bóng đá, du lịch biển; cần quang học tốt, chống nước.</dd></div><div><dt>Kích hoạt</dt><dd>Bộ kit YAMA, video so sánh độ phóng đại, bảo hành chính hãng.</dd></div></dl><blockquote>“Mua một lần, mang theo mọi chuyến đi.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--aka)">N</div><div><h3>Nam, 30</h3><div class="role">Mua tặng · dịp đặc biệt</div></div></div><dl><div><dt>Mua gì</dt><dd>Z fc bản màu, Travelite EX 8x25, hộp OKURIMONO</dd></div><div><dt>Vì sao</dt><dd>Quà kỷ niệm, sinh nhật, tốt nghiệp, tặng ba mẹ.</dd></div><div><dt>Kích hoạt</dt><dd>Hộp quà đẹp, thiệp viết tay, giao đúng ngày.</dd></div></dl><blockquote>“Mở ra phải thấy được tình cảm.”</blockquote></article>
+    </div>
+    </div>
+    <div class="ta-pane" data-ta="1" hidden>
     <p class="mono" style="font-size:12px;color:var(--mute)">Tỷ trọng mục tiêu (giả định, kiểm lại sau 60 ngày bán)</p>
     <div class="segbar" role="img" aria-label="Core 50%, Upgrade 30%, Creator 15%, Gifting 5%">
       <div style="flex:50;background:var(--ai)">CORE · 50%</div><div style="flex:30;background:var(--sumi)">UPGRADE · 30%</div><div style="flex:15;background:var(--kaki);color:var(--sumi)">CREATOR · 15%</div><div style="flex:5;background:var(--aka)">5%</div>
@@ -1063,6 +1131,16 @@ body.immersive .subnav ul{pointer-events:none}
       <article class="persona"><div class="head"><div class="avatar" style="background:var(--sumi)">H</div><div><h3>Huy, 28</h3><div class="role">Upgrade · Kỹ sư · Hà Nội</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Từng chơi film, mê đồ cơ khí. Zf giống FM2 là điểm chạm.</dd></div><div><dt>Nỗi sợ</dt><dd>Nghe nói Nikon lấy nét chậm, sợ mua sai cấu hình.</dd></div><div><dt>Kích hoạt</dt><dd>Video AF test thật, so sánh Zf và FM2, bảo hành dài.</dd></div></dl><blockquote>“Đẹp thôi chưa đủ, phải bắt nét được.”</blockquote></article>
       <article class="persona"><div class="head"><div class="avatar" style="background:var(--kaki)">V</div><div><h3>Vy, 25</h3><div class="role">Creator · Bán hàng TikTok</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Quay sản phẩm đẹp hơn điện thoại, máy gọn, màn hình lật.</dd></div><div><dt>Nỗi sợ</dt><dd>Setup phức tạp, âm thanh kém.</dd></div><div><dt>Kích hoạt</dt><dd>Bộ kit vlog, hướng dẫn setup livestream.</dd></div></dl><blockquote>“Máy đẹp lên hình thì khách tin shop hơn.”</blockquote></article>
       <article class="persona"><div class="head"><div class="avatar" style="background:var(--aka)">N</div><div><h3>Nam, 30</h3><div class="role">Gifting · Mua tặng</div></div></div><dl><div><dt>Vì sao mua</dt><dd>Quà kỷ niệm, sinh nhật, Valentine, tốt nghiệp.</dd></div><div><dt>Nỗi sợ</dt><dd>Giao trễ, hộp xấu, chọn sai màu.</dd></div><div><dt>Kích hoạt</dt><dd>Hộp quà đẹp, thiệp viết tay, giao đúng ngày.</dd></div></dl><blockquote>“Mở ra phải thấy được tình cảm.”</blockquote></article>
+    </div>
+    </div>
+    <div class="ta-pane" data-ta="2" hidden>
+    <div class="tbl"><table class="jt ta-tbl"><thead><tr><th>Nhóm</th><th>Tỷ trọng</th><th>Tuổi</th><th>Sản phẩm phù hợp</th><th>Ngân sách</th></tr></thead><tbody><tr><td><b>Core</b><br><span>Người mua máy đầu tiên vì “vibe”</span></td><td>~50%</td><td>20–27</td><td>Z fc kit 16-50 / 28mm SE</td><td>Tầm trung</td></tr><tr><td><b>Upgrade</b><br><span>Đã chơi film, digicam, muốn nâng cấp</span></td><td>~30%</td><td>24–32</td><td>Zf + 40mm SE, 50mm f/1.4</td><td>Cao</td></tr><tr><td><b>Creator</b><br><span>Làm nội dung, vlog, bán hàng online</span></td><td>~15%</td><td>20–30</td><td>Z30, Z50 II, Z fc + ML-L7</td><td>Tầm trung</td></tr><tr><td><b>Gifting</b><br><span>Mua tặng người yêu, tốt nghiệp, kỷ niệm</span></td><td>~5%</td><td>22–35</td><td>Z fc bản màu, hộp quà</td><td>Tầm trung</td></tr></tbody></table></div>
+    <div class="grid g2 ta-grid">
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--ai)">L</div><div><h3>Linh, 23</h3><div class="role">Core · cô nàng săn khoảnh khắc</div></div></div><dl><div><dt>Hồ sơ</dt><dd>Nhân viên marketing năm 2 ở TP.HCM, thu nhập 12–15 triệu/tháng.</dd></div><div><dt>Đời sống</dt><dd>Cà phê cuối tuần, đi Đà Lạt, Hội An mỗi quý, “photo dump” trên Instagram, theo dõi TikToker chụp film.</dd></div><div><dt>Vì sao mua</dt><dd>Ảnh điện thoại “giống hệt mọi người”, muốn màu riêng; thích máy đẹp đeo cổ như phụ kiện.</dd></div><div><dt>Nỗi sợ</dt><dd>Máy khó dùng rồi để tủ, hàng không chính hãng, phải trả góp.</dd></div><div><dt>Kích hoạt</dt><dd>Video “1 ngày đi chơi với Z fc”, công thức màu tải sẵn, trả góp 0%, voucher ngày đôi.</dd></div></dl><blockquote>“Mình muốn ảnh nhìn là biết của mình.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--sumi)">H</div><div><h3>Huy, 28</h3><div class="role">Upgrade · người chơi film muốn nâng cấp</div></div></div><dl><div><dt>Hồ sơ</dt><dd>Kỹ sư phần mềm ở Hà Nội, thu nhập 30–40 triệu/tháng.</dd></div><div><dt>Đời sống</dt><dd>Từng chụp film (Pentax, Canon AE-1), chán chi phí tráng rửa; nghe vinyl, mê đồ cơ khí, đồng hồ.</dd></div><div><dt>Vì sao mua</dt><dd>Muốn cảm giác cơ của máy film và sự tiện của máy số; Zf giống FM2 là điểm chạm.</dd></div><div><dt>Nỗi sợ</dt><dd>Mua sai cấu hình, giá trên sàn không rõ, hàng xách tay.</dd></div><div><dt>Kích hoạt</dt><dd>So sánh Zf và FM2, ống kính manual qua FTZ II, recipe màu film, bảo hành rõ ràng.</dd></div></dl><blockquote>“Mình muốn một chiếc máy dùng 10 năm.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--kaki);color:var(--sumi)">V</div><div><h3>Vy, 25</h3><div class="role">Creator · bán hàng online</div></div></div><dl><div><dt>Hồ sơ</dt><dd>Tự kinh doanh thời trang trên TikTok Shop.</dd></div><div><dt>Vì sao mua</dt><dd>Cần quay video sản phẩm đẹp hơn điện thoại, máy nhỏ gọn, màn hình lật.</dd></div><div><dt>Kích hoạt</dt><dd>Bộ kit vlog (máy, remote ML-L7, pin dự phòng), hướng dẫn setup livestream.</dd></div></dl><blockquote>“Máy đẹp lên hình thì khách cũng tin shop hơn.”</blockquote></article>
+      <article class="persona"><div class="head"><div class="avatar" style="background:var(--aka)">N</div><div><h3>Nam, 30</h3><div class="role">Gifting · người tặng quà</div></div></div><dl><div><dt>Hồ sơ</dt><dd>Mua tặng bạn gái dịp kỷ niệm, sinh nhật, Valentine.</dd></div><div><dt>Kích hoạt</dt><dd>Hộp quà đẹp, thiệp viết tay, giao đúng ngày, khắc tên dây đeo.</dd></div></dl><blockquote>“Mở ra phải thấy được tình cảm.”</blockquote></article>
+    </div>
     </div>
     <h3 style="margin-top:72px">Hành trình mua trên sàn</h3>
     <ol class="journey">
@@ -1169,7 +1247,7 @@ body.immersive .subnav ul{pointer-events:none}
     <div class="sec-head">
       <div class="eyebrow">07 · 5 phương án logo <span class="kana">ロゴ案</span></div>
       <h2>Vintage, máy ảnh, <i>trẻ và rất Nhật.</i></h2>
-      <p class="lede">Bỏ dấu triện đỏ và chữ Hán, vốn dễ gợi nhà hàng hay Trung Quốc. Năm hướng mới dùng chữ katakana (chỉ có trong tiếng Nhật), màu nâu kogecha của quán cà phê Showa, sọc Showa và hình ảnh máy ảnh. Mỗi phương án có bản nền sáng, nền tối và icon.</p>
+      <p class="lede">Bỏ dấu triện đỏ và chữ Hán, vốn dễ gợi nhà hàng hay Trung Quốc. Năm hướng mới dùng chữ katakana (chỉ có trong tiếng Nhật), màu chàm Japan Blue, sọc Showa và hình ảnh máy ảnh. Mỗi phương án có bản nền sáng, nền tối và icon.</p>
     </div>
     <article class="lo rec">
       <div><div class="light"><span class="recbadge">Đề xuất</span><img src="logo/opt4-katakana-viewfinder.svg" alt="Logo phương án 4: Katakana Viewfinder"></div>
@@ -1219,34 +1297,39 @@ body.immersive .subnav ul{pointer-events:none}
   <div class="wrap">
     <div class="sec-head">
       <div class="eyebrow">08 · Màu sắc <span class="kana">にほんのいろ</span></div>
-      <h2>Nâu Showa, <i>không đụng ai.</i></h2>
-      <p class="lede">Màu chính chuyển từ xanh chàm (dễ liên tưởng logo navy của VHG) sang nâu kogecha: màu da bọc máy ảnh cổ, màu gỗ quán cà phê kissaten Nhật thập niên 70. Đi cùng nền vải mộc kinari, mực sumi và ba sọc Showa đỏ, cam, vàng. Bấm ô màu để sao chép mã HEX.</p>
+      <h2>Chàm Nhật, <i>sọc Showa.</i></h2>
+      <p class="lede">Màu chủ đạo là chàm Ai (藍), sắc “Japan Blue” của vải nhuộm truyền thống Nhật. Đi cùng nền vải mộc kinari, mực sumi và ba sọc Showa đỏ, cam, vàng để giữ năng lượng trẻ. Bấm ô màu để sao chép mã HEX.</p>
     </div>
     <h3 style="margin-bottom:12px">Màu cần tránh</h3>
-    <div class="avoid"><div class="av"><i style="background:#2B2E6B"></i><b>VHG</b><span>Xanh navy logo VHG</span></div><div class="av"><i style="background:#FFE100"></i><b>Nikon</b><span>Vàng Nikon</span></div><div class="av"><i style="background:#EE4D2D"></i><b>Shopee</b><span>Cam đỏ Shopee</span></div><div class="av"><i style="background:#0B9444"></i><b>Fujifilm</b><span>Xanh lá Fujifilm</span></div><div class="av"><i style="background:#C8102E"></i><b>Nhà hàng lẩu</b><span>Đỏ đậm + vàng</span></div></div>
-    <p class="note" style="margin-top:8px">Mã màu thương hiệu khác là ước lượng để minh họa khoảng cách màu.</p>
-    <h3 style="margin-top:48px;margin-bottom:16px">Ba phương án bảng màu để BOD chọn</h3>
+    <div class="avoid"><div class="av"><i style="background:#2B2E6B"></i><b>VHG</b><span>Navy đậm đứng một mình</span></div><div class="av"><i style="background:#FFE100"></i><b>Nikon</b><span>Vàng Nikon</span></div><div class="av"><i style="background:#EE4D2D"></i><b>Shopee</b><span>Cam đỏ Shopee</span></div><div class="av"><i style="background:#0B9444"></i><b>Fujifilm</b><span>Xanh lá Fujifilm</span></div><div class="av"><i style="background:#C8102E"></i><b>Nhà hàng lẩu</b><span>Đỏ đậm + vàng</span></div></div>
+    <p class="note" style="margin-top:8px">Mã màu thương hiệu khác là ước lượng để minh họa. Chàm Ai sáng và ngả xanh dương hơn navy, và luôn đi cùng nền kinari và sọc Showa để không lẫn với logo VHG. Nên đặt cạnh logo VHG thật để duyệt lần cuối.</p>
+    <h3 style="margin-top:48px;margin-bottom:16px">Bốn phương án bảng màu để BOD chọn</h3>
     <div class="pals">
       <article class="pal rec">
-  <div class="pal-mock" style="background:#4A2C1F;color:var(--kinari)"><span class="recbadge">Đề xuất</span><img src="logo/opt4-katakana-viewfinder-dark.svg" alt=""><div class="stripes" style="width:46%"><i></i><i></i><i></i></div></div>
-  <div class="pal-body"><span class="num">PHƯƠNG ÁN A</span><h3>Showa Kissaten<small>しょうわ・きっさてん</small></h3><div class="pal-sw"><i style="background:#4A2C1F" title="#4A2C1F"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
-  <p><b>Hợp:</b> rất Nhật, rất vintage, ấm, cao cấp như da máy ảnh. Ba sọc Showa giữ năng lượng trẻ. Không trùng VHG, Nikon, Shopee.</p><p><b>Lưu ý:</b> nâu dễ “già” nếu dùng một mình, nên luôn đi kèm sọc Showa và chữ to.</p></div>
+  <div class="pal-mock" style="background:#1F3A68;color:var(--kinari)"><span class="recbadge">Đề xuất</span><img src="logo/opt4-katakana-viewfinder-dark.svg" alt=""><div class="stripes" style="width:46%"><i></i><i></i><i></i></div></div>
+  <div class="pal-body"><span class="num">PHƯƠNG ÁN A</span><h3>Japan Blue<small>あい・ジャパンブルー</small></h3><div class="pal-sw"><i style="background:#1F3A68" title="#1F3A68"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
+  <p><b>Hợp:</b> đúng chất Nhật nhất (vải chàm, đồng phục, gốm sứ), sạch, tin cậy, hợp ngành máy ảnh. Sọc Showa giữ nét trẻ.</p><p><b>Lưu ý:</b> gần họ màu navy của VHG, nên luôn dùng kèm kinari và sọc Showa.</p></div>
+</article>
+      <article class="pal">
+  <div class="pal-mock" style="background:#4A2C1F;color:var(--kinari)"><img src="logo/opt4-katakana-viewfinder-dark.svg" alt=""><div class="stripes" style="width:46%"><i></i><i></i><i></i></div></div>
+  <div class="pal-body"><span class="num">PHƯƠNG ÁN B</span><h3>Showa Kissaten<small>しょうわ・きっさてん</small></h3><div class="pal-sw"><i style="background:#4A2C1F" title="#4A2C1F"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
+  <p><b>Hợp:</b> ấm, vintage, cao cấp như da bọc máy ảnh cổ. Hoàn toàn tách khỏi VHG.</p><p><b>Lưu ý:</b> nâu dễ “già” nếu dùng một mình, cần sọc Showa và chữ to.</p></div>
 </article>
       <article class="pal">
   <div class="pal-mock" style="background:#5E6136;color:var(--kinari)"><img src="logo/opt4-katakana-viewfinder-dark.svg" alt=""><div class="stripes" style="width:46%"><i></i><i></i><i></i></div></div>
-  <div class="pal-body"><span class="num">PHƯƠNG ÁN B</span><h3>Matcha Kissa<small>まっちゃ</small></h3><div class="pal-sw"><i style="background:#5E6136" title="#5E6136"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
-  <p><b>Hợp:</b> trà xanh Nhật, tươi và trẻ hơn, hợp nội dung du lịch, ống nhòm ngoài trời.</p><p><b>Lưu ý:</b> gần xanh lá của Fujifilm, đối thủ trực tiếp ở mảng máy retro.</p></div>
+  <div class="pal-body"><span class="num">PHƯƠNG ÁN C</span><h3>Matcha Kissa<small>まっちゃ</small></h3><div class="pal-sw"><i style="background:#5E6136" title="#5E6136"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
+  <p><b>Hợp:</b> trà xanh Nhật, tươi và trẻ, hợp nội dung du lịch, ống nhòm ngoài trời.</p><p><b>Lưu ý:</b> gần xanh lá của Fujifilm, đối thủ trực tiếp ở mảng máy retro.</p></div>
 </article>
       <article class="pal">
   <div class="pal-mock" style="background:#1A1A1A;color:var(--kinari)"><img src="logo/opt4-katakana-viewfinder-dark.svg" alt=""><div class="stripes" style="width:46%"><i></i><i></i><i></i></div></div>
-  <div class="pal-body"><span class="num">PHƯƠNG ÁN C</span><h3>Sumi Mono<small>すみ・モノ</small></h3><div class="pal-sw"><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#9A9890" title="#9A9890"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
+  <div class="pal-body"><span class="num">PHƯƠNG ÁN D</span><h3>Sumi Mono<small>すみ・モノ</small></h3><div class="pal-sw"><i style="background:#1A1A1A" title="#1A1A1A"></i><i style="background:#F3EFE6" title="#F3EFE6"></i><i style="background:#9A9890" title="#9A9890"></i><i style="background:#E03C31" title="#E03C31"></i><i style="background:#EE7B30" title="#EE7B30"></i><i style="background:#F2B33D" title="#F2B33D"></i></div>
   <p><b>Hợp:</b> mạnh, chuyên nghiệp, ảnh sản phẩm máy đen nổi bật.</p><p><b>Lưu ý:</b> đen + vàng dễ gần nhận diện Nikon, ít cá tính riêng.</p></div>
 </article>
     </div>
-    <h3 style="margin-top:56px;margin-bottom:16px">Bảng màu đề xuất · Showa Kissaten</h3>
+    <h3 style="margin-top:56px;margin-bottom:16px">Bảng màu đề xuất · Japan Blue</h3>
     <div class="colors">
       <button class="chip c1" data-hex="#F3EFE6"><span><span class="nm">KINARI</span><span class="jn">きなり · vải mộc</span><span class="role">Nền chính. Mộc, sạch, nhiều khoảng thở.</span></span><span class="codes">#F3EFE6<br>RGB 243 239 230</span><span class="copied">ĐÃ CHÉP</span></button>
-      <button class="chip c2" data-hex="#4A2C1F"><span><span class="nm">KOGECHA</span><span class="jn">こげちゃ · nâu cháy</span><span class="role">Màu thương hiệu chính. Da máy ảnh, gỗ kissaten.</span></span><span class="codes">#4A2C1F<br>RGB 74 44 31</span><span class="copied">ĐÃ CHÉP</span></button>
+      <button class="chip c2" data-hex="#1F3A68"><span><span class="nm">AI</span><span class="jn">あい · chàm Nhật</span><span class="role">Màu thương hiệu chính, “Japan Blue”.</span></span><span class="codes">#1F3A68<br>RGB 31 58 104</span><span class="copied">ĐÃ CHÉP</span></button>
       <button class="chip c3" data-hex="#1A1A1A"><span><span class="nm">SUMI</span><span class="jn">すみ · mực</span><span class="role">Chữ, thân máy.</span></span><span class="codes">#1A1A1A</span><span class="copied">ĐÃ CHÉP</span></button>
       <button class="chip c4" data-hex="#E03C31"><span><span class="nm">HINOMARU</span><span class="jn">ひのまる</span></span><span class="codes">#E03C31 · chỉ cho chấm</span><span class="copied">ĐÃ CHÉP</span></button>
       <button class="chip c5" data-hex="#EE7B30"><span><span class="nm">KAKI</span><span class="jn">かき · hồng chín</span></span><span class="codes">#EE7B30</span><span class="copied">ĐÃ CHÉP</span></button>
@@ -1254,12 +1337,12 @@ body.immersive .subnav ul{pointer-events:none}
       <button class="chip c7" data-hex="#9A9890"><span><span class="nm">NEZUMI</span><span class="jn">ねずみ · xám</span></span><span class="codes">#9A9890</span><span class="copied">ĐÃ CHÉP</span></button>
     </div>
     <p class="mono" style="font-size:12px;color:var(--mute);margin-top:30px">Tỷ lệ sử dụng trong một ấn phẩm</p>
-    <div class="ratio" role="img" aria-label="Kinari 45%, Kogecha 30%, Sumi 15%, sọc Showa 10%">
-      <div style="flex:45;background:var(--kinari)">KINARI 45%</div><div style="flex:30;background:var(--ai);color:var(--kinari)">KOGECHA 30%</div><div style="flex:15;background:var(--sumi);color:var(--kinari)">SUMI 15%</div><div style="flex:4;background:var(--aka)"></div><div style="flex:3;background:var(--kaki)"></div><div style="flex:3;background:var(--yama)"></div>
+    <div class="ratio" role="img" aria-label="Kinari 45%, Ai 30%, Sumi 15%, sọc Showa 10%">
+      <div style="flex:45;background:var(--kinari)">KINARI 45%</div><div style="flex:30;background:var(--ai);color:var(--kinari)">AI 30%</div><div style="flex:15;background:var(--sumi);color:var(--kinari)">SUMI 15%</div><div style="flex:4;background:var(--aka)"></div><div style="flex:3;background:var(--kaki)"></div><div style="flex:3;background:var(--yama)"></div>
     </div>
     <div class="pairs">
-      <div class="pair" style="background:var(--kinari);box-shadow:inset 0 0 0 1px var(--line)"><span class="m">Mặc định</span><span class="t">Kinari + Sumi<br><span style="color:var(--ai)">+ Kogecha</span></span></div>
-      <div class="pair" style="background:var(--ai);color:var(--kinari)"><span class="m" style="color:var(--yama)">Thương hiệu</span><span class="t">Kogecha + <span style="color:var(--yama)">Yamabuki</span></span></div>
+      <div class="pair" style="background:var(--kinari);box-shadow:inset 0 0 0 1px var(--line)"><span class="m">Mặc định</span><span class="t">Kinari + Sumi<br><span style="color:var(--ai)">+ Ai</span></span></div>
+      <div class="pair" style="background:var(--ai);color:var(--kinari)"><span class="m" style="color:var(--yama)">Thương hiệu</span><span class="t">Ai + <span style="color:var(--yama)">Yamabuki</span></span></div>
       <div class="pair" style="background:var(--sumi);color:var(--kinari)"><span class="m">Sale · năng lượng</span><span class="t">Sumi + sọc Showa</span><div class="stripes" style="margin-top:10px"><i></i><i></i><i></i></div></div>
       <div class="pair" style="background:var(--kinari-2)"><span class="m">Điểm nhấn</span><span class="t">Một chấm <span style="color:var(--aka)">Hinomaru</span> = “đã bắt nét”</span></div>
     </div>
@@ -1691,23 +1774,23 @@ body.immersive .subnav ul{pointer-events:none}
 
   var COLORS=[['black','Đen cổ điển'],['moss-green','Xanh rêu'],['stone-gray','Xám đá'],['sepia-brown','Nâu sepia'],['indigo-blue','Xanh chàm'],['sunset-orange','Cam hoàng hôn'],['bordeaux-red','Đỏ Bordeaux']];
   var SHOTS=[['01-main','Ảnh chính','Nhận diện, tagline, bảo hành 60 tháng.'],['02-lifestyle','Lifestyle','Chụp nhanh, nhớ lâu, mặt trời Showa.'],['03-autofocus','Lấy nét nhanh','9 chủ thể, công nghệ Z8/Z9, Pre-Release.'],['04-design','Thiết kế FM2','Vòng ISO, logo cổ điển, đồng thau.'],['05-image-quality','Chất lượng ảnh','24,5MP, so sánh cảm biến theo tỷ lệ.'],['06-monochrome-recipes','Đơn sắc & Recipes','3 chế độ trắng đen, 3 Sabi Recipes.'],['07-in-the-box','Trong hộp','Bộ AKI: phụ kiện Nikon và quà Sabi.'],['08-warranty','Bảo hành 60 tháng','Cam kết để chốt đơn.']];
-  var CAM_SVG='<svg viewBox="0 0 200 130"><rect x="10" y="34" width="180" height="88" rx="14" fill="#4A2C1F"/><path d="M72 36 L82 8 H118 L128 36 Z" fill="#4A2C1F"/><rect x="30" y="18" width="28" height="16" rx="3" fill="#4A2C1F"/><rect x="142" y="18" width="28" height="16" rx="3" fill="#4A2C1F"/><circle cx="100" cy="80" r="34" fill="#F3EFE6"/><circle cx="100" cy="80" r="21" fill="#E03C31"/></svg>';
+  var CAM_SVG='<svg viewBox="0 0 200 130"><rect x="10" y="34" width="180" height="88" rx="14" fill="#1F3A68"/><path d="M72 36 L82 8 H118 L128 36 Z" fill="#1F3A68"/><rect x="30" y="18" width="28" height="16" rx="3" fill="#1F3A68"/><rect x="142" y="18" width="28" height="16" rx="3" fill="#1F3A68"/><circle cx="100" cy="80" r="34" fill="#F3EFE6"/><circle cx="100" cy="80" r="21" fill="#E03C31"/></svg>';
   var G={
-    strap:'<svg viewBox="0 0 200 150"><path d="M30 20c-12 40-14 80 10 120" stroke="#4A2C1F" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M170 20c12 40 14 80-10 120" stroke="#4A2C1F" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M30 20c-12 40-14 80 10 120M170 20c12 40 14 80-10 120" stroke="#F2B33D" stroke-width="3" fill="none"/><rect x="76" y="58" width="48" height="34" rx="4" fill="#1A1A1A"/><path d="M84 68v-6h6M110 62h6v6M116 82v6h-6M90 88h-6v-6" stroke="#F2B33D" stroke-width="2" fill="none"/><circle cx="111" cy="68" r="2.5" fill="#E03C31"/></svg>',
-    pouch:'<svg viewBox="0 0 200 150"><rect x="40" y="30" width="120" height="96" rx="22" fill="#4A2C1F"/><path d="M40 70h120" stroke="#E03C31" stroke-width="6"/><path d="M40 80h120" stroke="#EE7B30" stroke-width="6"/><path d="M40 90h120" stroke="#F2B33D" stroke-width="6"/><path d="M52 30c10-14 86-14 96 0" stroke="#1A1A1A" stroke-width="6" fill="none"/></svg>',
-    tee:'<svg viewBox="0 0 200 150"><path d="M62 20l-34 20 12 26 16-8v76h88V58l16 8 12-26-34-20c-6 12-18 18-38 18s-32-6-38-18z" fill="#F3EFE6" stroke="#1A1A1A" stroke-width="2"/><text x="100" y="82" font-family="Dela Gothic One,sans-serif" font-size="22" fill="#4A2C1F" text-anchor="middle">サビ</text><path d="M72 94h56" stroke="#E03C31" stroke-width="4"/><path d="M72 101h56" stroke="#EE7B30" stroke-width="4"/><path d="M72 108h56" stroke="#F2B33D" stroke-width="4"/></svg>',
-    cloth:'<svg viewBox="0 0 200 150"><g transform="rotate(-6 100 78)"><rect x="45" y="28" width="110" height="100" fill="#fff" stroke="#D9D2C3" stroke-width="2"/><path d="M72 52v-10h10M118 42h10v10M128 104v10h-10M82 114h-10v-10" stroke="#4A2C1F" stroke-width="5" fill="none"/><text x="100" y="86" font-family="Dela Gothic One,sans-serif" font-size="20" fill="#1A1A1A" text-anchor="middle">サビ</text></g></svg>',
+    strap:'<svg viewBox="0 0 200 150"><path d="M30 20c-12 40-14 80 10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M170 20c12 40 14 80-10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M30 20c-12 40-14 80 10 120M170 20c12 40 14 80-10 120" stroke="#F2B33D" stroke-width="3" fill="none"/><rect x="76" y="58" width="48" height="34" rx="4" fill="#1A1A1A"/><path d="M84 68v-6h6M110 62h6v6M116 82v6h-6M90 88h-6v-6" stroke="#F2B33D" stroke-width="2" fill="none"/><circle cx="111" cy="68" r="2.5" fill="#E03C31"/></svg>',
+    pouch:'<svg viewBox="0 0 200 150"><rect x="40" y="30" width="120" height="96" rx="22" fill="#1F3A68"/><path d="M40 70h120" stroke="#E03C31" stroke-width="6"/><path d="M40 80h120" stroke="#EE7B30" stroke-width="6"/><path d="M40 90h120" stroke="#F2B33D" stroke-width="6"/><path d="M52 30c10-14 86-14 96 0" stroke="#1A1A1A" stroke-width="6" fill="none"/></svg>',
+    tee:'<svg viewBox="0 0 200 150"><path d="M62 20l-34 20 12 26 16-8v76h88V58l16 8 12-26-34-20c-6 12-18 18-38 18s-32-6-38-18z" fill="#F3EFE6" stroke="#1A1A1A" stroke-width="2"/><text x="100" y="82" font-family="Dela Gothic One,sans-serif" font-size="22" fill="#1F3A68" text-anchor="middle">サビ</text><path d="M72 94h56" stroke="#E03C31" stroke-width="4"/><path d="M72 101h56" stroke="#EE7B30" stroke-width="4"/><path d="M72 108h56" stroke="#F2B33D" stroke-width="4"/></svg>',
+    cloth:'<svg viewBox="0 0 200 150"><g transform="rotate(-6 100 78)"><rect x="45" y="28" width="110" height="100" fill="#fff" stroke="#D9D2C3" stroke-width="2"/><path d="M72 52v-10h10M118 42h10v10M128 104v10h-10M82 114h-10v-10" stroke="#1F3A68" stroke-width="5" fill="none"/><text x="100" y="86" font-family="Dela Gothic One,sans-serif" font-size="20" fill="#1A1A1A" text-anchor="middle">サビ</text></g></svg>',
     shoe:'<svg viewBox="0 0 200 150"><rect x="36" y="56" width="74" height="40" rx="5" fill="#B9935A"/><text x="73" y="82" font-family="Dela Gothic One,sans-serif" font-size="14" fill="#1A1A1A" text-anchor="middle">サビ</text><circle cx="150" cy="76" r="20" fill="#E03C31"/><circle cx="150" cy="76" r="12" fill="#F05A4E"/><path d="M150 96v24" stroke="#9A9890" stroke-width="6"/></svg>',
-    tote:'<svg viewBox="0 0 200 150"><path d="M58 40h84l8 96H50z" fill="#E9E3D6" stroke="#4A2C1F" stroke-width="2"/><path d="M78 40c0-20 44-20 44 0" stroke="#1A1A1A" stroke-width="5" fill="none"/><text x="100" y="92" font-family="Archivo,sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#4A2C1F" text-anchor="middle">Sabi Lab</text><path d="M66 102h68" stroke="#E03C31" stroke-width="4"/><path d="M66 109h68" stroke="#EE7B30" stroke-width="4"/><path d="M66 116h68" stroke="#F2B33D" stroke-width="4"/></svg>',
+    tote:'<svg viewBox="0 0 200 150"><path d="M58 40h84l8 96H50z" fill="#E9E3D6" stroke="#1F3A68" stroke-width="2"/><path d="M78 40c0-20 44-20 44 0" stroke="#1A1A1A" stroke-width="5" fill="none"/><text x="100" y="92" font-family="Archivo,sans-serif" font-weight="900" font-style="italic" font-size="20" fill="#1F3A68" text-anchor="middle">Sabi Lab</text><path d="M66 102h68" stroke="#E03C31" stroke-width="4"/><path d="M66 109h68" stroke="#EE7B30" stroke-width="4"/><path d="M66 116h68" stroke="#F2B33D" stroke-width="4"/></svg>',
     sd:'<svg viewBox="0 0 200 150"><circle cx="100" cy="72" r="46" fill="#1A1A1A"/><circle cx="100" cy="72" r="38" fill="none" stroke="#F2B33D" stroke-width="2"/><rect x="84" y="50" width="14" height="20" rx="2" fill="#9A9890"/><rect x="102" y="50" width="14" height="20" rx="2" fill="#9A9890"/><rect x="84" y="74" width="14" height="20" rx="2" fill="#9A9890"/><rect x="102" y="74" width="14" height="20" rx="2" fill="#E03C31"/><text x="100" y="138" font-family="IBM Plex Mono,monospace" font-size="9" fill="#55524C" text-anchor="middle">SD · microSD</text></svg>',
-    note:'<svg viewBox="0 0 200 150"><rect x="56" y="22" width="88" height="112" rx="4" fill="#4A2C1F"/><rect x="56" y="22" width="10" height="112" fill="#33201A"/><text x="104" y="70" font-family="Archivo,sans-serif" font-weight="900" font-size="14" fill="#F3EFE6" text-anchor="middle">LAB NOTES</text><text x="104" y="92" font-family="Zen Kaku Gothic New,sans-serif" font-size="11" fill="#F2B33D" text-anchor="middle">ラボノート</text></svg>',
+    note:'<svg viewBox="0 0 200 150"><rect x="56" y="22" width="88" height="112" rx="4" fill="#1F3A68"/><rect x="56" y="22" width="10" height="112" fill="#16294A"/><text x="104" y="70" font-family="Archivo,sans-serif" font-weight="900" font-size="14" fill="#F3EFE6" text-anchor="middle">LAB NOTES</text><text x="104" y="92" font-family="Zen Kaku Gothic New,sans-serif" font-size="11" fill="#F2B33D" text-anchor="middle">ラボノート</text></svg>',
     case:'<svg viewBox="0 0 200 150"><path d="M36 60h128v54c0 6-4 10-10 10H46c-6 0-10-4-10-10z" fill="#6B4A33"/><path d="M42 66h116v48H42z" fill="none" stroke="#F2B33D" stroke-width="1" stroke-dasharray="3 3"/><circle cx="100" cy="92" r="18" fill="#4E3524"/><circle cx="100" cy="92" r="8" fill="#2a2a2a"/></svg>',
-    wrap:'<svg viewBox="0 0 200 150"><path d="M100 16l64 60-64 60-64-60z" fill="#4A2C1F"/><circle cx="100" cy="76" r="24" fill="#F3EFE6"/><circle cx="100" cy="76" r="14" fill="#E03C31"/></svg>',
-    pin:'<svg viewBox="0 0 200 150"><g transform="translate(26 28) scale(.46)"><path d="M8 52 V8 H52 M148 8 H192 V52 M192 148 V192 H148 M52 192 H8 V148" stroke="#4A2C1F" stroke-width="12" fill="none"/><text x="100" y="124" font-family="Dela Gothic One,sans-serif" font-size="68" fill="#1A1A1A" text-anchor="middle">サビ</text><circle cx="166" cy="28" r="10" fill="#E03C31"/></g><circle cx="150" cy="76" r="26" fill="#4A2C1F"/><circle cx="150" cy="76" r="16" fill="#F3EFE6"/><circle cx="150" cy="76" r="8" fill="#E03C31"/></svg>',
-    print:'<svg viewBox="0 0 200 150"><defs><linearGradient id="pgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6B04C"/><stop offset="1" stop-color="#4A2C1F"/></linearGradient></defs><rect x="48" y="26" width="104" height="96" rx="4" fill="#fff" stroke="#D9D2C3" stroke-width="2"/><rect x="58" y="36" width="84" height="58" fill="url(#pgr)"/><text x="138" y="88" font-family="IBM Plex Mono,monospace" font-size="7" fill="#F2B33D" text-anchor="end">26 10 20</text><text x="100" y="112" font-family="Archivo,sans-serif" font-weight="800" font-size="8.5" fill="#1A1A1A" text-anchor="middle">CHỤP NHANH. NHỚ LÂU.</text></svg>'
+    wrap:'<svg viewBox="0 0 200 150"><path d="M100 16l64 60-64 60-64-60z" fill="#1F3A68"/><circle cx="100" cy="76" r="24" fill="#F3EFE6"/><circle cx="100" cy="76" r="14" fill="#E03C31"/></svg>',
+    pin:'<svg viewBox="0 0 200 150"><g transform="translate(26 28) scale(.46)"><path d="M8 52 V8 H52 M148 8 H192 V52 M192 148 V192 H148 M52 192 H8 V148" stroke="#1F3A68" stroke-width="12" fill="none"/><text x="100" y="124" font-family="Dela Gothic One,sans-serif" font-size="68" fill="#1A1A1A" text-anchor="middle">サビ</text><circle cx="166" cy="28" r="10" fill="#E03C31"/></g><circle cx="150" cy="76" r="26" fill="#1F3A68"/><circle cx="150" cy="76" r="16" fill="#F3EFE6"/><circle cx="150" cy="76" r="8" fill="#E03C31"/></svg>',
+    print:'<svg viewBox="0 0 200 150"><defs><linearGradient id="pgr" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F6B04C"/><stop offset="1" stop-color="#1F3A68"/></linearGradient></defs><rect x="48" y="26" width="104" height="96" rx="4" fill="#fff" stroke="#D9D2C3" stroke-width="2"/><rect x="58" y="36" width="84" height="58" fill="url(#pgr)"/><text x="138" y="88" font-family="IBM Plex Mono,monospace" font-size="7" fill="#F2B33D" text-anchor="end">26 10 20</text><text x="100" y="112" font-family="Archivo,sans-serif" font-weight="800" font-size="8.5" fill="#1A1A1A" text-anchor="middle">CHỤP NHANH. NHỚ LÂU.</text></svg>'
   };
   var GL=[
-    ['strap','u','Dây đeo Sabi sọc Showa','Cotton dệt màu nâu kogecha, sọc vàng, khoen kim loại, tag in サビ. Khắc tên theo yêu cầu.',['OEM','MOQ ~300','Khắc tên'],390000],
+    ['strap','u','Dây đeo Sabi sọc Showa','Cotton dệt màu chàm, sọc vàng, khoen kim loại, tag in サビ. Khắc tên theo yêu cầu.',['OEM','MOQ ~300','Khắc tên'],390000],
     ['pouch','g','Túi chống sốc sọc Showa','Túi mềm vừa Zf, Z fc gắn ống nhỏ, lót nỉ, sọc đỏ cam vàng nhận diện từ xa.',['ODM','2 size','Quà bộ AKI'],450000],
     ['tee','s','Áo thun サビ','Cotton 250gsm form rộng, ngực in サビ và sọc Showa, lưng in dải tốc độ màn trập.',['OEM','Kinari · Ai','Drop theo mùa'],350000],
     ['cloth','g','Khăn lau microfiber','In khung AF và サビ. Chi phí thấp, có trong mọi đơn hàng.',['OEM','Mọi đơn'],59000],
@@ -1716,7 +1799,7 @@ body.immersive .subnav ul{pointer-events:none}
     ['sd','u','Hộp thẻ nhớ','Hộp tròn nhỏ chứa 4 thẻ SD và 2 microSD (Zf dùng cả hai loại).',['ODM','Add-on'],290000],
     ['note','g','Sổ Lab Notes','Ghi thông số, 30 ngày thử thách chụp ảnh, QR tới video hướng dẫn.',['OEM in','A6','Bộ HARU'],120000],
     ['case','s','Half-case da thật','Bao da nửa thân cho Zf, Z fc. Da bò thuộc thực vật, lên màu theo năm tháng.',['ODM','3 màu','Biên LN cao'],1290000],
-    ['wrap','g','Khăn furoshiki gói máy','Khăn vải nâu kogecha in mặt trời Hinomaru, vừa gói quà vừa bọc máy.',['OEM','50×50cm','Bộ OKURIMONO'],190000],
+    ['wrap','g','Khăn furoshiki gói máy','Khăn vải chàm in mặt trời Hinomaru, vừa gói quà vừa bọc máy.',['OEM','50×50cm','Bộ OKURIMONO'],190000],
     ['pin','u','Sticker & huy hiệu','Logo サビ, huy hiệu tròn, sọc Showa. Khách tự dán, quảng bá cho Sabi.',['OEM','Mọi đơn'],49000],
     ['print','s','Dịch vụ in ảnh Sabi Print','Gửi 10 ảnh đầu tiên, Sabi in 10x15 viền trắng gửi kèm đơn sau.',['Đối tác in','Mua lặp lại'],99000]
   ];
@@ -1743,7 +1826,7 @@ body.immersive .subnav ul{pointer-events:none}
   $('#liveGrid').innerHTML=[ZF[0],ZF[1],GD[0]].map(card).join('');
   $('#allGrid').innerHTML=ZF.concat(OT,GD.slice(0,5)).map(card).join('');
   $('#sideGrid').innerHTML=[ZF[1],OT[1],GD[0]].map(card).join('');
-  var CATS=[['Nikon Zf',CAM_SVG],['Nikon Z fc',CAM_SVG],['Bộ kit mùa','<svg viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="24" rx="3" fill="#E03C31"/><path d="M4 18h32" stroke="#F3EFE6" stroke-width="2"/></svg>'],['Ống kính','<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="#1A1A1A"/><circle cx="20" cy="20" r="9" fill="#4A2C1F"/></svg>'],['Dây đeo',G.strap],['Túi máy',G.pouch],['Áo thun',G.tee],['Phụ kiện',G.sd]];
+  var CATS=[['Nikon Zf',CAM_SVG],['Nikon Z fc',CAM_SVG],['Bộ kit mùa','<svg viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="24" rx="3" fill="#E03C31"/><path d="M4 18h32" stroke="#F3EFE6" stroke-width="2"/></svg>'],['Ống kính','<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="16" fill="#1A1A1A"/><circle cx="20" cy="20" r="9" fill="#1F3A68"/></svg>'],['Dây đeo',G.strap],['Túi máy',G.pouch],['Áo thun',G.tee],['Phụ kiện',G.sd]];
   $('#cats').innerHTML=CATS.map(function(c){return '<div class="cat"><i>'+c[1]+'</i>'+c[0]+'</div>'}).join('');
 
   document.addEventListener('click',function(e){var pc=e.target.closest('.pc');if(!pc)return;var l=pc.dataset.link;if(l&&l.indexOf('listing:')===0){show('listing');selColor(+l.split(':')[1])}else{toast('Trang sản phẩm này chưa dựng trong bản mô phỏng')}});
@@ -1858,7 +1941,7 @@ body.immersive .subnav ul{pointer-events:none}
 <script>
 (function(){
   var $=function(s,r){return (r||document).querySelector(s)}, $$=function(s,r){return Array.prototype.slice.call((r||document).querySelectorAll(s))};
-  var BR='#4A2C1F',SU='#1A1A1A',KI='#F3EFE6',YA='#F2B33D',AK='#E03C31',KA='#EE7B30',NE='#9A9890';
+  var BR='#1F3A68',SU='#1A1A1A',KI='#F3EFE6',YA='#F2B33D',AK='#E03C31',KA='#EE7B30',NE='#9A9890';
   function cam(t,silver){var b=silver?'#C9C6BE':SU,top=silver?'#D9D6CF':'#2a2a2a';var hump=t==='noev'?'':(t==='retro'?'<path d="M78 34 L86 10 H114 L122 34Z" fill="'+top+'"/>':'<path d="M74 36 Q80 12 100 12 Q120 12 126 36Z" fill="'+SU+'"/>');
     var dials=t==='retro'?'<rect x="34" y="22" width="24" height="12" rx="3" fill="'+top+'"/><rect x="142" y="22" width="24" height="12" rx="3" fill="'+top+'"/>':'<rect x="140" y="26" width="20" height="9" rx="3" fill="'+SU+'"/>';
     var grip=t==='retro'?'':'<rect x="14" y="40" width="26" height="74" rx="10" fill="#111"/>';
@@ -1928,7 +2011,7 @@ body.immersive .subnav ul{pointer-events:none}
   var all=$('#allGrid');
   if(all){var box=all.closest('.box');var html=C.map(function(g){return '<div class="box"><div class="box-t"><h3>'+g.cat+' Nikon</h3><a href="#store">Xem tất cả ›</a></div><div class="pgrid">'+g.items.map(pcard).join('')+'</div></div>'}).join('');box.insertAdjacentHTML('afterend',html)}
   var cats=$('#cats');
-  if(cats){var CT=[['Máy ảnh',C[0].items[0][4]],['Ống kính',C[1].items[4][4]],['Pin & sạc',C[2].items[0][4]],['Phụ kiện',C[3].items[0][4]],['Kính lọc',C[3].items[6][4]],['Ống nhòm',C[4].items[2][4]],['Bộ kit mùa','<svg viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="24" rx="3" fill="#E03C31"/><path d="M4 18h32" stroke="#F3EFE6" stroke-width="2"/></svg>'],['Sabi Goods','<svg viewBox="0 0 200 150"><path d="M30 20c-12 40-14 80 10 120" stroke="#4A2C1F" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M170 20c12 40 14 80-10 120" stroke="#4A2C1F" stroke-width="16" fill="none" stroke-linecap="round"/></svg>']];
+  if(cats){var CT=[['Máy ảnh',C[0].items[0][4]],['Ống kính',C[1].items[4][4]],['Pin & sạc',C[2].items[0][4]],['Phụ kiện',C[3].items[0][4]],['Kính lọc',C[3].items[6][4]],['Ống nhòm',C[4].items[2][4]],['Bộ kit mùa','<svg viewBox="0 0 40 40"><rect x="4" y="10" width="32" height="24" rx="3" fill="#E03C31"/><path d="M4 18h32" stroke="#F3EFE6" stroke-width="2"/></svg>'],['Sabi Goods','<svg viewBox="0 0 200 150"><path d="M30 20c-12 40-14 80 10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M170 20c12 40 14 80-10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/></svg>']];
     cats.innerHTML=CT.map(function(c){return '<div class="cat"><i>'+c[1]+'</i>'+c[0]+'</div>'}).join('')}
   $$('.shop-tabs a').forEach(function(a,i){if(i===0)return});
   var st=$('.shop-tabs');if(st)st.innerHTML='<a class="on" href="#store">Dạo</a><a href="#store">Tất cả sản phẩm</a><a href="#store">Máy ảnh</a><a href="#store">Ống kính</a><a href="#store">Pin & sạc</a><a href="#store">Phụ kiện</a><a href="#store">Ống nhòm</a><a href="#store">Bộ kit</a><a href="#store">Sabi Goods</a>';
@@ -1948,6 +2031,18 @@ body.immersive .subnav ul{pointer-events:none}
   cards.forEach(function(c,i){c.addEventListener('click',function(){pickSv(c.dataset.sv)});c.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();pickSv(cards[(i+d+cards.length)%cards.length].dataset.sv,true)})});
 })();
 </script>
+<script>
+(function(){
+  var cards=[].slice.call(document.querySelectorAll('.pk-card')),heads=[].slice.call(document.querySelectorAll('.ta-head')),panes=[].slice.call(document.querySelectorAll('.ta-pane')),RMq=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function pick(v,focus){
+    cards.forEach(function(c){var on=c.dataset.ta===v;c.setAttribute('aria-selected',on?'true':'false');c.tabIndex=on?0:-1;if(on&&focus)c.focus()});
+    heads.forEach(function(h){var on=h.dataset.ta===v;h.classList.toggle('on',on);h.setAttribute('aria-hidden',on?'false':'true')});
+    panes.forEach(function(p){var on=p.dataset.ta===v;p.hidden=!on;if(on&&!RMq){p.classList.remove('sv-in');void p.offsetWidth;p.classList.add('sv-in')}});
+  }
+  cards.forEach(function(c,i){c.tabIndex=c.getAttribute('aria-selected')==='true'?0:-1;c.addEventListener('click',function(){pick(c.dataset.ta)});c.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();pick(cards[(i+d+cards.length)%cards.length].dataset.ta,true)})});
+})();
+</script>
+
 
 
 
