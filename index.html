@@ -890,7 +890,7 @@ body.immersive .subnav ul{pointer-events:none}
 .tana{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
 .tana-main{border-radius:14px;overflow:hidden;background:var(--white);box-shadow:0 24px 50px rgba(26,26,26,.12);aspect-ratio:1}
 .tana-main img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .35s}
-.tana-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+.tana-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:12px}
 .tana-thumbs button{border:2px solid transparent;border-radius:10px;overflow:hidden;padding:0;cursor:pointer;background:var(--white);aspect-ratio:1;transition:border-color .2s,transform .2s}
 .tana-thumbs button:hover{transform:translateY(-2px)}
 .tana-thumbs button[aria-pressed="true"]{border-color:var(--ai)}
@@ -939,6 +939,104 @@ body.immersive .subnav ul{pointer-events:none}
 .tana-bn button{border:0;border-radius:2px;padding:10px 16px;background:var(--yama);color:var(--sumi);font-weight:700;cursor:pointer;white-space:nowrap}
 @media(max-width:860px){.tana{grid-template-columns:1fr}.tana-bn{grid-template-columns:72px minmax(0,1fr)}.tana-bn img{width:72px;height:72px}.tana-bn .left{display:none}.tana-bn button{grid-column:1/-1}}
 @media(max-width:520px){.fill{grid-template-columns:1fr}.tana-spec{grid-template-columns:1fr}.tana-spec div:nth-child(odd){border-right:0}.tana-spec div:nth-last-child(2){border-bottom:1px solid var(--line)}}
+
+/* ---- store v2 ---- */
+.hero-bn{margin-top:14px}
+.car{position:relative;overflow:hidden;border-radius:2px;min-height:320px;background:var(--ai)}
+.car-track{display:flex;height:100%;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.hero-bn>*{min-width:0}
+.sl{box-sizing:border-box;position:relative;flex:0 0 100%;min-width:0;width:100%;min-height:320px;overflow:hidden;color:var(--kinari);display:flex;align-items:center;padding:28px 34px}
+.sl .sun{position:absolute;right:8%;top:50%;width:min(44vw,300px);aspect-ratio:1;transform:translateY(-55%);border-radius:50%;background:radial-gradient(circle,#F8C25E,#EE7B30 60%,#E03C31)}
+.sl .rays{position:absolute;right:-6%;top:50%;width:min(80vw,620px);aspect-ratio:1;transform:translateY(-50%);border-radius:50%;background:repeating-conic-gradient(rgba(243,239,230,.07) 0 6deg,transparent 6deg 15deg)}
+.sl-tx{position:relative;z-index:2;max-width:52%;display:flex;flex-direction:column;gap:10px}
+.sl-k{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--yama)}
+.sl-h{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(24px,3.2vw,42px);line-height:.98;text-transform:uppercase}
+.sl-h i{font-family:var(--f-ex);font-style:italic;font-stretch:100%;text-transform:none;color:var(--yama)}
+.sl p{font-size:14px;opacity:.88;max-width:36ch}
+.sl-cta{align-self:flex-start;margin-top:4px;background:var(--yama);color:var(--sumi);font-weight:700;font-size:13.5px;padding:8px 14px;border-radius:2px}
+.sl-cam{position:absolute;right:2%;bottom:10%;width:min(50%,430px);z-index:1;filter:drop-shadow(0 18px 22px rgba(0,0,0,.45))}
+.sl-gift{position:absolute;right:3%;top:8%;z-index:3;width:84px;height:110px;background:var(--kinari);border:3px solid var(--yama);border-radius:10px;display:grid;place-items:center;transform:rotate(6deg);box-shadow:0 10px 20px rgba(0,0,0,.3)}
+.sl-gift img{height:96px;mix-blend-mode:multiply}
+.sl-gift b{position:absolute;left:-10px;top:-10px;background:var(--aka);color:#fff;font-size:10px;letter-spacing:.1em;padding:3px 6px;border-radius:4px}
+.sl-zf{background:var(--sumi)}
+.sl-60{background:var(--kinari);color:var(--sumi)}
+.sl-60 .sl-k{color:var(--aka)}
+.sl-big{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(70px,9vw,120px);line-height:.85;color:var(--ai)}
+.sl-big small{font-size:.28em;margin-left:8px;letter-spacing:.06em}
+.sl-60 .sl-cta{background:var(--ai);color:var(--kinari)}
+.sl-str{position:absolute;left:auto;right:-4%;top:14%;width:44%;z-index:0}
+.sl-1111{background:linear-gradient(120deg,#16294A,#1F3A68 55%,#2C4F86)}
+.sl-1111-art{position:absolute;right:4%;top:50%;transform:translateY(-50%) rotate(-6deg);display:flex;gap:10px}
+.sl-1111-art span{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(70px,10vw,150px);line-height:1;color:var(--yama);text-shadow:6px 6px 0 var(--aka)}
+.cd{display:flex;gap:8px}
+.cd span{display:flex;flex-direction:column;align-items:center;font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.9}
+.cd b{min-width:46px;text-align:center;font-family:var(--f-ex);font-stretch:112%;font-weight:900;font-size:24px;background:var(--kinari);color:var(--sumi);border-radius:4px;padding:4px 6px;margin-bottom:3px}
+.car-btn{position:absolute;top:50%;transform:translateY(-50%);z-index:5;width:34px;height:52px;border:0;background:rgba(0,0,0,.28);color:#fff;font-size:26px;cursor:pointer;opacity:0;transition:opacity .2s}
+.car:hover .car-btn,.car-btn:focus-visible{opacity:1}
+.car-btn.prev{left:0;border-radius:0 4px 4px 0}.car-btn.next{right:0;border-radius:4px 0 0 4px}
+.car-dots{position:absolute;left:50%;bottom:12px;transform:translateX(-50%);display:flex;gap:6px;z-index:5}
+.car-dots button{width:8px;height:8px;border-radius:999px;border:0;background:rgba(243,239,230,.55);cursor:pointer;padding:0;transition:width .3s,background .3s}
+.car-dots button[aria-current="true"]{width:22px;background:var(--yama)}
+.st-story{margin-top:14px;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);background:var(--ai);color:var(--kinari);position:relative;overflow:hidden;border-radius:2px}
+.st-kanji{position:absolute;left:-30px;bottom:-80px;font-family:var(--f-jp);font-weight:900;font-size:340px;line-height:1;color:rgba(243,239,230,.06);pointer-events:none}
+.st-body{position:relative;padding:34px 36px;display:flex;flex-direction:column;gap:14px}
+.st-k{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--yama)}
+.st-body h3{font-family:var(--f-ex);font-stretch:118%;font-weight:900;font-size:clamp(26px,3vw,38px);line-height:1.02;text-transform:uppercase}
+.st-body h3 i{font-stretch:100%;text-transform:none;color:var(--yama)}
+.st-body p{font-size:15px;line-height:1.65;opacity:.88;max-width:52ch}
+.st-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:4px}
+.st-cta button{border:0;border-radius:2px;padding:10px 16px;font-weight:700;cursor:pointer;background:var(--yama);color:var(--sumi)}
+.st-cta .ghost{background:transparent;color:var(--kinari);box-shadow:inset 0 0 0 1px rgba(243,239,230,.5)}
+.st-pic{position:relative;min-height:280px}
+.st-pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.st-tag{position:absolute;left:16px;bottom:16px;background:var(--kinari);color:var(--sumi);font-family:var(--f-ex);font-stretch:112%;font-weight:900;font-size:14px;padding:6px 10px;border-radius:2px}
+.st-prom{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:var(--white);margin-top:14px}
+.st-prom div{padding:18px 18px 18px 74px;position:relative;border-right:1px solid var(--shp-line);min-width:0}
+.st-prom div:last-child{border-right:0}
+.st-prom .kj{position:absolute;left:18px;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--ai);color:var(--kinari);font-family:var(--f-jp);font-weight:900;font-size:20px}
+.st-prom b{display:block;font-size:15px}
+.st-prom small{display:block;font-size:12.5px;color:var(--shp-mute);margin-top:2px}
+.mega{margin-top:14px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.4fr);gap:18px;align-items:center;padding:26px 28px;background:var(--sumi);color:var(--kinari);border-radius:2px;position:relative;overflow:hidden}
+.mega::before{content:"";position:absolute;inset:auto -10% -40% auto;width:420px;aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,#F8C25E,#EE7B30 60%,#E03C31);opacity:.9}
+.mega>*{position:relative}
+.mega-k{font-family:var(--f-mono);font-size:11px;letter-spacing:.16em;color:var(--yama)}
+.mega-h{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:clamp(46px,6vw,76px);line-height:.9;margin:8px 0 14px}
+.mega-h i{display:block;font-stretch:100%;font-size:.45em;color:var(--yama)}
+.mega-l p{font-size:13.5px;opacity:.8;margin-top:10px}
+.mega-tiers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.tier{background:var(--kinari);color:var(--sumi);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:6px;min-width:0;position:relative}
+.tier span{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--aka)}
+.tier b{font-family:var(--f-ex);font-stretch:112%;font-weight:900;font-size:18px}
+.tier p{font-size:13px;color:var(--soft)}
+.tier.hot{background:var(--yama)}
+.tier em{font-style:normal;font-size:12px;font-weight:700;color:var(--ai)}
+.styles{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.sty{background:var(--c);color:var(--t,var(--kinari));text-decoration:none;border-radius:8px;padding:16px 14px;min-height:150px;display:flex;flex-direction:column;gap:6px;position:relative;overflow:hidden;transition:transform .25s}
+.sty:hover{transform:translateY(-3px)}
+.sty .kn{font-family:var(--f-jp);font-weight:700;font-size:12px;letter-spacing:.2em;opacity:.8}
+.sty b{font-family:var(--f-ex);font-stretch:112%;font-weight:900;font-size:17px;line-height:1.1;margin-top:auto}
+.sty small{font-size:12px;opacity:.85;line-height:1.4}
+.kitrow{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(210px,1fr);gap:10px;overflow-x:auto;scrollbar-width:thin;padding-bottom:6px}
+.kc{background:var(--c);color:var(--t,var(--kinari));border-radius:8px;padding:18px;display:flex;flex-direction:column;gap:6px;min-height:200px;position:relative;overflow:hidden}
+.kc .kh{position:absolute;right:10px;top:6px;font-family:var(--f-jp);font-weight:900;font-size:40px;opacity:.22}
+.kc b{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:24px}
+.kc small{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;opacity:.85}
+.kc p{font-size:13px;opacity:.9;line-height:1.45}
+.kc .kp{margin-top:auto;font-weight:700;font-size:15px;background:rgba(255,255,255,.14);align-self:flex-start;padding:4px 8px;border-radius:4px}
+.journal{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.jn{display:flex;flex-direction:column;gap:6px;min-width:0;cursor:pointer}
+.jn img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:6px}
+.jn .jtag{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.14em;color:var(--shp)}
+.jn b{font-size:14.5px;line-height:1.35}
+.jn small{font-size:12px;color:var(--shp-mute)}
+.pol{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;background:var(--ai);color:var(--kinari);margin-top:14px;margin-bottom:30px;border-radius:2px}
+.pol div{padding:16px 18px;border-right:1px solid rgba(243,239,230,.15);min-width:0}
+.pol div:last-child{border-right:0}
+.pol b{display:block;font-size:14px}
+.pol small{display:block;font-size:12px;opacity:.75;margin-top:2px}
+@media(max-width:980px){.styles{grid-template-columns:repeat(3,minmax(0,1fr))}.journal{grid-template-columns:repeat(2,minmax(0,1fr))}.st-prom{grid-template-columns:repeat(2,minmax(0,1fr))}.st-prom div:nth-child(2){border-right:0}.pol{grid-template-columns:repeat(2,minmax(0,1fr))}.mega{grid-template-columns:1fr}}
+@media(max-width:700px){.st-story{grid-template-columns:1fr}.st-pic{min-height:220px}.sl{padding:22px 20px;min-height:300px}.car{min-height:300px}.sl-tx{max-width:62%}.sl-cam{width:56%;bottom:6%;right:-6%}.sl .sun{width:180px;right:-4%}.sl-1111-art span{font-size:56px}.sl-1111-art{right:2%;top:24%}.sl-gift{width:64px;height:84px}.sl-gift img{height:72px}.mega-tiers{grid-template-columns:1fr}.styles{grid-template-columns:repeat(2,minmax(0,1fr))}.st-prom{grid-template-columns:1fr}.st-prom div{border-right:0;border-bottom:1px solid var(--shp-line)}.pol{grid-template-columns:1fr}.pol div{border-right:0;border-bottom:1px solid rgba(243,239,230,.15)}.cd b{min-width:38px;font-size:19px}}
+@media(prefers-reduced-motion:reduce){.car-track{transition:none}}
 
 </style>
 </head>
@@ -1556,9 +1654,10 @@ body.immersive .subnav ul{pointer-events:none}
     </div>
     <div class="tana">
       <div class="tana-gal">
-        <div class="tana-main"><img id="tanaMain" src="img/09-gift-tana.jpg" alt="Ảnh Shopee: mua máy ảnh tặng kệ TANA 3 tầng"></div>
+        <div class="tana-main"><img id="tanaMain" src="img/promo-tana-1x1.jpg" alt="Ảnh Shopee: mua máy ảnh tặng kệ TANA 3 tầng"></div>
         <div class="tana-thumbs" role="group" aria-label="Ảnh kệ TANA">
-          <button type="button" aria-pressed="true" data-src="img/09-gift-tana.jpg"><img src="img/t_09-gift-tana.jpg" alt="Ảnh quà tặng"></button>
+          <button type="button" aria-pressed="true" data-src="img/promo-tana-1x1.jpg"><img src="img/t_promo-tana-1x1.jpg" alt="Banner quà tặng"></button>
+          <button type="button" aria-pressed="false" data-src="img/09-gift-tana.jpg"><img src="img/t_09-gift-tana.jpg" alt="Ảnh quà tặng"></button>
           <button type="button" aria-pressed="false" data-src="img/10-tana-corner.jpg"><img src="img/t_10-tana-corner.jpg" alt="Góc máy ảnh"></button>
           <button type="button" aria-pressed="false" data-src="img/tana-features.jpg"><img src="img/tana-features.jpg" alt="Tính năng kệ"></button>
           <button type="button" aria-pressed="false" data-src="img/tana-dim.jpg"><img src="img/tana-dim.jpg" alt="Kích thước kệ"></button>
@@ -1705,12 +1804,45 @@ body.immersive .subnav ul{pointer-events:none}
         <div class="shop-btns"><button type="button" id="followBtn">+ Theo dõi</button><button type="button" class="js-toast" data-msg="Mở khung chat với Sabi (mô phỏng)">Chat</button></div>
       </div>
       <div class="shop-stats">
-        <div>Sản phẩm: <span>32</span></div><div>Người theo dõi: <span id="fol">12,4k</span></div>
+        <div>Sản phẩm: <span>45+</span></div><div>Người theo dõi: <span id="fol">12,4k</span></div>
         <div>Đánh giá: <span>4.9 (2,1k đánh giá)</span></div><div>Tỉ lệ phản hồi chat: <span>99% (trong vài phút)</span></div>
-        <div>Đang theo dõi: <span>18</span></div><div>Tham gia: <span>1 tháng trước</span></div>
+        <div>Đang theo dõi: <span>18</span></div><div>Bảo hành: <span>60 tháng mọi máy ảnh</span></div>
       </div>
     </div>
     <nav class="shop-tabs" aria-label="Danh mục shop"><a class="on" href="#store">Dạo</a><a href="#store">Tất cả sản phẩm</a><a href="#store">Nikon Zf</a><a href="#store">Nikon Z fc</a><a href="#store">Bộ kit theo mùa</a><a href="#store">Ống kính</a><a href="#store">Sabi Goods</a></nav>
+
+    <div class="hero-bn">
+      <div class="car" id="heroCar" aria-roledescription="carousel" aria-label="Banner khuyến mãi">
+        <div class="car-track">
+          <div class="sl sl-tana" role="group" aria-label="1 / 4">
+            <div class="sun"></div><div class="rays"></div>
+            <div class="sl-tx"><span class="sl-k">QUÀ TẶNG · SỐ LƯỢNG CÓ HẠN</span><div class="sl-h">Mua máy ảnh<br><i>tặng kệ TANA</i></div><p>Zf · Z fc · Z30 · Z50 II · Nhận ngay kệ 3 tầng khung gỗ</p><span class="sl-cta">Xem máy áp dụng ›</span></div>
+            <img class="sl-cam" src="img/cam_black.webp" alt=""><div class="sl-gift"><img src="img/tana-angle.jpg" alt=""><b>QUÀ</b></div>
+          </div>
+          <div class="sl sl-zf" role="group" aria-label="2 / 4">
+            <div class="sun"></div>
+            <div class="sl-tx"><span class="sl-k">BỘ AKI · KIT 40MM F/2 SE</span><div class="sl-h">Nikon Zf<br><i>Chụp nhanh. Nhớ lâu.</i></div><p>Lấy nét nhận diện 9 chủ thể · Bảo hành 60 tháng · Trả góp 0%</p><span class="sl-cta">Mua ngay ›</span></div>
+            <img class="sl-cam" src="img/cam_black.webp" alt="">
+          </div>
+          <div class="sl sl-60" role="group" aria-label="3 / 4">
+            <div class="sl-tx"><span class="sl-k">CHỈ CÓ TẠI SABI LAB</span><div class="sl-big">60<small>THÁNG</small></div><p>Bảo hành cho mọi máy ảnh Nikon chính hãng, kèm Sabi Care vệ sinh cảm biến mỗi năm.</p><span class="sl-cta">Xem chính sách ›</span></div>
+            <img class="sl-cam" src="img/cam_stone-gray.webp" alt="">
+            <div class="stripes sl-str"><i></i><i></i><i></i></div>
+          </div>
+          <div class="sl sl-1111" role="group" aria-label="4 / 4">
+            <div class="sl-tx"><span class="sl-k">NGÀY ĐÔI · MEGA SALE</span><div class="sl-h">11.11<br><i>Quà theo bậc đơn</i></div><p>Voucher tới ₫1tr · Quà Sabi Goods · Kệ TANA cho mọi máy ảnh</p><div class="cd" data-to="2026-11-11T00:00:00+07:00"><span><b data-u="d">00</b>ngày</span><span><b data-u="h">00</b>giờ</span><span><b data-u="m">00</b>phút</span><span><b data-u="s">00</b>giây</span></div></div>
+            <div class="sl-1111-art"><span>11</span><span>11</span></div>
+          </div>
+        </div>
+        <button type="button" class="car-btn prev" aria-label="Banner trước">‹</button><button type="button" class="car-btn next" aria-label="Banner sau">›</button>
+        <div class="car-dots" role="group" aria-label="Chọn banner"><button type="button" aria-label="Banner 1" aria-current="true"></button><button type="button" aria-label="Banner 2"></button><button type="button" aria-label="Banner 3"></button><button type="button" aria-label="Banner 4"></button></div>
+      </div>
+      <div style="display:grid;gap:6px">
+        <div class="bn small" style="background:var(--sumi)"><div class="t">11.11 · <i>Mega Sale</i></div><p style="margin-top:4px;font-size:13px">Voucher tới ₫1tr + quà Sabi Goods</p></div>
+        <div class="bn small" style="background:var(--kaki);color:var(--sumi)"><div class="t" style="color:var(--sumi)">AF Challenge <i style="color:var(--ai)">Live</i></div><p style="margin-top:4px;font-size:13px">20:00 thứ 4 và Chủ nhật</p></div>
+        <div class="bn small" style="background:var(--kinari);color:var(--sumi)"><div class="t" style="color:var(--ai)">Sabi Goods <i style="color:var(--aka)">mới</i></div><p style="margin-top:4px;font-size:13px">Dây đeo, túi chống sốc, áo thun</p></div>
+      </div>
+    </div>
 
     <div class="box">
       <div class="box-t"><h3>Mã giảm giá của shop</h3><a href="#store">Xem tất cả ›</a></div>
@@ -1722,15 +1854,6 @@ body.immersive .subnav ul{pointer-events:none}
       </div>
     </div>
 
-    <div class="hero-bn">
-      <div class="bn" style="min-height:300px"><div class="sun"></div><div class="t">Nikon Zf<br><i>Chụp nhanh.<br>Nhớ lâu.</i></div><p>Bộ AKI · Kit 40mm f/2 SE · Bảo hành 60 tháng · Trả góp 0%</p><img class="c" src="img/cam_black.webp" alt=""></div>
-      <div style="display:grid;gap:6px">
-        <div class="bn small" style="background:var(--sumi)"><div class="t">11.11 · <i>Mega Sale</i></div><p style="margin-top:4px;font-size:13px">Voucher tới ₫1tr + quà Sabi Goods</p></div>
-        <div class="bn small" style="background:var(--kaki);color:var(--sumi)"><div class="t" style="color:var(--sumi)">AF Challenge <i style="color:var(--ai)">Live</i></div><p style="margin-top:4px;font-size:13px">20:00 thứ 4 và Chủ nhật</p></div>
-        <div class="bn small" style="background:var(--kinari);color:var(--sumi)"><div class="t" style="color:var(--ai)">Sabi Goods <i style="color:var(--aka)">mới</i></div><p style="margin-top:4px;font-size:13px">Dây đeo, túi chống sốc, áo thun</p></div>
-      </div>
-    </div>
-
     <div class="tana-bn">
       <img src="img/t_09-gift-tana.jpg" alt="">
       <div class="tx"><span class="k">QUÀ TẶNG · SỐ LƯỢNG CÓ HẠN</span><b>Mua máy ảnh, tặng kệ TANA 3 tầng</b><span>Áp dụng Zf · Z fc · Z30 · Z50 II. Khung gỗ tự nhiên, bánh xe 360°, lắp sẵn.</span></div>
@@ -1738,11 +1861,63 @@ body.immersive .subnav ul{pointer-events:none}
       <button type="button" class="js-toast" data-msg="Mở danh sách máy ảnh áp dụng (mô phỏng)">Xem máy áp dụng ›</button>
     </div>
 
+<section class="st-story" aria-label="Câu chuyện Sabi Lab">
+      <div class="st-kanji" aria-hidden="true">寂</div>
+      <div class="st-body">
+        <span class="st-k">サビラボ · CÂU CHUYỆN CỦA CHÚNG TÔI</span>
+        <h3>Có một chiếc FM2<br><i>nằm trong ngăn tủ.</i></h3>
+        <p>Lớp sơn đã mòn, vòng tốc độ vẫn kêu “tách” như ngày đầu. Người Nhật gọi vẻ đẹp ấy là <b>Sabi</b>: thứ tốt sẽ đẹp hơn theo thời gian.</p>
+        <p>Sabi Lab tuyển chọn máy ảnh, ống kính, phụ kiện và ống nhòm Nikon chính hãng, ghép thành bộ kit sẵn sàng, cài sẵn công thức màu và bảo hành 60 tháng. Bạn không cần giỏi, chỉ cần tò mò.</p>
+        <div class="st-cta"><button type="button" class="js-toast" data-msg="Mở trang Câu chuyện Sabi (mô phỏng)">Đọc câu chuyện</button><button type="button" class="ghost js-toast" data-msg="Cuộn tới Bộ kit theo mùa (mô phỏng)">Xem bộ kit theo mùa</button></div>
+      </div>
+      <div class="st-pic"><img src="img/10-tana-corner.jpg" alt="Góc máy ảnh với kệ TANA" loading="lazy"><span class="st-tag">Chụp nhanh. Nhớ lâu.</span></div>
+    </section>
+
+    <div class="st-prom">
+      <div><span class="kj">正</span><b>Chính hãng 100%</b><small>Nikon phân phối chính thức tại Việt Nam</small></div>
+      <div><span class="kj">守</span><b>Bảo hành 60 tháng</b><small>Dài nhất trên sàn, kèm Sabi Care hằng năm</small></div>
+      <div><span class="kj">色</span><b>Sabi Recipes</b><small>Công thức màu film cài sẵn trước khi giao</small></div>
+      <div><span class="kj">手</span><b>Hướng dẫn 7 ngày</b><small>Chat 1–1 với Sabi đến khi bạn tự tin bấm máy</small></div>
+    </div>
+
     <div class="box"><div class="box-t"><h3>Danh mục</h3></div><div class="cats" id="cats"></div></div>
 
     <div class="box">
       <div class="box-t"><div class="fs-head"><span class="fs-logo">FLASH SALE</span><span class="timer" aria-label="Thời gian còn lại"><b id="th">02</b>:<b id="tm">14</b>:<b id="ts">36</b></span></div><a href="#store">Xem tất cả ›</a></div>
       <div class="pgrid" id="fsGrid"></div>
+    </div>
+
+<section class="mega" aria-label="11.11 Mega Sale">
+      <div class="mega-l"><span class="mega-k">ダブルデー · NGÀY ĐÔI</span><div class="mega-h">11.11<i>Mega Sale</i></div><div class="cd" data-to="2026-11-11T00:00:00+07:00"><span><b data-u="d">00</b>ngày</span><span><b data-u="h">00</b>giờ</span><span><b data-u="m">00</b>phút</span><span><b data-u="s">00</b>giây</span></div><p>Quà theo bậc đơn, cộng dồn với voucher Shopee.</p></div>
+      <div class="mega-tiers">
+        <div class="tier"><span>BẬC 1</span><b>Đơn từ ₫5tr</b><p>Khăn lau, sticker Sabi, Lab Card</p></div>
+        <div class="tier"><span>BẬC 2</span><b>Đơn từ ₫20tr</b><p>Thêm dây đeo Sabi sọc Showa</p></div>
+        <div class="tier hot"><span>BẬC 3</span><b>Đơn từ ₫45tr</b><p>Thêm túi chống sốc Sabi</p><em>+ Kệ TANA cho mọi máy ảnh</em></div>
+      </div>
+    </section>
+
+    <div class="box">
+      <div class="box-t"><h3>Mua theo phong cách</h3><a href="#store">Xem tất cả ›</a></div>
+      <div class="styles">
+        <a class="sty" href="#store" style="--c:var(--ai)"><span class="kn">はじめて</span><b>Máy đầu tiên</b><small>Z50 II, Z fc kit · dễ dùng, màu đẹp</small></a>
+        <a class="sty" href="#store" style="--c:var(--sumi)"><span class="kn">レトロ</span><b>Mê máy film</b><small>Zf, Z fc SE · dáng FM2, vòng xoay cơ</small></a>
+        <a class="sty" href="#store" style="--c:var(--kaki);--t:var(--sumi)"><span class="kn">クリエイター</span><b>Creator, vlog</b><small>Z30, remote ML-L7, pin dự phòng</small></a>
+        <a class="sty" href="#store" style="--c:#2C4F86"><span class="kn">レンズ</span><b>Nâng cấp ống kính</b><small>9 ống kính Z, ngàm FTZ II</small></a>
+        <a class="sty" href="#store" style="--c:#5E6136"><span class="kn">そと</span><b>Ngoài trời</b><small>Ống nhòm Prostaff, Action, Travelite</small></a>
+        <a class="sty" href="#store" style="--c:var(--aka)"><span class="kn">おくりもの</span><b>Quà tặng</b><small>Hộp quà, thiệp viết tay, khắc tên</small></a>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-t"><h3>Bộ kit theo mùa</h3><a href="#store">Xem tất cả ›</a></div>
+      <div class="kitrow">
+        <div class="kc" style="--c:#5C684A"><span class="kh">はる</span><b>HARU</b><small>Người mới</small><p>Z fc + 16-50mm VR, pin EN-EL25a, recipe Haru</p><span class="kp">₫25.400.000</span></div>
+        <div class="kc" style="--c:var(--kaki);--t:var(--sumi)"><span class="kh">なつ</span><b>NATSU</b><small>Du lịch</small><p>Z fc bạc + 28mm SE, ống nhòm Travelite EX 8x25</p><span class="kp">từ ₫27.500.000</span></div>
+        <div class="kc" style="--c:var(--ai)"><span class="kh">あき</span><b>AKI</b><small>Cổ điển · Zf</small><p>Zf + 40mm SE, pin EN-EL15c, sạc MH-25a</p><span class="kp">₫53.990.000</span></div>
+        <div class="kc" style="--c:var(--sumi)"><span class="kh">ふゆ</span><b>FUYU</b><small>Creator</small><p>Z30 + 16-50mm, remote ML-L7, sạc MH-32</p><span class="kp">Giá đang cập nhật</span></div>
+        <div class="kc" style="--c:#5E6136"><span class="kh">やま</span><b>YAMA</b><small>Ngoài trời</small><p>Z50 II kit, ống nhòm Prostaff P7 10x42</p><span class="kp">Giá đang cập nhật</span></div>
+        <div class="kc" style="--c:var(--aka)"><span class="kh">おくりもの</span><b>OKURIMONO</b><small>Quà tặng</small><p>Bất kỳ kit nào, hộp quà, thiệp, khắc tên</p><span class="kp">+ ₫190.000</span></div>
+      </div>
     </div>
 
     <div class="box">
@@ -1771,7 +1946,25 @@ body.immersive .subnav ul{pointer-events:none}
       </div>
     </div>
 
+<div class="box">
+      <div class="box-t"><h3>Sabi Journal · Đọc trước khi mua</h3><a href="#store">Xem tất cả ›</a></div>
+      <div class="journal">
+        <article class="jn"><img src="img/t_03-autofocus.jpg" alt="" loading="lazy"><span class="jtag">AF TEST</span><b>Zf lấy nét có nhanh không? Test thật 9 chủ thể</b><small>5 phút đọc · kèm video</small></article>
+        <article class="jn"><img src="img/t_06-monochrome-recipes.jpg" alt="" loading="lazy"><span class="jtag">RECIPES</span><b>3 công thức màu film cài sẵn cho Zf và Z fc</b><small>4 phút đọc · tải file recipe</small></article>
+        <article class="jn"><img src="img/t_04-design.jpg" alt="" loading="lazy"><span class="jtag">ỐNG KÍNH</span><b>Ống kính đầu tiên: 24mm, 28mm hay 40mm?</b><small>6 phút đọc</small></article>
+        <article class="jn"><img src="img/t_10-tana-corner.jpg" alt="" loading="lazy"><span class="jtag">GÓC MÁY ẢNH</span><b>Dựng góc máy ảnh với kệ TANA trong 10 phút</b><small>3 phút đọc</small></article>
+      </div>
+    </div>
+
     <div class="box"><div class="box-t"><h3>Sản phẩm bán chạy</h3><a href="#store">Xem tất cả ›</a></div><div class="pgrid" id="allGrid"></div></div>
+
+    <div class="pol">
+      <div><b>Nikon chính hãng</b><small>Phân phối chính thức tại Việt Nam</small></div>
+      <div><b>Bảo hành 60 tháng</b><small>Kèm Sabi Care hằng năm</small></div>
+      <div><b>Trả góp 0%</b><small>Qua thẻ tín dụng trên Shopee</small></div>
+      <div><b>Đổi trả</b><small>Theo chính sách Shopee Mall</small></div>
+      <div><b>Tư vấn 1–1</b><small>Chat phản hồi trong vài phút</small></div>
+    </div>
   </div>
 </main>
 
@@ -2170,6 +2363,23 @@ body.immersive .subnav ul{pointer-events:none}
 (function(){var m=document.getElementById('tanaMain');if(!m)return;var bs=[].slice.call(document.querySelectorAll('.tana-thumbs button'));
 bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});m.style.opacity=0;setTimeout(function(){m.src=b.dataset.src;m.style.opacity=1},180)})})})();
 </script>
+<script>
+(function(){
+  var car=document.getElementById('heroCar');
+  if(car){var tr=car.querySelector('.car-track'),dots=[].slice.call(car.querySelectorAll('.car-dots button')),n=dots.length,i=0,t=null,RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function go(k){i=(k+n)%n;tr.style.transform='translateX('+(-100*i)+'%)';dots.forEach(function(d,j){if(j===i)d.setAttribute('aria-current','true');else d.removeAttribute('aria-current')})}
+    function play(){if(RM)return;stop();t=setInterval(function(){go(i+1)},5000)}function stop(){if(t)clearInterval(t);t=null}
+    car.querySelector('.prev').addEventListener('click',function(){go(i-1);play()});car.querySelector('.next').addEventListener('click',function(){go(i+1);play()});
+    dots.forEach(function(d,j){d.addEventListener('click',function(){go(j);play()})});
+    car.addEventListener('mouseenter',stop);car.addEventListener('mouseleave',play);car.addEventListener('focusin',stop);
+    var x0=null;car.addEventListener('touchstart',function(e){x0=e.touches[0].clientX;stop()},{passive:true});car.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null;play()});
+    play()}
+  var cds=[].slice.call(document.querySelectorAll('.cd[data-to]'));
+  function tick(){cds.forEach(function(c){var d=Math.max(0,new Date(c.dataset.to)-new Date()),p=function(v){return ('0'+v).slice(-2)};var u={d:Math.floor(d/864e5),h:Math.floor(d/36e5)%24,m:Math.floor(d/6e4)%60,s:Math.floor(d/1e3)%60};[].forEach.call(c.querySelectorAll('b[data-u]'),function(b){b.textContent=p(u[b.dataset.u])})})}
+  if(cds.length){tick();setInterval(tick,1000)}
+})();
+</script>
+
 
 
 
