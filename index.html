@@ -887,6 +887,59 @@ body.immersive .subnav ul{pointer-events:none}
 @media(max-width:760px){.pk-pick{grid-template-columns:1fr;gap:10px}.pk-card{min-height:0;padding:16px 18px 28px}.pk-bar{bottom:14px}}
 @media(prefers-reduced-motion:reduce){.ta-head,.pk-card,.pk-bar,.pk-jp{transition:none}}
 
+.tana{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
+.tana-main{border-radius:14px;overflow:hidden;background:var(--white);box-shadow:0 24px 50px rgba(26,26,26,.12);aspect-ratio:1}
+.tana-main img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .35s}
+.tana-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
+.tana-thumbs button{border:2px solid transparent;border-radius:10px;overflow:hidden;padding:0;cursor:pointer;background:var(--white);aspect-ratio:1;transition:border-color .2s,transform .2s}
+.tana-thumbs button:hover{transform:translateY(-2px)}
+.tana-thumbs button[aria-pressed="true"]{border-color:var(--ai)}
+.tana-thumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.tana-info{display:flex;flex-direction:column;gap:16px;min-width:0}
+.tana-name{display:flex;gap:18px;align-items:center}
+.tana-name .jp{font-family:var(--f-jp);font-weight:900;font-size:76px;line-height:1;color:var(--ai)}
+.tana-name b{display:block;font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:40px;line-height:1;letter-spacing:.04em}
+.tana-name small{display:block;font-size:15px;color:var(--soft);margin-top:6px}
+.tana-info>p{color:var(--soft)}
+.tana-spec{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border:1px solid var(--line);border-radius:10px;overflow:hidden;background:var(--white)}
+.tana-spec div{padding:14px 16px;border-bottom:1px solid var(--line)}
+.tana-spec div:nth-child(odd){border-right:1px solid var(--line)}
+.tana-spec div:nth-last-child(-n+2){border-bottom:0}
+.tana-spec dt{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--aka)}
+.tana-spec dd{font-weight:600;margin-top:4px}
+.tana-info h4{margin-top:8px}
+.tana-tiers{list-style:none;padding:0;display:grid;gap:0;border-left:4px solid var(--ai)}
+.tana-tiers li{padding:10px 0 10px 16px;display:grid;grid-template-columns:72px 1fr;gap:10px;border-bottom:1px dashed var(--line)}
+.tana-tiers b{font-family:var(--f-ex);font-stretch:112%;font-weight:800;color:var(--ai)}
+.tana-tiers span{color:var(--soft);font-size:15px}
+.tana-mech{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:14px}
+.tm{position:relative;border:1px solid rgba(243,239,230,.18);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:10px;background:rgba(255,255,255,.03)}
+.tm.hot{background:var(--ai);border-color:transparent;box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.tm .pick{position:absolute;right:16px;top:16px;font-family:var(--f-mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:var(--aka);color:#fff}
+.tm .n{font-family:var(--f-ex);font-stretch:125%;font-weight:900;font-size:34px;line-height:1;color:var(--yama)}
+.tm h4{font-size:20px}
+.tm p{font-size:14.5px;opacity:.78}
+.tm .how{margin-top:auto;font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--yama)}
+.tana-ops{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr));gap:14px;margin-top:20px}
+.op{border:1px solid rgba(243,239,230,.18);border-radius:14px;padding:22px}
+.op h4{margin-bottom:12px}
+.op ul{padding-left:18px;display:grid;gap:8px;font-size:14.5px;opacity:.85}
+.fill{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.fill div{background:rgba(255,255,255,.05);border:1px dashed rgba(242,179,61,.45);border-radius:10px;padding:12px 14px}
+.fill span{display:block;font-size:12.5px;opacity:.7}
+.fill b{display:block;font-family:var(--f-ex);font-stretch:112%;font-size:20px;color:var(--yama);margin-top:4px}
+.tana-bn{display:grid;grid-template-columns:96px minmax(0,1fr) auto auto;gap:18px;align-items:center;margin-top:14px;padding:14px 18px;border-radius:2px;background:linear-gradient(90deg,var(--ai),#2A4A80);color:var(--kinari)}
+.tana-bn img{width:96px;height:96px;border-radius:6px;object-fit:cover}
+.tana-bn .tx{display:flex;flex-direction:column;gap:4px;min-width:0}
+.tana-bn .k{font-family:var(--f-mono);font-size:11px;letter-spacing:.14em;color:var(--yama)}
+.tana-bn .tx b{font-size:20px}
+.tana-bn .tx span:last-child{font-size:13.5px;opacity:.8}
+.tana-bn .left{text-align:center;font-size:12px;opacity:.9}
+.tana-bn .left b{display:block;font-family:var(--f-ex);font-size:26px;color:var(--yama)}
+.tana-bn button{border:0;border-radius:2px;padding:10px 16px;background:var(--yama);color:var(--sumi);font-weight:700;cursor:pointer;white-space:nowrap}
+@media(max-width:860px){.tana{grid-template-columns:1fr}.tana-bn{grid-template-columns:72px minmax(0,1fr)}.tana-bn img{width:72px;height:72px}.tana-bn .left{display:none}.tana-bn button{grid-column:1/-1}}
+@media(max-width:520px){.fill{grid-template-columns:1fr}.tana-spec{grid-template-columns:1fr}.tana-spec div:nth-child(odd){border-right:0}.tana-spec div:nth-last-child(2){border-bottom:1px solid var(--line)}}
+
 </style>
 </head>
 <body>
@@ -950,7 +1003,7 @@ body.immersive .subnav ul{pointer-events:none}
 </div></div>
 
 <nav class="subnav" aria-label="Mục lục brand book"><div class="wrap"><ul>
-  <li><a href="#tagline">Tagline</a></li><li><a href="#insight">Insight</a></li><li><a href="#core">Core</a></li><li><a href="#story">Story</a></li><li><a href="#audience">Khách hàng</a></li><li><a href="#position">Định vị</a></li><li><a href="#voice">Voice</a></li><li><a href="#logos">5 Logo</a></li><li><a href="#color">Màu</a></li><li><a href="#type">Chữ</a></li><li><a href="#devices">Họa tiết</a></li><li><a href="#product">Zf & Kit</a></li><li><a href="#lineup">Danh mục</a></li><li><a href="#goods">Sabi Goods</a></li><li><a href="#bundle">Bundle</a></li><li><a href="#shopee-img">Ảnh Shopee</a></li><li><a href="#channels">Kênh</a></li><li><a href="#roadmap">Lộ trình</a></li>
+  <li><a href="#tagline">Tagline</a></li><li><a href="#insight">Insight</a></li><li><a href="#core">Core</a></li><li><a href="#story">Story</a></li><li><a href="#audience">Khách hàng</a></li><li><a href="#position">Định vị</a></li><li><a href="#voice">Voice</a></li><li><a href="#logos">5 Logo</a></li><li><a href="#color">Màu</a></li><li><a href="#type">Chữ</a></li><li><a href="#devices">Họa tiết</a></li><li><a href="#product">Zf & Kit</a></li><li><a href="#lineup">Danh mục</a></li><li><a href="#goods">Sabi Goods</a></li><li><a href="#bundle">Bundle</a></li><li><a href="#tana">Quà TANA</a></li><li><a href="#shopee-img">Ảnh Shopee</a></li><li><a href="#channels">Kênh</a></li><li><a href="#roadmap">Lộ trình</a></li>
 </ul></div></nav>
 
 
@@ -1494,11 +1547,74 @@ body.immersive .subnav ul{pointer-events:none}
   </div>
 </section>
 
+<section class="band" id="tana">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">13b · Quà tặng đẩy tồn kho <span class="kana">たな · 棚</span></div>
+      <h2>Máy ảnh không thuộc về <i>ngăn tủ.</i></h2>
+      <p class="lede">Chương trình “Mua máy ảnh, tặng kệ TANA 3 tầng”: giải phóng nhanh lượng kệ 3 tầng còn tồn, đồng thời tăng giá trị đơn máy ảnh mà không phải giảm giá máy. Món quà nối thẳng vào brand story: chiếc FM2 năm xưa nằm trong ngăn tủ, chiếc Nikon hôm nay có một góc riêng trong nhà.</p>
+    </div>
+    <div class="tana">
+      <div class="tana-gal">
+        <div class="tana-main"><img id="tanaMain" src="img/09-gift-tana.jpg" alt="Ảnh Shopee: mua máy ảnh tặng kệ TANA 3 tầng"></div>
+        <div class="tana-thumbs" role="group" aria-label="Ảnh kệ TANA">
+          <button type="button" aria-pressed="true" data-src="img/09-gift-tana.jpg"><img src="img/t_09-gift-tana.jpg" alt="Ảnh quà tặng"></button>
+          <button type="button" aria-pressed="false" data-src="img/10-tana-corner.jpg"><img src="img/t_10-tana-corner.jpg" alt="Góc máy ảnh"></button>
+          <button type="button" aria-pressed="false" data-src="img/tana-features.jpg"><img src="img/tana-features.jpg" alt="Tính năng kệ"></button>
+          <button type="button" aria-pressed="false" data-src="img/tana-dim.jpg"><img src="img/tana-dim.jpg" alt="Kích thước kệ"></button>
+        </div>
+      </div>
+      <div class="tana-info">
+        <div class="tana-name"><span class="jp">棚</span><div><b>TANA</b><small>Kệ 3 tầng · khung gỗ tự nhiên, khay trắng</small></div></div>
+        <p>“Tana” (棚) nghĩa là cái kệ trong tiếng Nhật. Đặt tên riêng để món quà có giá trị cảm nhận, thay vì chỉ là “kệ tặng kèm”.</p>
+        <dl class="tana-spec">
+          <div><dt>Kích thước</dt><dd>43 × 30 × 81 cm</dd></div>
+          <div><dt>Tải trọng</dt><dd>~5 kg mỗi khay</dd></div>
+          <div><dt>Di chuyển</dt><dd>Bánh xe 360°, 2 khóa phanh</dd></div>
+          <div><dt>Lắp đặt</dt><dd>Lắp sẵn, mở hộp là dùng</dd></div>
+        </dl>
+        <h4>Góc máy ảnh trong 3 tầng</h4>
+        <ol class="tana-tiers">
+          <li><b>Tầng 1</b><span>Máy ảnh và ống kính đang dùng, luôn trong tầm tay.</span></li>
+          <li><b>Tầng 2</b><span>Sách ảnh, ảnh in Sabi Print, ống nhòm.</span></li>
+          <li><b>Tầng 3</b><span>Pin, sạc, kính lọc, dây đeo, hộp phụ kiện.</span></li>
+        </ol>
+        <p class="note">Kệ dùng cho máy dùng hằng ngày. Cất máy lâu ngày nên dùng hộp chống ẩm vì khí hậu Việt Nam ẩm cao.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band sumi" id="tana-plan">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eyebrow">13c · Cơ chế bán hàng <span class="kana">しくみ</span></div>
+      <h2>Bốn cách <i>xả kệ nhanh.</i></h2>
+      <p class="lede">Ưu tiên quà tặng kèm máy ảnh vì giá trị đơn cao, quà “đáng” với khách. Ba cơ chế còn lại giúp kéo thêm đơn ống kính, ống nhòm và nội dung.</p>
+    </div>
+    <div class="tana-mech">
+      <div class="tm hot"><span class="pick">Chính</span><span class="n">01</span><h4>Mua máy ảnh, tặng kệ</h4><p>Áp dụng 6 máy ảnh: Zf, Z fc (2 bộ), Z30, Z50 II kit và body. Mỗi máy nhận 1 kệ, đến khi hết quà.</p><span class="how">Shopee · chương trình Quà tặng kèm</span></div>
+      <div class="tm"><span class="n">02</span><h4>Mua kèm deal sốc</h4><p>Khách mua ống kính hoặc ống nhòm được thêm kệ với giá ưu đãi. Giá đề xuất cần BOD duyệt theo giá vốn kệ.</p><span class="how">Shopee · Mua kèm deal sốc</span></div>
+      <div class="tm"><span class="n">03</span><h4>Live “Góc máy ảnh”</h4><p>Dựng kệ ngay trong phiên AF Challenge Live. Một số đơn đầu mỗi phiên nhận kệ kèm dây đeo Sabi.</p><span class="how">Shopee Live · TikTok Live</span></div>
+      <div class="tm"><span class="n">04</span><h4>Video “ngăn tủ → kệ”</h4><p>Clip 30–60 giây: lấy máy cũ ra khỏi ngăn tủ, dựng góc máy ảnh mới. Nối thẳng brand story, dễ viral.</p><span class="how">TikTok · Reels</span></div>
+    </div>
+    <div class="tana-ops">
+      <div class="op"><h4>Số liệu cần điền</h4><div class="fill"><div><span>Tồn kho kệ hiện tại</span><b>____ kệ</b></div><div><span>Giá vốn mỗi kệ</span><b>₫ ____</b></div><div><span>Mục tiêu xả hết</span><b>____ tuần</b></div><div><span>Giá mua kèm đề xuất</span><b>₫ ____</b></div></div></div>
+      <div class="op"><h4>Lưu ý vận hành</h4><ul>
+        <li>Kệ cồng kềnh (43 × 30 × 81 cm, lắp sẵn): kiểm tra phí ship và giới hạn kích thước kiện của đơn vị vận chuyển, có thể giao 2 kiện.</li>
+        <li>Quà tặng trên Shopee phải là sản phẩm có tồn kho trong shop: kiểm tra quy định danh mục của shop Mall trước khi tạo.</li>
+        <li>Ghi rõ “quà tặng không quy đổi thành tiền, áp dụng đến khi hết quà”; hiện số quà còn lại để tạo cảm giác khan hiếm.</li>
+        <li>Theo dõi mỗi tuần: số kệ đã xả, tỷ lệ chuyển đổi và giá trị đơn máy ảnh trước và sau chương trình.</li>
+      </ul></div>
+    </div>
+  </div>
+</section>
+
 <section class="hgal" id="shopee-img" data-hscroll>
   <div class="stick">
     <div class="wrap hg-head">
       <div class="eyebrow">14 · Bộ ảnh Shopee · Nikon Zf <span class="kana">しゃしん</span></div>
-      <h2>Tám tấm ảnh, <i>một câu chuyện.</i></h2>
+      <h2>Chín tấm ảnh, <i>một câu chuyện.</i></h2>
     </div>
     <div class="hg-track" id="shots"></div>
     <div class="wrap hg-foot"><span class="mono">KÉO HOẶC CUỘN →</span><span class="hg-bar" aria-hidden="true"><i></i></span></div>
@@ -1601,7 +1717,7 @@ body.immersive .subnav ul{pointer-events:none}
       <div class="vouchers">
         <div class="vc"><div class="l">SABI<br>500K</div><div class="r"><b>Giảm ₫500k</b><small>Đơn tối thiểu ₫20tr · HSD 30.11</small><button type="button" class="js-save">Lưu</button></div></div>
         <div class="vc"><div class="l">SABI<br>1TR</div><div class="r"><b>Giảm ₫1tr</b><small>Đơn tối thiểu ₫45tr · HSD 30.11</small><button type="button" class="js-save">Lưu</button></div></div>
-        <div class="vc"><div class="l" style="background:var(--aka);color:var(--white)">QUÀ</div><div class="r"><b>Tặng dây đeo Sabi</b><small>Đơn máy ảnh bất kỳ · số lượng có hạn</small><button type="button" class="js-save">Lưu</button></div></div>
+        <div class="vc"><div class="l" style="background:var(--aka);color:var(--white)">QUÀ</div><div class="r"><b>Tặng kệ TANA 3 tầng</b><small>Đơn máy ảnh bất kỳ · đến khi hết quà</small><button type="button" class="js-save">Lưu</button></div></div>
         <div class="vc"><div class="l" style="background:var(--kaki);color:var(--sumi)">LIVE</div><div class="r"><b>Giảm thêm 3%</b><small>Chỉ trong AF Challenge Live</small><button type="button" class="js-save">Lưu</button></div></div>
       </div>
     </div>
@@ -1613,6 +1729,13 @@ body.immersive .subnav ul{pointer-events:none}
         <div class="bn small" style="background:var(--kaki);color:var(--sumi)"><div class="t" style="color:var(--sumi)">AF Challenge <i style="color:var(--ai)">Live</i></div><p style="margin-top:4px;font-size:13px">20:00 thứ 4 và Chủ nhật</p></div>
         <div class="bn small" style="background:var(--kinari);color:var(--sumi)"><div class="t" style="color:var(--ai)">Sabi Goods <i style="color:var(--aka)">mới</i></div><p style="margin-top:4px;font-size:13px">Dây đeo, túi chống sốc, áo thun</p></div>
       </div>
+    </div>
+
+    <div class="tana-bn">
+      <img src="img/t_09-gift-tana.jpg" alt="">
+      <div class="tx"><span class="k">QUÀ TẶNG · SỐ LƯỢNG CÓ HẠN</span><b>Mua máy ảnh, tặng kệ TANA 3 tầng</b><span>Áp dụng Zf · Z fc · Z30 · Z50 II. Khung gỗ tự nhiên, bánh xe 360°, lắp sẵn.</span></div>
+      <div class="left"><span>Còn lại</span><b>___</b><span>phần quà</span></div>
+      <button type="button" class="js-toast" data-msg="Mở danh sách máy ảnh áp dụng (mô phỏng)">Xem máy áp dụng ›</button>
     </div>
 
     <div class="box"><div class="box-t"><h3>Danh mục</h3></div><div class="cats" id="cats"></div></div>
@@ -1672,7 +1795,7 @@ body.immersive .subnav ul{pointer-events:none}
         <h1><span class="mall">Mall</span>Máy Ảnh Nikon Zf Kit 40mm f/2 SE Chính Hãng | Bảo Hành 60 Tháng | Bộ Sabi AKI | Lấy Nét Nhận Diện 9 Chủ Thể</h1>
         <div class="prow"><span class="st">4.9 ★★★★★</span><span class="sep"></span><span><b>128</b> <span class="g">Đánh giá</span></span><span class="sep"></span><span><b>356</b> <span class="g">Đã bán</span></span></div>
         <div class="pricebox"><div class="fs"><span>⚡ FLASH SALE</span><span id="pdpTimer">KẾT THÚC TRONG 02:14:36</span></div><div class="p"><s id="pOld">₫61.990.000</s><span class="now" id="pNow">₫53.990.000</span><span class="off" id="pOff">-13%</span></div></div>
-        <div class="prop"><span>Mã giảm giá</span><div class="vchips"><span>Giảm ₫500k</span><span>Giảm ₫1tr</span><span>Tặng dây đeo Sabi</span></div></div>
+        <div class="prop"><span>Mã giảm giá</span><div class="vchips"><span>Giảm ₫500k</span><span>Giảm ₫1tr</span><span>Tặng kệ TANA 3 tầng</span><span>Tặng dây đeo Sabi</span></div></div>
         <div class="prop"><span>Bảo hành</span><div><b>60 tháng</b> tại Sabi Lab · Sabi Care vệ sinh máy hằng năm</div></div>
         <div class="prop"><span>Vận chuyển</span><div>Miễn phí vận chuyển · Nhận từ <b>22 Th10 – 23 Th10</b> · Hỏa tốc nội thành HCM</div></div>
         <div class="prop"><span>Màu sắc</span><div class="optlist" id="optColor"></div></div>
@@ -1773,7 +1896,7 @@ body.immersive .subnav ul{pointer-events:none}
   $$('.chip').forEach(function(c){c.addEventListener('click',function(){try{navigator.clipboard.writeText(c.dataset.hex).then(function(){c.classList.add('ok');setTimeout(function(){c.classList.remove('ok')},1200)},function(){})}catch(e){}})});
 
   var COLORS=[['black','Đen cổ điển'],['moss-green','Xanh rêu'],['stone-gray','Xám đá'],['sepia-brown','Nâu sepia'],['indigo-blue','Xanh chàm'],['sunset-orange','Cam hoàng hôn'],['bordeaux-red','Đỏ Bordeaux']];
-  var SHOTS=[['01-main','Ảnh chính','Nhận diện, tagline, bảo hành 60 tháng.'],['02-lifestyle','Lifestyle','Chụp nhanh, nhớ lâu, mặt trời Showa.'],['03-autofocus','Lấy nét nhanh','9 chủ thể, công nghệ Z8/Z9, Pre-Release.'],['04-design','Thiết kế FM2','Vòng ISO, logo cổ điển, đồng thau.'],['05-image-quality','Chất lượng ảnh','24,5MP, so sánh cảm biến theo tỷ lệ.'],['06-monochrome-recipes','Đơn sắc & Recipes','3 chế độ trắng đen, 3 Sabi Recipes.'],['07-in-the-box','Trong hộp','Bộ AKI: phụ kiện Nikon và quà Sabi.'],['08-warranty','Bảo hành 60 tháng','Cam kết để chốt đơn.']];
+  var SHOTS=[['01-main','Ảnh chính','Nhận diện, tagline, bảo hành 60 tháng.'],['02-lifestyle','Lifestyle','Chụp nhanh, nhớ lâu, mặt trời Showa.'],['03-autofocus','Lấy nét nhanh','9 chủ thể, công nghệ Z8/Z9, Pre-Release.'],['04-design','Thiết kế FM2','Vòng ISO, logo cổ điển, đồng thau.'],['05-image-quality','Chất lượng ảnh','24,5MP, so sánh cảm biến theo tỷ lệ.'],['06-monochrome-recipes','Đơn sắc & Recipes','3 chế độ trắng đen, 3 Sabi Recipes.'],['07-in-the-box','Trong hộp','Bộ AKI: phụ kiện Nikon và quà Sabi.'],['08-warranty','Bảo hành 60 tháng','Cam kết để chốt đơn.'],['09-gift-tana','Quà tặng kệ TANA','Mua máy ảnh tặng kệ 3 tầng, ảnh thứ 9 (tối đa của Shopee).']];
   var CAM_SVG='<svg viewBox="0 0 200 130"><rect x="10" y="34" width="180" height="88" rx="14" fill="#1F3A68"/><path d="M72 36 L82 8 H118 L128 36 Z" fill="#1F3A68"/><rect x="30" y="18" width="28" height="16" rx="3" fill="#1F3A68"/><rect x="142" y="18" width="28" height="16" rx="3" fill="#1F3A68"/><circle cx="100" cy="80" r="34" fill="#F3EFE6"/><circle cx="100" cy="80" r="21" fill="#E03C31"/></svg>';
   var G={
     strap:'<svg viewBox="0 0 200 150"><path d="M30 20c-12 40-14 80 10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M170 20c12 40 14 80-10 120" stroke="#1F3A68" stroke-width="16" fill="none" stroke-linecap="round"/><path d="M30 20c-12 40-14 80 10 120M170 20c12 40 14 80-10 120" stroke="#F2B33D" stroke-width="3" fill="none"/><rect x="76" y="58" width="48" height="34" rx="4" fill="#1A1A1A"/><path d="M84 68v-6h6M110 62h6v6M116 82v6h-6M90 88h-6v-6" stroke="#F2B33D" stroke-width="2" fill="none"/><circle cx="111" cy="68" r="2.5" fill="#E03C31"/></svg>',
@@ -1814,11 +1937,11 @@ body.immersive .subnav ul{pointer-events:none}
     var off=p.old?Math.round((1-p.price/p.old)*100):0;
     return '<button type="button" class="pc" data-link="'+(p.link||'')+'"><div class="im">'+im+(off?'<span class="disc">'+off+'%<small>GIẢM</small></span>':'')+(p.frame?'<span class="frame"><em>60T</em>'+p.frame+'</span>':'')+'</div><div class="bd"><div class="nm">'+(p.mall!==false?'<span class="mall">Mall</span>':'')+p.name+'</div><div class="tags">'+(p.tags||[]).map(function(t){return '<span>'+t+'</span>'}).join('')+'</div>'+(p.fs?'<div class="fsbar"><i style="width:'+p.fs+'%"></i><span>Đã bán '+p.fsn+'</span></div>':'')+'<div class="pr"><b><small>₫</small>'+money(p.price).slice(1)+'</b><span>Đã bán '+p.sold+'</span></div><div class="loc">TP. Hồ Chí Minh</div></div></button>';
   }
-  var ZF=COLORS.map(function(c,i){return {name:'Máy Ảnh Nikon Zf Kit 40mm f/2 SE Chính Hãng · '+c[1]+' · Bộ Sabi AKI',img:'img/t_var-0'+(i+1)+'-'+c[0]+'.jpg',price:53990000,old:61990000,sold:['356','42','31','58','27','19','12'][i],tags:['Trả góp 0%','Quà Sabi'],frame:'BỘ AKI · BH 60 THÁNG',link:'listing:'+i}});
+  var ZF=COLORS.map(function(c,i){return {name:'Máy Ảnh Nikon Zf Kit 40mm f/2 SE Chính Hãng · '+c[1]+' · Bộ Sabi AKI',img:'img/t_var-0'+(i+1)+'-'+c[0]+'.jpg',price:53990000,old:61990000,sold:['356','42','31','58','27','19','12'][i],tags:['Tặng kệ TANA','Trả góp 0%'],frame:'BỘ AKI · BH 60 THÁNG',link:'listing:'+i}});
   var OT=[
-    {name:'Máy Ảnh Nikon Zf Body Chính Hãng · Bảo hành 60 tháng',model:'Nikon Zf Body',price:48990000,old:50500000,sold:'88',tags:['Trả góp 0%'],frame:'BODY · BH 60 THÁNG'},
-    {name:'Máy Ảnh Nikon Z fc Kit 16-50mm Chính Hãng · Bộ Sabi HARU',model:'Nikon Z fc · HARU',price:25400000,sold:'120',tags:['Quà Sabi'],frame:'BỘ HARU'},
-    {name:'Máy Ảnh Nikon Z fc Kit 28mm f/2.8 SE · Bộ Sabi NATSU',model:'Nikon Z fc · NATSU',price:27500000,sold:'64',tags:['Quà Sabi'],frame:'BỘ NATSU'}
+    {name:'Máy Ảnh Nikon Zf Body Chính Hãng · Bảo hành 60 tháng',model:'Nikon Zf Body',price:48990000,old:50500000,sold:'88',tags:['Tặng kệ TANA','Trả góp 0%'],frame:'BODY · BH 60 THÁNG'},
+    {name:'Máy Ảnh Nikon Z fc Kit 16-50mm Chính Hãng · Bộ Sabi HARU',model:'Nikon Z fc · HARU',price:25400000,sold:'120',tags:['Tặng kệ TANA','Quà Sabi'],frame:'BỘ HARU'},
+    {name:'Máy Ảnh Nikon Z fc Kit 28mm f/2.8 SE · Bộ Sabi NATSU',model:'Nikon Z fc · NATSU',price:27500000,sold:'64',tags:['Tặng kệ TANA','Quà Sabi'],frame:'BỘ NATSU'}
   ];
   var GD=GL.map(function(g,i){return {name:g[2],goods:g[0],price:g[5],sold:String(20+i*7),tags:['Sabi Goods'],mall:false}});
   function ext(a,b){var o={},k;for(k in a)o[k]=a[k];for(k in b)o[k]=b[k];return o}
@@ -1845,7 +1968,7 @@ body.immersive .subnav ul{pointer-events:none}
   $('#pdpMainWrap').addEventListener('click',function(){openLb($('#pdpMain').src)});
   $('#descImgs').innerHTML=GAL.slice(1).map(function(n){return '<img src="img/'+n+'.jpg" alt="" loading="lazy">'}).join('');
   $('#optColor').innerHTML=COLORS.map(function(c,i){return '<button type="button" class="opt" data-i="'+i+'" aria-pressed="'+(i===0)+'"><img src="img/t_var-0'+(i+1)+'-'+c[0]+'.jpg" alt="">'+c[1]+'</button>'}).join('');
-  var VERS=[['Kit 40mm f/2 SE · Bộ AKI',53990000,61990000,['Dây đeo Sabi','Túi chống sốc','Khăn lau','Lab Card + 3 Recipes']],['Body',48990000,50500000,['Khăn lau','Lab Card + 3 Recipes']],['Kit 40mm · Sabi Atelier',56490000,64990000,['Dây đeo Sabi','Túi chống sốc','Half-case da','Hộp thẻ nhớ','Vé photowalk','Sabi Print 10 ảnh']]];
+  var VERS=[['Kit 40mm f/2 SE · Bộ AKI',53990000,61990000,['Kệ TANA 3 tầng','Dây đeo Sabi','Túi chống sốc','Khăn lau','Lab Card + 3 Recipes']],['Body',48990000,50500000,['Kệ TANA 3 tầng','Khăn lau','Lab Card + 3 Recipes']],['Kit 40mm · Sabi Atelier',56490000,64990000,['Kệ TANA 3 tầng','Dây đeo Sabi','Túi chống sốc','Half-case da','Hộp thẻ nhớ','Vé photowalk','Sabi Print 10 ảnh']]];
   $('#optVer').innerHTML=VERS.map(function(v,i){return '<button type="button" class="opt txt" data-v="'+i+'" aria-pressed="'+(i===0)+'">'+v[0]+'</button>'}).join('');
   function selColor(i){$$('#optColor .opt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.i===i?'true':'false')});setMain('var-0'+(i+1)+'-'+COLORS[i][0])}
   function selVer(i){var v=VERS[i];$$('#optVer .opt').forEach(function(b){b.setAttribute('aria-pressed',+b.dataset.v===i?'true':'false')});$('#pNow').textContent=money(v[1]);$('#pOld').textContent=money(v[2]);$('#pOff').textContent='-'+Math.round((1-v[1]/v[2])*100)+'%';$('#gifts').innerHTML=v[3].map(function(g){return '<span>'+g+'</span>'}).join('')}
@@ -2006,8 +2129,9 @@ body.immersive .subnav ul{pointer-events:none}
 
   /* store: catalog boxes per category */
   var money=function(n){return n.toString().replace(/\B(?=(\d{3})+(?!\d))/g,'.')};
+  function g_cam(it){return /^Nikon (Zf|Z fc|Z30|Z50)/.test(it[0])}
   function pcard(it,i){var off=it[6]?Math.round((1-it[5]/it[6])*100):0;var price=it[5]?'<b><small>₫</small>'+money(it[5])+'</b>':'<b class="na">Giá đang cập nhật</b>';
-    return '<button type="button" class="pc"'+(it[0].indexOf('Zf +')===0?' data-link="listing:0"':'')+'><div class="im"><div class="ph big" style="background:var(--kinari-2)">'+it[4]+'</div>'+(off?'<span class="disc">'+off+'%<small>GIẢM</small></span>':'')+'<span class="frame"><em>60T</em>'+it[3].toUpperCase()+'</span></div><div class="bd"><div class="nm"><span class="mall">Mall</span>'+it[0]+' Chính Hãng</div><div class="tags"><span>'+(it[2]==='out'?'Ống nhòm':'Nikon')+'</span><span>Trả góp 0%</span></div><div class="pr">'+price+'<span>TP. HCM</span></div></div></button>'}
+    return '<button type="button" class="pc"'+(it[0].indexOf('Zf +')===0?' data-link="listing:0"':'')+'><div class="im"><div class="ph big" style="background:var(--kinari-2)">'+it[4]+'</div>'+(off?'<span class="disc">'+off+'%<small>GIẢM</small></span>':'')+'<span class="frame"><em>60T</em>'+it[3].toUpperCase()+'</span></div><div class="bd"><div class="nm"><span class="mall">Mall</span>'+it[0]+' Chính Hãng</div><div class="tags">'+(g_cam(it)?'<span>Tặng kệ TANA</span>':'')+'<span>'+(it[2]==='out'?'Ống nhòm':'Nikon')+'</span><span>Trả góp 0%</span></div><div class="pr">'+price+'<span>TP. HCM</span></div></div></button>'}
   var all=$('#allGrid');
   if(all){var box=all.closest('.box');var html=C.map(function(g){return '<div class="box"><div class="box-t"><h3>'+g.cat+' Nikon</h3><a href="#store">Xem tất cả ›</a></div><div class="pgrid">'+g.items.map(pcard).join('')+'</div></div>'}).join('');box.insertAdjacentHTML('afterend',html)}
   var cats=$('#cats');
@@ -2042,6 +2166,11 @@ body.immersive .subnav ul{pointer-events:none}
   cards.forEach(function(c,i){c.tabIndex=c.getAttribute('aria-selected')==='true'?0:-1;c.addEventListener('click',function(){pick(c.dataset.ta)});c.addEventListener('keydown',function(e){var d=e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0;if(!d)return;e.preventDefault();pick(cards[(i+d+cards.length)%cards.length].dataset.ta,true)})});
 })();
 </script>
+<script>
+(function(){var m=document.getElementById('tanaMain');if(!m)return;var bs=[].slice.call(document.querySelectorAll('.tana-thumbs button'));
+bs.forEach(function(b){b.addEventListener('click',function(){bs.forEach(function(x){x.setAttribute('aria-pressed',x===b?'true':'false')});m.style.opacity=0;setTimeout(function(){m.src=b.dataset.src;m.style.opacity=1},180)})})})();
+</script>
+
 
 
 
