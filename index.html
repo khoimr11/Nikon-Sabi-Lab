@@ -495,7 +495,7 @@ footer p{font-family:var(--f-mono);font-size:12px;letter-spacing:.04em;opacity:.
 .pdp>*{min-width:0}
 .gal .main{aspect-ratio:1;background:var(--kinari);position:relative;max-width:100%;cursor:zoom-in}
 .gal .main img{width:100%;height:100%;object-fit:cover}
-.gal .main .play{position:absolute;left:12px;bottom:12px;background:rgba(0,0,0,.55);color:var(--white);font-size:12px;padding:4px 10px;border-radius:12px}
+.gal .main .play{position:absolute;left:12px;bottom:15%;background:rgba(0,0,0,.55);color:var(--white);font-size:12px;padding:4px 10px;border-radius:12px}
 .thumbs{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:8px}
 .thumbs button{border:2px solid transparent;padding:0;cursor:pointer;aspect-ratio:1;background:var(--kinari);overflow:hidden;max-width:100%}
 .thumbs button[aria-pressed="true"]{border-color:var(--shp)}
@@ -890,7 +890,7 @@ body.immersive .subnav ul{pointer-events:none}
 .tana{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:40px;align-items:start}
 .tana-main{border-radius:14px;overflow:hidden;background:var(--white);box-shadow:0 24px 50px rgba(26,26,26,.12);aspect-ratio:1}
 .tana-main img{width:100%;height:100%;object-fit:cover;display:block;transition:opacity .35s}
-.tana-thumbs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:12px}
+.tana-thumbs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:12px}
 .tana-thumbs button{border:2px solid transparent;border-radius:10px;overflow:hidden;padding:0;cursor:pointer;background:var(--white);aspect-ratio:1;transition:border-color .2s,transform .2s}
 .tana-thumbs button:hover{transform:translateY(-2px)}
 .tana-thumbs button[aria-pressed="true"]{border-color:var(--ai)}
@@ -1654,10 +1654,9 @@ body.immersive .subnav ul{pointer-events:none}
     </div>
     <div class="tana">
       <div class="tana-gal">
-        <div class="tana-main"><img id="tanaMain" src="img/promo-tana-1x1.jpg" alt="Ảnh Shopee: mua máy ảnh tặng kệ TANA 3 tầng"></div>
+        <div class="tana-main"><img id="tanaMain" src="img/09-gift-tana.jpg" alt="Ảnh Shopee: mua máy ảnh tặng kệ TANA 3 tầng"></div>
         <div class="tana-thumbs" role="group" aria-label="Ảnh kệ TANA">
-          <button type="button" aria-pressed="true" data-src="img/promo-tana-1x1.jpg"><img src="img/t_promo-tana-1x1.jpg" alt="Banner quà tặng"></button>
-          <button type="button" aria-pressed="false" data-src="img/09-gift-tana.jpg"><img src="img/t_09-gift-tana.jpg" alt="Ảnh quà tặng"></button>
+          <button type="button" aria-pressed="true" data-src="img/09-gift-tana.jpg"><img src="img/t_09-gift-tana.jpg" alt="Ảnh quà tặng"></button>
           <button type="button" aria-pressed="false" data-src="img/10-tana-corner.jpg"><img src="img/t_10-tana-corner.jpg" alt="Góc máy ảnh"></button>
           <button type="button" aria-pressed="false" data-src="img/tana-features.jpg"><img src="img/tana-features.jpg" alt="Tính năng kệ"></button>
           <button type="button" aria-pressed="false" data-src="img/tana-dim.jpg"><img src="img/tana-dim.jpg" alt="Kích thước kệ"></button>
@@ -2155,7 +2154,7 @@ body.immersive .subnav ul{pointer-events:none}
 
   var GAL=SHOTS.map(function(s){return s[0]});
   var THUMBS=GAL.concat(COLORS.map(function(c,i){return 'var-0'+(i+1)+'-'+c[0]}));
-  function setMain(n){$('#pdpMain').src='img/'+n+'.jpg';$$('#pdpThumbs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.n===n?'true':'false')})}
+  function setMain(n){$('#pdpMain').src='img/'+n+'.jpg';var pl=document.querySelector('#pdpMainWrap .play');if(pl)pl.style.display=n==='01-main'?'':'none';$$('#pdpThumbs button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.n===n?'true':'false')})}
   $('#pdpThumbs').innerHTML=THUMBS.map(function(n,i){return '<button type="button" data-n="'+n+'" aria-pressed="'+(i===0)+'" aria-label="Ảnh '+(i+1)+'"><img src="img/t_'+n+'.jpg" alt="" loading="lazy"></button>'}).join('');
   $$('#pdpThumbs button').forEach(function(b){b.addEventListener('mouseenter',function(){setMain(b.dataset.n)});b.addEventListener('click',function(){setMain(b.dataset.n)})});
   $('#pdpMainWrap').addEventListener('click',function(){openLb($('#pdpMain').src)});
